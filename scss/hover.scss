@@ -11,1332 +11,236 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 
+@import "hover/variables";
+@import "hover/hacks";
+@import "hover/button";
+@import "hover/grow";
+@import "hover/shrink";
+@import "hover/pulse";
+@import "hover/pulse-grow";
+@import "hover/pulse-shrink";
+@import "hover/push";
+@import "hover/pop";
+@import "hover/rotate";
+@import "hover/grow-rotate";
+@import "hover/float";
+@import "hover/sink";
+@import "hover/hover";
+@import "hover/hang";
+@import "hover/skew";
+@import "hover/skew-forward";
+@import "hover/wobble-vertical";
+@import "hover/wobble-horizontal";
+@import "hover/wobble-top";
+@import "hover/wobble-bottom";
+@import "hover/border-fade";
+@import "hover/hollow";
+@import "hover/trim";
+@import "hover/outline-outward";
+@import "hover/outline-inward";
+@import "hover/round-corners";
+@import "hover/glow";
+@import "hover/box-shadow-outset";
+@import "hover/box-shadow-inset";
+@import "hover/float-shadow";
+@import "hover/hover-shadow";
+@import "hover/shadow-radial";
+@import "hover/bubble-top";
+@import "hover/bubble-right";
+@import "hover/bubble-bottom";
+@import "hover/bubble-left";
+@import "hover/bubble-float-top";
+@import "hover/bubble-float-right";
+@import "hover/bubble-float-bottom";
+@import "hover/bubble-float-left";
+@import "hover/curl-top-left";
+@import "hover/curl-top-right";
+@import "hover/curl-bottom-right";
+@import "hover/curl-bottom-left";
 
-// Default options
-$defaultDuration: .3s;
-$primaryColour: #ececec;
-$secondaryColour: #666;
-$shadowColour: rgba(0, 0, 0, .6);
-
-
-
-// As is often the case, some devices/browsers need additional code to get CSS to work
-// in the most desired way. These mixins are used to quickly drop in hacks for each element
-@mixin hideTapHighlightColor() {
-	//Prevent highlight colour when element is tapped
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-@mixin hardwareAccel() {
-	//Improve performance on mobile/tablet devices
-	transform: translateZ(0);
-}
-
-@mixin improveAntiAlias() {
-	//Improve aliasing on mobile/tablet devices
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-
-
-/* Default styles for the demo buttons */
+/* BASE BUTTON */
 .button {
-  margin: .4em;
-  padding: 1em;
-  cursor: pointer;
-  background: $primaryColour;
-  text-decoration: none;
-  color: $secondaryColour;
+	@include button();
 }
-
 
 /* 2D TRANSITIONS */
 
-/* Grow */
 .grow {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: scale(1.1);
-	}
+	@include grow();
 }
 
-
-/* Shrink */
 .shrink {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: scale(.9);
-	}
-}
-
-
-/* Pulse */
-@keyframes pulse {
-	25% {
-		transform: scale(1.1);
-	}
-
-	75% {
-		transform: scale(.9);
-	}
+	@include shrink();
 }
 
 .pulse {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: pulse;
-		animation-duration: 1s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-	}
+	@include pulse();
 }
 
-
-/* Pulse Grow */
-@keyframes pulse-grow {
-	to {
-		transform: scale(1.1);
-	}
+.pulse-grow{
+	@include pulse-grow();
 }
 
-.pulse-grow {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: pulse-grow;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	}
+.pulse-shrink{
+	@include pulse-shrink();
 }
 
-
-/* Pulse Shrink */
-@keyframes pulse-shrink {
-	to {
-		transform: scale(.9);
-	}
+.push{
+	@include push();
 }
 
-.pulse-shrink {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: pulse-shrink;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	}
+.pop{
+	@include pop();
 }
 
-
-/* Push */
-@keyframes push {
-	50% {
-		transform: scale(.8);
-	}
-
-	100% {
-		transform: scale(1);
-	}
+.rotate{
+	@include rotate();
 }
 
-.push {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: push;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: 1;
-	}
+.grow-rotate{
+	@include grow-rotate();
 }
 
-
-/* Pop */
-@keyframes pop {
-	50% {
-		transform: scale(1.2);
-	}
-
-	100% {
-		transform: scale(1);
-	}
+.float{
+	@include float();
 }
 
-.pop {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: pop;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: 1;
-	}
+.sink{
+	@include sink();
 }
 
-
-/* Rotate */
-.rotate {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-	
-	&:hover {	
-		transform: rotate(4deg);
-	}
+.hover{
+	@include hover();
 }
 
-
-/* Grow Rotate */
-.grow-rotate {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-	
-	&:hover {	
-		transform: scale(1.1) rotate(4deg);
-	}
+.hang{
+	@include hang();
 }
 
-
-/* Float */
-.float {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: translateY(-5px);
-	}
+.skew{
+	@include skew();
 }
 
-
-/* Sink */
-.sink {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: translateY(5px);
-	}
+.skew-forward{
+	@include skew-forward();
 }
 
-
-/* Hover */
-@keyframes hover {
-	50% {
-		transform: translateY(-3px);
-	}
-
-	100% {
-		transform: translateY(-6px);
-	}
+.wobble-vertical{
+	@include wobble-vertical();
 }
 
-.hover {
-	display: inline-block;
-	transition-duration: .5s;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: translateY(-6px);
-		animation-name: hover;
-		animation-duration: 1.5s;
-		animation-delay: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	}
+.wobble-horizontal{
+	@include wobble-horizontal();
 }
 
-
-/* Hang */
-@keyframes hang {
-	50% {
-		transform: translateY(3px);
-	}
-
-	100% {
-		transform: translateY(6px);
-	}
+.wobble-top{
+	@include wobble-top();
 }
 
-.hang {
-	display: inline-block;
-	transition-duration: .5s;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: translateY(6px);
-		animation-name: hang;
-		animation-duration: 1.5s;
-		animation-delay: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	}
+.wobble-bottom{
+	@include wobble-bottom();
 }
-
-
-/* Skew */
-.skew {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: skew(-10deg);
-	}
-}
-
-
-/* Skew Forward */
-.skew-forward {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-	transform-origin: 0 100%;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: skew(-10deg);
-	}
-}
-
-
-/* Wobble Vertical */
-@keyframes wobble-vertical {
-	16.65% {
-		transform: translateY(8px);
-	}
-
-	33.3% {
-		transform: translateY(-6px);
-	}
-
-	49.95% {
-		transform: translateY(4px);
-	}
-
-	66.6% {
-		transform: translateY(-2px);
-	}
-
-	83.25% {
-		transform: translateY(1px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-
-.wobble-vertical {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: wobble-vertical;
-		animation-duration: 1s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: 1;
-	}
-}
-
-
-/* Wobble Horizontal */
-@keyframes wobble-horizontal {
-	16.65% {
-		transform: translateX(8px);
-	}
-
-	33.3% {
-		transform: translateX(-6px);
-	}
-
-	49.95% {
-		transform: translateX(4px);
-	}
-
-	66.6% {
-		transform: translateX(-2px);
-	}
-
-	83.25% {
-		transform: translateX(1px);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
-}
-
-.wobble-horizontal {
-	display: inline-block;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: wobble-horizontal;
-		animation-duration: 1s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: 1;
-	}
-}
-
-
-/* Wobble Top */
-@keyframes wobble-top {
-	16.65% {
-		transform: skew(-12deg);
-	}
-
-	33.3% {
-		transform: skew(10deg);
-	}
-
-	49.95% {
-		transform: skew(-6deg);
-	}
-
-	66.6% {
-		transform: skew(4deg);
-	}
-
-	83.25% {
-		transform: skew(-2deg);
-	}
-
-	100% {
-		transform: skew(0);
-	}
-}
-
-.wobble-top {
-	display: inline-block;
-	transform-origin: 0 100%;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: wobble-top;
-		animation-duration: 1s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: 1;
-	}
-}
-
-
-/* Wobble Bottom */
-@keyframes wobble-bottom {
-	16.65% {
-		transform: skew(-12deg);
-	}
-
-	33.3% {
-		transform: skew(10deg);
-	}
-
-	49.95% {
-		transform: skew(-6deg);
-	}
-
-	66.6% {
-		transform: skew(4deg);
-	}
-
-	83.25% {
-		transform: skew(-2deg);
-	}
-
-	100% {
-		transform: skew(0);
-	}
-}
-
-.wobble-bottom {
-	display: inline-block;
-	transform-origin: 100% 0;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		animation-name: wobble-bottom;
-		animation-duration: 1s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: 1;
-	}
-}
-
-
-
 
 /* BORDER TRANSITIONS */
 
-/* Border Fade */
-.border-fade {
-	display: inline-block;
-	$borderWidth: 4px;
-
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	box-shadow: 
-			inset 0 0 0 $borderWidth $primaryColour,
-			0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */ 
-	
-	&:hover {
-		box-shadow: 
-			inset 0 0 0 $borderWidth $secondaryColour,
-			0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
-	}
+.border-fade{
+	@include border-fade();
 }
 
-
-/* Hollow */
-.hollow {
-	display: inline-block;
-	$borderWidth: 4px;
-
-	transition-duration: $defaultDuration;
-	transition-property: background;
-
-	transform: translateZ(0); /* Hack to improve performance on mobile/tablet devices */
-	box-shadow: 
-		inset 0 0 0 $borderWidth $primaryColour,
-		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
-
-	&:hover {
-		background: none;
-	}
+.hollow{
+	@include hollow();
 }
 
-
-/* Trim */
-.trim {
-	display: inline-block;
-	$outerBorderWidth: 4px;
-	$innerBorderWidth: 4px;
-
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		content: '';
-		position: absolute;
-		border: white solid $innerBorderWidth;
-		top: $outerBorderWidth;
-		left: $outerBorderWidth;
-		right: $outerBorderWidth;
-		bottom: $outerBorderWidth;
-		opacity: 0;
-		transition-duration: $defaultDuration;
-		transition-property: opacity;
-	}
-
-	&:hover:before {
-		opacity: 1;
-	}
+.trim{
+	@include trim();
 }
 
-
-/* Outline Outward */
-.outline-outward {
-	display: inline-block;
-	$outerBorderWidth: 4px;
-	$innerBorderWidth: 4px;
-
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		content: '';
-		position: absolute;
-		border: $primaryColour solid $outerBorderWidth;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		transition-duration: .3s;
-		transition-property: top right bottom left;
-	}
-
-	&:hover:before {
-		top: -($outerBorderWidth + $innerBorderWidth);
-		right: -($outerBorderWidth + $innerBorderWidth);
-		bottom: -($outerBorderWidth + $innerBorderWidth);
-		left: -($outerBorderWidth + $innerBorderWidth);
-	}
+.outline-outward{
+	@include outline-outward();
 }
 
-
-/* Outline Inward */
-.outline-inward {
-	display: inline-block;
-	$outerBorderWidth: 4px;
-	$innerBorderWidth: 4px;
-
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		content: '';
-		position: absolute;
-		border: $primaryColour solid $outerBorderWidth;
-		top: -($outerBorderWidth + $innerBorderWidth) * 2;
-		right: -($outerBorderWidth + $innerBorderWidth) * 2;
-		bottom: -($outerBorderWidth + $innerBorderWidth) * 2;
-		left: -($outerBorderWidth + $innerBorderWidth) * 2;
-		opacity: 0;
-		transition-duration: .3s;
-		transition-property: top right bottom left;
-	}
-
-	&:hover:before {
-		top: -($outerBorderWidth + $innerBorderWidth);
-		right: -($outerBorderWidth + $innerBorderWidth);
-		bottom: -($outerBorderWidth + $innerBorderWidth);
-		left: -($outerBorderWidth + $innerBorderWidth);
-		opacity: 1;
-	}
+.outline-inward{
+	@include outline-inward();
 }
 
-
-/* Round Corners */
-.round-corners {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: border-radius;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		border-radius: 1em;
-	}
+.round-corners{
+	@include round-corners();
 }
-
-
-
 
 /* SHADOW/GLOW TRANSITIONS */
 
-/* Glow */
-.glow {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		box-shadow: 0 0 8px $shadowColour;
-	}
+.glow{
+	@include glow();
 }
 
-
-/* Box Shadow Outset */
-.box-shadow-outset {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		box-shadow: 2px 2px 2px $shadowColour;
-	}
+.box-shadow-outset{
+	@include box-shadow-outset();
 }
 
-
-/* Box Shadow Inset */
-.box-shadow-inset {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
-
-	box-shadow: inset 0 0 0 $shadowColour,
-		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-
-	&:hover {
-		box-shadow: inset 2px 2px 2px $shadowColour,
-		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
-	}
+.box-shadow-inset{
+	@include box-shadow-inset();
 }
 
-
-/* Float Shadow */
-.float-shadow {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-	  position: absolute;
-	  z-index: -1;
-	  content: '';
-	  top: 100%;
-	  left: 5%;
-	  height: 10px;
-	  width: 90%;
-	  opacity: 0;
-	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
-		transition-duration: $defaultDuration;
-		transition-property: transform opacity;
-	}
-
-	&:hover {
-		transform: translateY(-5px); /* move the element up by 5px */
-
-		&:before {
-			opacity: 1;
-			transform: translateY(5px); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-		}
-	}
+.float-shadow{
+	@include float-shadow();
 }
 
-
-/* Hover Shadow */
-@keyframes hover {
-	50% {
-		transform: translateY(-3px);
-	}
-
-	100% {
-		transform: translateY(-6px);
-	}
+.hover-shadow{
+	@include hover-shadow();
 }
 
-@keyframes hover-shadow {
-	0% {
-		transform: translateY(6px);
-		opacity: .4;
-	}
-
-	50% {
-		transform: translateY(3px);
-		opacity: 1;
-	}
-
-
-	100% {
-		transform: translateY(6px);
-		opacity: .4;
-	}
+.shadow-radial{
+	@include shadow-radial();
 }
-
-.hover-shadow {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-	  position: absolute;
-	  z-index: -1;
-	  content: '';
-	  top: 100%;
-	  left: 5%;
-	  height: 10px;
-	  width: 90%;
-	  opacity: 0;
-	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
-		transition-duration: $defaultDuration;
-		transition-property: transform opacity;
-	}
-
-	&:hover {
-		transform: translateY(-6px);
-		animation-name: hover;
-		animation-duration: 1.5s;
-		animation-delay: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-
-		&:before {
-			opacity: .4;
-			transform: translateY(6px);
-			animation-name: hover-shadow;
-			animation-duration: 1.5s;
-			animation-delay: .3s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-direction: alternate;
-		}
-	}
-}
-
-
-/* Shadow Radial */
-.shadow-radial {
-	display: inline-block;
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before,
-	&:after {
-		pointer-events: none;
-		position: absolute;
-		content: '';
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    height: 5px;
-    opacity: 0;
-    transition-duration: $defaultDuration;
-    transition-property: opacity;
-	}
-
-	&:before {
-		bottom: 100%;
-    background: radial-gradient(ellipse at 50% 150%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
-	}
-
-	&:after {
-		top: 100%;
-		background: radial-gradient(ellipse at 50% -50%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
-	}
-
-	&:hover:before,
-	&:hover:after {
-		opacity: 1;
-	}
-}
-
-
 
 /* SPEECH BUBBLES */
 
-$tipWidth: 10px;  //the width of the speech bubble tip
-$tipHeight: 10px; //the height of the speech bubble tip
-$tipColour: $primaryColour;
-
-/* Bubble Top */
-.bubble-top {
-	display: inline-block;
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		border-style: solid;
-		transition-duration: $defaultDuration;
-		left: calc(50% - #{$tipWidth});
-		border-width: 0 $tipWidth $tipHeight $tipWidth;
-		border-color: transparent transparent $tipColour transparent;
-		transition-property: top;
-	}
-
-	&:hover:before {
-		top: -($tipHeight);
-	}
+.bubble-top{
+	@include bubble-top();
 }
 
-
-/* Bubble Right */
-.bubble-right {
-	display: inline-block;
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		border-style: solid;
-		transition-duration: $defaultDuration;
-		transition-property: right;
-		top: calc(50% - #{$tipHeight});
-		right: 0;
-		border-width: $tipHeight 0 $tipHeight $tipWidth;
-		border-color: transparent transparent transparent $tipColour ;
-	}
-
-	&:hover:before {
-		right: -($tipWidth);
-	}
+.bubble-right{
+	@include bubble-right();
 }
 
-
-/* Bubble Bottom */
-.bubble-bottom {
-	display: inline-block;
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		border-style: solid;
-		transition-duration: $defaultDuration;
-		transition-property: bottom;
-		left: calc(50% - #{$tipWidth});
-		bottom: 0;
-		border-width: $tipHeight $tipWidth 0 $tipWidth;
-		border-color: $tipColour transparent transparent transparent;
-	}
-
-	&:hover:before {
-		bottom: -($tipHeight);
-	}	
+.bubble-bottom{
+	@include bubble-bottom();
 }
 
-
-/* Bubble Left */
-.bubble-left {
-	display: inline-block;
-	position: relative;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		border-style: solid;
-		transition-duration: $defaultDuration;
-		transition-property: left;
-		top: calc(50% - #{$tipHeight});
-		left: 0;
-		border-width: $tipHeight $tipWidth $tipHeight 0;
-		border-color: transparent $tipColour transparent transparent;
-	}
-
-	&:hover:before {
-		left: -($tipWidth);
-	}
+.bubble-left{
+	@include bubble-left();
 }
 
-
-/* Bubble Float Top */
-.bubble-float-top {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		left: calc(50% - #{$tipWidth});
-		top: 0;
-		border-style: solid;
-		border-width: 0 $tipWidth $tipHeight $tipWidth;
-		border-color: transparent transparent $tipColour transparent;
-		transition-duration: $defaultDuration;
-		transition-property: top;
-	}
-
-
-	&:hover {
-		transform: translateY(5px) translateZ(0);
-	}
-
-	&:hover:before {
-		top: -($tipHeight);
-	}
+.bubble-float-top{
+	@include bubble-float-top();
 }
 
-/* Bubble Float Right */
-.bubble-float-right {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		top: calc(50% - #{$tipHeight});
-		right: 0;
-		content: '';
-		border-style: solid;
-		border-width: $tipHeight 0 $tipHeight $tipWidth;
-		border-color: transparent transparent transparent $tipColour;
-		transition-duration: $defaultDuration;
-		transition-property: right;
-	}
-
-	&:hover {
-		transform: translateX(-5px);
-	}
-
-	&:hover:before {
-		right: -($tipWidth);
-	}
+.bubble-float-right{
+	@include bubble-float-right();
 }
 
-
-/* Bubble Float Bottom */
-.bubble-float-bottom {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		left: calc(50% - #{$tipWidth});
-		bottom: 0;
-		border-style: solid;
-		border-width: $tipHeight $tipWidth 0 $tipWidth;
-		border-color: $tipColour transparent transparent transparent;
-		transition-duration: $defaultDuration;
-		transition-property: bottom;
-	}
-
-	&:hover {
-		transform: translateY(-5px) translateZ(0);
-	}
-
-	&:hover:before {
-		bottom: -($tipHeight);
-	}
+.bubble-float-bottom{
+	@include bubble-float-bottom();
 }
 
-
-/* Bubble Float Left */
-.bubble-float-left {
-	display: inline-block;
-	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		z-index: -1;
-		content: '';
-		top: calc(50% - #{$tipHeight});
-		left: 0;
-		border-style: solid;
-		border-width: $tipHeight $tipWidth $tipHeight 0;
-		border-color: transparent $tipColour transparent transparent;
-		transition-duration: $defaultDuration;
-		transition-property: left;
-	}
-
-	&:hover {
-		transform: translateX(5px);
-	}
-
-	&:hover:before {
-		left: -($tipWidth);
-	}
+.bubble-float-left{
+	@include bubble-float-left();
 }
-
-
 
 /* CURLS */
 
-// Curl dimensions
-$curlWidth: 25px;
-$curlHeight: 25px;
-
-// Curl colours
-$revealAreaColour: white;			// reveal area behind the curl
-$curlLineColour: #aaa;				// crease line
-$curlTransitionColour: #ccc;	// colour transitioning from crease line to final colour
-$curlLastColour: white;				// final colour of the back of the curl
-
-
-/* Curl Top Left */
-.curl-top-left {
-	display: inline-block;
-	position: relative;
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		content: '';
-		height: 0;
-		width: 0;
-		top: 0;
-		left: 0;
-		background: $revealAreaColour; /* IE9 */
-		background: linear-gradient(
-			135deg, 
-			$revealAreaColour 45%,
-			$curlLineColour 50%,		
-			$curlTransitionColour 56%,		
-			$curlLastColour 80%   
-		);
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');/*For IE7-8-9*/
-
-		z-index: 1000;
-		box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-		transition-duration: $defaultDuration;
-		transition-property: width height;
-	}
-
-	&:hover:before {
-		width: $curlWidth;
-		height: $curlHeight;
-	}
+.curl-top-left{
+	@include curl-top-left();
 }
 
-
-/* Curl Top Right */
-.curl-top-right {
-	display: inline-block;
-	position: relative;
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		content: '';
-		height: 0;
-		width: 0;
-		top: 0;
-		right: 0;
-		background: $revealAreaColour; /* IE9 */
-		background: linear-gradient(
-			225deg, 
-			$revealAreaColour 45%,
-			$curlLineColour 50%,		
-			$curlTransitionColour 56%,		
-			$curlLastColour 80%   
-		);
-		box-shadow: -1px 1px 1px rgba(0, 0, 0, .4);
-		transition-duration: $defaultDuration;
-		transition-property: width height;
-	}
-
-	&:hover:before {
-		width: $curlWidth;
-		height: $curlHeight;
-	}
+.curl-top-right{
+	@include curl-top-right();
 }
 
-
-/* Curl Bottom Right */
-.curl-bottom-right {
-	display: inline-block;
-	position: relative;
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		content: '';
-		height: 0;
-		width: 0;
-		bottom: 0;
-		right: 0;
-		background: $revealAreaColour; /* IE9 */
-		background: linear-gradient(
-			315deg, 
-			$revealAreaColour 45%,
-			$curlLineColour 50%,		
-			$curlTransitionColour 56%,		
-			$curlLastColour 80%   
-		);
-		box-shadow: -1px -1px 1px rgba(0, 0, 0, .4);
-		transition-duration: $defaultDuration;
-		transition-property: width height;
-	}
-
-	&:hover:before {
-		width: $curlWidth;
-		height: $curlHeight;
-	}
+.curl-bottom-right{
+	@include curl-bottom-right();
 }
 
-
-
-/* Curl Bottom Left */
-.curl-bottom-left {
-	display: inline-block;
-	position: relative;
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:before {
-		pointer-events: none;
-		position: absolute;
-		content: '';
-		height: 0;
-		width: 0;
-		bottom: 0;
-		left: 0;
-		background: $revealAreaColour; /* IE9 */
-		background: linear-gradient(
-			45deg, 
-			$revealAreaColour 45%,
-			$curlLineColour 50%,		
-			$curlTransitionColour 56%,		
-			$curlLastColour 80%   
-		);
-		box-shadow: 1px -1px 1px rgba(0, 0, 0, .4);
-		transition-duration: $defaultDuration;
-		transition-property: width height;
-	}
-
-	&:hover:before {
-		width: $curlWidth;
-		height: $curlHeight;
-	}
+.curl-bottom-left{
+	@include curl-bottom-left();
 }

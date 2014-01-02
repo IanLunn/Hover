@@ -1,0 +1,12 @@
+/* Sink */
+@mixin sink {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@extend %hacks;
+
+	&:hover {
+		transform: translateY(5px);
+	}
+}
