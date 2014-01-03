@@ -1,0 +1,9 @@
+/* Default styles for the demo buttons */
+@mixin button {
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  background: $primaryColour;
+  text-decoration: none;
+  color: $secondaryColour;
+}
