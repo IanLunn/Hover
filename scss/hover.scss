@@ -1,6 +1,6 @@
 /*
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -11,52 +11,52 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 
-@import "hover/variables";
-@import "hover/hacks";
-@import "hover/button";
-@import "hover/grow";
-@import "hover/shrink";
-@import "hover/pulse";
-@import "hover/pulse-grow";
-@import "hover/pulse-shrink";
-@import "hover/push";
-@import "hover/pop";
-@import "hover/rotate";
-@import "hover/grow-rotate";
-@import "hover/float";
-@import "hover/sink";
-@import "hover/hover";
-@import "hover/hang";
-@import "hover/skew";
-@import "hover/skew-forward";
-@import "hover/wobble-vertical";
-@import "hover/wobble-horizontal";
-@import "hover/wobble-top";
-@import "hover/wobble-bottom";
-@import "hover/border-fade";
-@import "hover/hollow";
-@import "hover/trim";
-@import "hover/outline-outward";
-@import "hover/outline-inward";
-@import "hover/round-corners";
-@import "hover/glow";
-@import "hover/box-shadow-outset";
-@import "hover/box-shadow-inset";
-@import "hover/float-shadow";
-@import "hover/hover-shadow";
-@import "hover/shadow-radial";
-@import "hover/bubble-top";
-@import "hover/bubble-right";
-@import "hover/bubble-bottom";
-@import "hover/bubble-left";
-@import "hover/bubble-float-top";
-@import "hover/bubble-float-right";
-@import "hover/bubble-float-bottom";
-@import "hover/bubble-float-left";
-@import "hover/curl-top-left";
-@import "hover/curl-top-right";
-@import "hover/curl-bottom-right";
-@import "hover/curl-bottom-left";
+@import "effects/variables";
+@import "effects/hacks";
+@import "effects/button";
+@import "effects/grow";
+@import "effects/shrink";
+@import "effects/pulse";
+@import "effects/pulse-grow";
+@import "effects/pulse-shrink";
+@import "effects/push";
+@import "effects/pop";
+@import "effects/rotate";
+@import "effects/grow-rotate";
+@import "effects/float";
+@import "effects/sink";
+@import "effects/hover";
+@import "effects/hang";
+@import "effects/skew";
+@import "effects/skew-forward";
+@import "effects/wobble-vertical";
+@import "effects/wobble-horizontal";
+@import "effects/wobble-top";
+@import "effects/wobble-bottom";
+@import "effects/border-fade";
+@import "effects/hollow";
+@import "effects/trim";
+@import "effects/outline-outward";
+@import "effects/outline-inward";
+@import "effects/round-corners";
+@import "effects/glow";
+@import "effects/box-shadow-outset";
+@import "effects/box-shadow-inset";
+@import "effects/float-shadow";
+@import "effects/hover-shadow";
+@import "effects/shadow-radial";
+@import "effects/bubble-top";
+@import "effects/bubble-right";
+@import "effects/bubble-bottom";
+@import "effects/bubble-left";
+@import "effects/bubble-float-top";
+@import "effects/bubble-float-right";
+@import "effects/bubble-float-bottom";
+@import "effects/bubble-float-left";
+@import "effects/curl-top-left";
+@import "effects/curl-top-right";
+@import "effects/curl-bottom-right";
+@import "effects/curl-bottom-left";
 
 /* BASE BUTTON */
 .button {
