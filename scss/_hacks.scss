@@ -1,5 +1,7 @@
 // As is often the case, some devices/browsers need additional code to get CSS to work
 // in the most desired way. These mixins are used to quickly drop in hacks for each element
+// Find out more here: https://github.com/IanLunn/Hover/wiki/Hacks-Explained
+
 @mixin hideTapHighlightColor() {
 	//Prevent highlight colour when element is tapped
 	-webkit-tap-highlight-color: rgba(0,0,0,0);

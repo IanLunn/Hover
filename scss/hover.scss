@@ -11,236 +11,239 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 
-@import "effects/variables";
-@import "effects/hacks";
-@import "effects/button";
-@import "effects/grow";
-@import "effects/shrink";
-@import "effects/pulse";
-@import "effects/pulse-grow";
-@import "effects/pulse-shrink";
-@import "effects/push";
-@import "effects/pop";
-@import "effects/rotate";
-@import "effects/grow-rotate";
-@import "effects/float";
-@import "effects/sink";
-@import "effects/hover";
-@import "effects/hang";
-@import "effects/skew";
-@import "effects/skew-forward";
-@import "effects/wobble-vertical";
-@import "effects/wobble-horizontal";
-@import "effects/wobble-top";
-@import "effects/wobble-bottom";
-@import "effects/border-fade";
-@import "effects/hollow";
-@import "effects/trim";
-@import "effects/outline-outward";
-@import "effects/outline-inward";
-@import "effects/round-corners";
-@import "effects/glow";
-@import "effects/box-shadow-outset";
-@import "effects/box-shadow-inset";
-@import "effects/float-shadow";
-@import "effects/hover-shadow";
-@import "effects/shadow-radial";
-@import "effects/bubble-top";
-@import "effects/bubble-right";
-@import "effects/bubble-bottom";
-@import "effects/bubble-left";
-@import "effects/bubble-float-top";
-@import "effects/bubble-float-right";
-@import "effects/bubble-float-bottom";
-@import "effects/bubble-float-left";
-@import "effects/curl-top-left";
-@import "effects/curl-top-right";
-@import "effects/curl-bottom-right";
-@import "effects/curl-bottom-left";
 
-/* BASE BUTTON */
+@import "options";
+@import "defaults";
+@import "hacks";
+
+
+
+/* Default styles for the demo buttons */
 .button {
 	@include button();
 }
 
-/* 2D TRANSITIONS */
 
+/* 2D TRANSITIONS */
+@import "effects/grow";
 .grow {
 	@include grow();
 }
 
+@import "effects/shrink";
 .shrink {
 	@include shrink();
 }
 
+@import "effects/pulse";
 .pulse {
 	@include pulse();
 }
 
-.pulse-grow{
+@import "effects/pulse-grow";
+.pulse-grow {
 	@include pulse-grow();
 }
 
-.pulse-shrink{
+@import "effects/pulse-shrink";
+.pulse-shrink {
 	@include pulse-shrink();
 }
 
-.push{
+@import "effects/push";
+.push {
 	@include push();
 }
 
-.pop{
+@import "effects/pop";
+.pop {
 	@include pop();
 }
 
-.rotate{
+@import "effects/rotate";
+.rotate {
 	@include rotate();
 }
 
-.grow-rotate{
+@import "effects/grow-rotate";
+.grow-rotate {
 	@include grow-rotate();
 }
 
-.float{
+@import "effects/float";
+.float {
 	@include float();
 }
 
-.sink{
+@import "effects/sink";
+.sink {
 	@include sink();
 }
 
-.hover{
+@import "effects/hover";
+.hover {
 	@include hover();
 }
 
-.hang{
+@import "effects/hang";
+.hang {
 	@include hang();
 }
 
-.skew{
+@import "effects/skew";
+.skew {
 	@include skew();
 }
 
-.skew-forward{
+@import "effects/skew-forward";
+.skew-forward {
 	@include skew-forward();
 }
 
-.wobble-vertical{
+@import "effects/wobble-vertical";
+.wobble-vertical {
 	@include wobble-vertical();
 }
 
-.wobble-horizontal{
+@import "effects/wobble-horizontal";
+.wobble-horizontal {
 	@include wobble-horizontal();
 }
 
-.wobble-top{
+@import "effects/wobble-top";
+.wobble-top {
 	@include wobble-top();
 }
 
-.wobble-bottom{
+@import "effects/wobble-bottom";
+.wobble-bottom {
 	@include wobble-bottom();
 }
 
-/* BORDER TRANSITIONS */
 
-.border-fade{
+/* BORDER TRANSITIONS */
+@import "effects/border-fade";
+.border-fade {
 	@include border-fade();
 }
 
-.hollow{
+@import "effects/hollow";
+.hollow {
 	@include hollow();
 }
 
-.trim{
+@import "effects/trim";
+.trim {
 	@include trim();
 }
 
-.outline-outward{
+@import "effects/outline-outward";
+.outline-outward {
 	@include outline-outward();
 }
 
-.outline-inward{
+@import "effects/outline-inward";
+.outline-inward {
 	@include outline-inward();
 }
 
-.round-corners{
+@import "effects/round-corners";
+.round-corners {
 	@include round-corners();
 }
 
-/* SHADOW/GLOW TRANSITIONS */
 
-.glow{
+/* SHADOW/GLOW TRANSITIONS */
+@import "effects/glow";
+.glow {
 	@include glow();
 }
 
-.box-shadow-outset{
+@import "effects/box-shadow-outset";
+.box-shadow-outset {
 	@include box-shadow-outset();
 }
 
-.box-shadow-inset{
+@import "effects/box-shadow-inset";
+.box-shadow-inset {
 	@include box-shadow-inset();
 }
 
-.float-shadow{
+@import "effects/float-shadow";
+.float-shadow {
 	@include float-shadow();
 }
 
-.hover-shadow{
+@import "effects/hover-shadow";
+.hover-shadow {
 	@include hover-shadow();
 }
 
-.shadow-radial{
+@import "effects/shadow-radial";
+.shadow-radial {
 	@include shadow-radial();
 }
 
-/* SPEECH BUBBLES */
 
-.bubble-top{
+/* SPEECH BUBBLES */
+@import "effects/bubble-top";
+.bubble-top {
 	@include bubble-top();
 }
 
-.bubble-right{
+@import "effects/bubble-right";
+.bubble-right {
 	@include bubble-right();
 }
 
-.bubble-bottom{
+@import "effects/bubble-bottom";
+.bubble-bottom {
 	@include bubble-bottom();
 }
 
-.bubble-left{
+@import "effects/bubble-left";
+.bubble-left {
 	@include bubble-left();
 }
 
-.bubble-float-top{
+@import "effects/bubble-float-top";
+.bubble-float-top {
 	@include bubble-float-top();
 }
 
-.bubble-float-right{
+@import "effects/bubble-float-right";
+.bubble-float-right {
 	@include bubble-float-right();
 }
 
-.bubble-float-bottom{
+@import "effects/bubble-float-bottom";
+.bubble-float-bottom {
 	@include bubble-float-bottom();
 }
 
-.bubble-float-left{
+@import "effects/bubble-float-left";
+.bubble-float-left {
 	@include bubble-float-left();
 }
 
-/* CURLS */
 
-.curl-top-left{
+/* CURLS */
+@import "effects/curl-top-left";
+.curl-top-left {
 	@include curl-top-left();
 }
 
-.curl-top-right{
+@import "effects/curl-top-right";
+.curl-top-right {
 	@include curl-top-right();
 }
 
-.curl-bottom-right{
+@import "effects/curl-bottom-right";
+.curl-bottom-right {
 	@include curl-bottom-right();
 }
 
-.curl-bottom-left{
+@import "effects/curl-bottom-left";
+.curl-bottom-left {
 	@include curl-bottom-left();
 }
