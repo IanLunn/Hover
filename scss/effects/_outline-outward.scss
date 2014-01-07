@@ -17,7 +17,7 @@
 		bottom: 0;
 		left: 0;
 		transition-duration: .3s;
-		transition-property: top right bottom left;
+		transition-property: top, right, bottom, left;
 	}
 
 	&:hover:before {
