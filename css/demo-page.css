@@ -73,6 +73,10 @@ h2 {
   text-decoration: none;
 }
 
+.credit {
+  font-size: .8em;
+}
+
 .footer a:hover {
   text-decoration: underline;
 }
@@ -90,6 +94,11 @@ h2 {
   margin: 6em auto 0 auto;
   text-align: center;
   font-weight: 900;
+}
+
+.author .logo {
+  display: block;
+  margin-bottom: .8em;
 }
 
 #forkongithub a {
