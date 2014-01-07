@@ -25,7 +25,7 @@
 		z-index: 1000;
 		box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 		transition-duration: $defaultDuration;
-		transition-property: width height;
+		transition-property: width, height;
 	}
 
 	&:hover:before {

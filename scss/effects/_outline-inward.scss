@@ -18,7 +18,7 @@
 		left: -($outerBorderWidth + $innerBorderWidth) * 2;
 		opacity: 0;
 		transition-duration: .3s;
-		transition-property: top right bottom left;
+		transition-property: top, right, bottom, left;
 	}
 
 	&:hover:before {

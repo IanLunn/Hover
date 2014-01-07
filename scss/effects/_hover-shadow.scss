@@ -47,7 +47,7 @@
 	  opacity: 0;
 	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
 		transition-duration: $defaultDuration;
-		transition-property: transform opacity;
+		transition-property: transform, opacity;
 	}
 
 	&:hover {
