@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             livereload: true,
           },
           css: {
-            files: ['scss/*.scss', 'css/*.css', '*.html'],
+            files: ['scss/**/*.scss', 'css/*.css', '*.html'],
             tasks: ['sass', 'autoprefixer', 'cssmin'],
             options: {
               spawn: false,
