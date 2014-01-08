@@ -1,6 +1,6 @@
 /*
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -947,8 +947,8 @@
   left: 0;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
-  -webkit-transition-property: top right bottom left;
-  transition-property: top right bottom left;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
 }
 
 .outline-outward:hover:before {
@@ -976,8 +976,8 @@
   opacity: 0;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
-  -webkit-transition-property: top right bottom left;
-  transition-property: top right bottom left;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
 }
 
 .outline-inward:hover:before {
@@ -1079,8 +1079,8 @@
   /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform opacity;
-  transition-property: transform opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
 }
 
 .float-shadow:hover {
@@ -1181,8 +1181,8 @@
   /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform opacity;
-  transition-property: transform opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
 }
 
 .hover-shadow:hover {
@@ -1556,8 +1556,8 @@
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: width height;
-  transition-property: width height;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
 }
 
 .curl-top-left:hover:before {
@@ -1587,8 +1587,8 @@
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: width height;
-  transition-property: width height;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
 }
 
 .curl-top-right:hover:before {
@@ -1618,8 +1618,8 @@
   box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: width height;
-  transition-property: width height;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
 }
 
 .curl-bottom-right:hover:before {
@@ -1649,8 +1649,8 @@
   box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: width height;
-  transition-property: width height;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
 }
 
 .curl-bottom-left:hover:before {
