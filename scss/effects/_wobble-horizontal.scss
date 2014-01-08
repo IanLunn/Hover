@@ -28,7 +28,7 @@
 @mixin wobble-horizontal {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: wobble-horizontal;

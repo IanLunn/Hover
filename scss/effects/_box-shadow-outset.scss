@@ -4,7 +4,7 @@
 	transition-duration: $defaultDuration;
 	transition-property: box-shadow;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		box-shadow: 2px 2px 2px $shadowColour;

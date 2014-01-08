@@ -14,7 +14,7 @@
 	transition-duration: .5s;
 	transition-property: transform;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		transform: translateY(6px);

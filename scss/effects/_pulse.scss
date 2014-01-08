@@ -12,7 +12,7 @@
 @mixin pulse {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: pulse;

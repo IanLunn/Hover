@@ -17,7 +17,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-%hacks{
+@mixin hacks() {
   @include hideTapHighlightColor();
   @include hardwareAccel();
   @include improveAntiAlias();

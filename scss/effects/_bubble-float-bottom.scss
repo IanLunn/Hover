@@ -5,7 +5,7 @@
 	transition-duration: $defaultDuration;
 	transition-property: transform;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:before {
 		pointer-events: none;

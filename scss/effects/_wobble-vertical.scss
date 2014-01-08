@@ -28,7 +28,7 @@
 @mixin wobble-vertical {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: wobble-vertical;

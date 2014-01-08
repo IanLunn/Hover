@@ -8,7 +8,7 @@
 @mixin pulse-grow {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: pulse-grow;

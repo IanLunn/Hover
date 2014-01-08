@@ -29,7 +29,7 @@
 	display: inline-block;
 	transform-origin: 0 100%;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: wobble-top;

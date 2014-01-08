@@ -12,7 +12,7 @@
 @mixin pop {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: pop;

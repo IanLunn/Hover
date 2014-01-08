@@ -1,6 +1,6 @@
-/*
+/*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -10,53 +10,6 @@
 
  * Hover.css Copyright Ian Lunn 2014.
  */
-
-.grow,
-.shrink,
-.pulse,
-.pulse-grow,
-.pulse-shrink,
-.push,
-.pop,
-.rotate,
-.grow-rotate,
-.float,
-.sink,
-.hover,
-.hang,
-.skew,
-.skew-forward,
-.wobble-vertical,
-.wobble-horizontal,
-.wobble-top,
-.wobble-bottom,
-.trim,
-.outline-outward,
-.outline-inward,
-.round-corners,
-.glow,
-.box-shadow-outset,
-.float-shadow,
-.hover-shadow,
-.shadow-radial,
-.bubble-top,
-.bubble-right,
-.bubble-bottom,
-.bubble-left,
-.bubble-float-top,
-.bubble-float-right,
-.bubble-float-bottom,
-.bubble-float-left,
-.curl-top-left,
-.curl-top-right,
-.curl-bottom-right,
-.curl-bottom-left {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
 
 /* Default styles for the demo buttons */
 
@@ -79,6 +32,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .grow:hover {
@@ -95,6 +53,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .shrink:hover {
@@ -133,6 +96,11 @@
 
 .pulse {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .pulse:hover {
@@ -165,6 +133,11 @@
 
 .pulse-grow {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .pulse-grow:hover {
@@ -199,6 +172,11 @@
 
 .pulse-shrink {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .pulse-shrink:hover {
@@ -244,6 +222,11 @@
 
 .push {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .push:hover {
@@ -287,6 +270,11 @@
 
 .pop {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .pop:hover {
@@ -308,6 +296,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .rotate:hover {
@@ -324,6 +317,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .grow-rotate:hover {
@@ -340,6 +338,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .float:hover {
@@ -356,6 +359,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .sink:hover {
@@ -398,6 +406,11 @@
   transition-duration: .5s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .hover:hover {
@@ -452,6 +465,11 @@
   transition-duration: .5s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .hang:hover {
@@ -480,6 +498,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .skew:hover {
@@ -499,6 +522,11 @@
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
   transform-origin: 0 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .skew-forward:hover {
@@ -581,6 +609,11 @@
 
 .wobble-vertical {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .wobble-vertical:hover {
@@ -668,6 +701,11 @@
 
 .wobble-horizontal {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .wobble-horizontal:hover {
@@ -758,6 +796,11 @@
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
   transform-origin: 0 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .wobble-top:hover {
@@ -848,6 +891,11 @@
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .wobble-bottom:hover {
@@ -892,10 +940,10 @@
   transition-duration: 0.3s;
   -webkit-transition-property: background;
   transition-property: background;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  /* Hack to improve performance on mobile/tablet devices */
   box-shadow: inset 0 0 0 4px #ececec, 0 0 1px rgba(0, 0, 0, 0);
   /* Hack to improve aliasing on mobile/tablet devices */
 }
@@ -909,6 +957,11 @@
 .trim {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .trim:before {
@@ -935,6 +988,11 @@
 .outline-outward {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .outline-outward:before {
@@ -963,6 +1021,11 @@
 .outline-inward {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .outline-inward:before {
@@ -996,6 +1059,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: border-radius;
   transition-property: border-radius;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .round-corners:hover {
@@ -1012,6 +1080,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .glow:hover {
@@ -1026,6 +1099,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .box-shadow-outset:hover {
@@ -1062,6 +1140,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .float-shadow:before {
@@ -1164,6 +1247,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .hover-shadow:before {
@@ -1227,6 +1315,11 @@
 .shadow-radial {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .shadow-radial:before,
@@ -1271,6 +1364,11 @@
 .bubble-top {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-top:before {
@@ -1298,6 +1396,11 @@
 .bubble-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-right:before {
@@ -1326,6 +1429,11 @@
 .bubble-bottom {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-bottom:before {
@@ -1354,6 +1462,11 @@
 .bubble-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-left:before {
@@ -1386,6 +1499,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-float-top:before {
@@ -1424,6 +1542,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-float-right:before {
@@ -1462,6 +1585,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-float-bottom:before {
@@ -1500,6 +1628,11 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .bubble-float-left:before {
@@ -1536,6 +1669,11 @@
 .curl-top-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .curl-top-left:before {
@@ -1570,6 +1708,11 @@
 .curl-top-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .curl-top-right:before {
@@ -1601,6 +1744,11 @@
 .curl-bottom-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .curl-bottom-right:before {
@@ -1632,6 +1780,11 @@
 .curl-bottom-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .curl-bottom-left:before {

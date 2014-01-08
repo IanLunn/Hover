@@ -2,7 +2,8 @@
 @mixin curl-bottom-right {
 	display: inline-block;
 	position: relative;
-	@extend %hacks;
+	
+	@include hacks();
 
 	&:before {
 		pointer-events: none;

@@ -5,7 +5,7 @@
 	transition-property: transform;
 	transform-origin: 0 100%;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		transform: skew(-10deg);

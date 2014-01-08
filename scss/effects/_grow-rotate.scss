@@ -4,7 +4,7 @@
 	transition-duration: $defaultDuration;
 	transition-property: transform;
 
-	@extend %hacks;
+	@include hacks();
 	
 	&:hover {	
 		transform: scale(1.1) rotate(4deg);

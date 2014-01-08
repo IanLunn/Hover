@@ -8,7 +8,7 @@
 @mixin pulse-shrink {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: pulse-shrink;

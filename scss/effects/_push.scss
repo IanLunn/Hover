@@ -12,7 +12,7 @@
 @mixin push {
 	display: inline-block;
 
-	@extend %hacks;
+	@include hacks();
 
 	&:hover {
 		animation-name: push;

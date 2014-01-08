@@ -6,7 +6,8 @@
 	transition-duration: $defaultDuration;
 	transition-property: background;
 
-	transform: translateZ(0); /* Hack to improve performance on mobile/tablet devices */
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
 	box-shadow: 
 		inset 0 0 0 $borderWidth $primaryColour,
 		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
