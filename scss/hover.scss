@@ -120,6 +120,11 @@
 	@include wobble-bottom();
 }
 
+@import "effects/wobble-skew";
+.wobble-skew {
+    @include wobble-skew();
+}
+
 
 /* BORDER TRANSITIONS */
 @import "effects/border-fade";
