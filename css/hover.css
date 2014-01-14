@@ -991,8 +991,8 @@
 }
 
 .wobble-skew:hover {
-  -webkit-animation-name: wobble-top;
-  animation-name: wobble-top;
+  -webkit-animation-name: wobble-skew;
+  animation-name: wobble-skew;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
