@@ -4,7 +4,7 @@ A collection of CSS3 powered hover effects to be applied to call to actions, but
 
 ##Demo
 
-[Demo here](ianlunn.github.io/Hover)
+[Demo here](http://ianlunn.github.io/Hover)
 
 ##Author
 
