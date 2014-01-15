@@ -27,6 +27,15 @@ img {
   text-align: center;
 }
 
+.tutorial {
+  display: block;
+  font-size: .8em;
+}
+
+.tutorial:hover {
+  text-decoration: none;
+}
+
 .intro {
   max-width: 680px;
   margin: 0 auto;
