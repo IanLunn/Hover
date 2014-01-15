@@ -2,6 +2,10 @@
 
 A collection of CSS3 powered hover effects to be applied to call to actions, buttons, logos, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS and SASS.
 
+##Demo
+
+[Demo here](ianlunn.github.io/Hover)
+
 ##Author
 
 - [Ian Lunn](https://twitter.com/IanLunn)  
@@ -83,6 +87,14 @@ Example element after applying hover.css effect:
 <a class="button grow">Add to Basket</a>
 ```
 
+##Browser Support
+Many of hover.css' effects rely on CSS3 features such as transitions, animations, transforms and pseudo-elements, for that reason, effects may not fully work in older browsers.
+
+- [Transitions](http://caniuse.com/#search=transitions) and [Animations](http://caniuse.com/#search=animations) - not supported below Internet Explorer 9
+- [Transforms](http://caniuse.com/#search=transforms) - not supported below Internet Explorer 10
+- [Generated Content (pseudo-elements)](http://caniuse.com/#search=pseudo-elements) - not supported below Internet Explorer 8
+
+Aside from the above mentioned browsers, hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your webpages accordingly.
 
 ##License
 hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
