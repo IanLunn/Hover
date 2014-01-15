@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -100,6 +100,11 @@
 	@include skew-forward();
 }
 
+@import "effects/skew-backward";
+.skew-backward {
+    @include skew-backward();
+}
+
 @import "effects/wobble-vertical";
 .wobble-vertical {
 	@include wobble-vertical();
@@ -123,6 +128,16 @@
 @import "effects/wobble-skew";
 .wobble-skew {
     @include wobble-skew();
+}
+
+@import "effects/buzz";
+.buzz {
+    @include buzz();
+}
+
+@import "effects/buzz-out";
+.buzz-out {
+    @include buzz-out();
 }
 
 
