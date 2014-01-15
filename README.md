@@ -2,9 +2,9 @@
 
 A collection of CSS3 powered hover effects to be applied to call to actions, buttons, logos, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS and SASS.
 
-##Demo
+##Demo and Tutorial
 
-[Demo here](http://ianlunn.github.io/Hover)
+[Demo](http://ianlunn.github.io/Hover) | [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
 ##Author
 
