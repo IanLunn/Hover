@@ -6,7 +6,6 @@
 	transition-duration: $defaultDuration;
 	transition-property: background;
 
-	@include hideTapHighlightColor();
 	@include hardwareAccel();
 	box-shadow: 
 		inset 0 0 0 $borderWidth $primaryColour,
