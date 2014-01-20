@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.5
+ * Version: 1.0.3
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -100,11 +100,6 @@
 	@include skew-forward();
 }
 
-@import "effects/skew-backward";
-.skew-backward {
-    @include skew-backward();
-}
-
 @import "effects/wobble-vertical";
 .wobble-vertical {
 	@include wobble-vertical();
@@ -123,21 +118,6 @@
 @import "effects/wobble-bottom";
 .wobble-bottom {
 	@include wobble-bottom();
-}
-
-@import "effects/wobble-skew";
-.wobble-skew {
-    @include wobble-skew();
-}
-
-@import "effects/buzz";
-.buzz {
-    @include buzz();
-}
-
-@import "effects/buzz-out";
-.buzz-out {
-    @include buzz-out();
 }
 
 
@@ -248,6 +228,26 @@
 
 
 /* CURLS */
+@import "effects/curl-top";
+.curl-top {
+	@include curl-top();
+}
+
+@import "effects/curl-bottom";
+.curl-bottom {
+	@include curl-bottom();
+}
+
+@import "effects/curl-full-left";
+.curl-full-left {
+	@include curl-full-left();
+}
+
+@import "effects/curl-full-right";
+.curl-full-right {
+	@include curl-full-right();
+}
+
 @import "effects/curl-top-left";
 .curl-top-left {
 	@include curl-top-left();

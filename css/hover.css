@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.5
+ * Version: 1.0.3
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -20,8 +20,6 @@
   background: #e1e1e1;
   text-decoration: none;
   color: #666666;
-  /* Prevent highlight colour when element is tapped */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* 2D TRANSITIONS */
@@ -34,6 +32,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -54,6 +53,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -96,6 +96,7 @@
 
 .pulse {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -132,6 +133,7 @@
 
 .pulse-grow {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -170,6 +172,7 @@
 
 .pulse-shrink {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -219,6 +222,7 @@
 
 .push {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -266,6 +270,7 @@
 
 .pop {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -291,6 +296,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -311,6 +317,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -331,6 +338,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -351,6 +359,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -397,6 +406,7 @@
   transition-duration: .5s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -455,6 +465,7 @@
   transition-duration: .5s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -487,6 +498,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -510,6 +522,7 @@
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
   transform-origin: 0 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -520,29 +533,6 @@
   -webkit-transform: skew(-10deg);
   -ms-transform: skew(-10deg);
   transform: skew(-10deg);
-}
-
-/* Skew Backward */
-
-.skew-backward {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.skew-backward:hover {
-  -webkit-transform: skew(10deg);
-  -ms-transform: skew(10deg);
-  transform: skew(10deg);
 }
 
 /* Wobble Vertical */
@@ -619,6 +609,7 @@
 
 .wobble-vertical {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -710,6 +701,7 @@
 
 .wobble-horizontal {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -804,6 +796,7 @@
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
   transform-origin: 0 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -898,6 +891,7 @@
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -915,279 +909,6 @@
   animation-iteration-count: 1;
 }
 
-/* Wobble Skew */
-
-@-webkit-keyframes wobble-skew {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-
-  33.3% {
-    -webkit-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-
-  66.6% {
-    -webkit-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
-}
-
-@keyframes wobble-skew {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    -ms-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-
-  33.3% {
-    -webkit-transform: skew(10deg);
-    -ms-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    -ms-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-
-  66.6% {
-    -webkit-transform: skew(4deg);
-    -ms-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    -ms-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-
-  100% {
-    -webkit-transform: skew(0);
-    -ms-transform: skew(0);
-    transform: skew(0);
-  }
-}
-
-.wobble-skew {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.wobble-skew:hover {
-  -webkit-animation-name: wobble-skew;
-  animation-name: wobble-skew;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-/* Buzz */
-
-@-webkit-keyframes buzz {
-  50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-}
-
-@keyframes buzz {
-  50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    -ms-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    -ms-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-}
-
-.buzz {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.buzz:hover {
-  -webkit-animation-name: buzz;
-  animation-name: buzz;
-  -webkit-animation-duration: .15s;
-  animation-duration: .15s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-/* Buzz Out */
-
-@-webkit-keyframes buzz-out {
-  10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-
-  30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-
-  50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-
-  60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-
-  70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-
-  80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-
-  90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
-  }
-
-  100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
-  }
-}
-
-@keyframes buzz-out {
-  10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    -ms-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    -ms-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-
-  30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    -ms-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-
-  40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    -ms-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-
-  50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    -ms-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-
-  60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    -ms-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-
-  70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    -ms-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
-  }
-
-  80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    -ms-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
-  }
-
-  90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    -ms-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
-  }
-
-  100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    -ms-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
-  }
-}
-
-.buzz-out {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.buzz-out:hover {
-  -webkit-animation-name: buzz-out;
-  animation-name: buzz-out;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
 /* BORDER TRANSITIONS */
 
 /* Border Fade */
@@ -1198,6 +919,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1218,6 +940,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: background;
   transition-property: background;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1234,6 +957,7 @@
 .trim {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1264,6 +988,7 @@
 .outline-outward {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1296,6 +1021,7 @@
 .outline-inward {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1333,6 +1059,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: border-radius;
   transition-property: border-radius;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1353,6 +1080,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1371,6 +1099,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1391,6 +1120,7 @@
   transition-property: box-shadow;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
   /* Hack to improve aliasing on mobile/tablet devices */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1410,6 +1140,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1516,6 +1247,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1583,6 +1315,7 @@
 .shadow-radial {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1631,6 +1364,7 @@
 .bubble-top {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1662,6 +1396,7 @@
 .bubble-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1694,6 +1429,7 @@
 .bubble-bottom {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1726,6 +1462,7 @@
 .bubble-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1762,6 +1499,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1804,6 +1542,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1846,6 +1585,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1888,6 +1628,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1923,11 +1664,167 @@
 
 /* CURLS */
 
+/* Curl Top */
+
+.curl-top {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.curl-top:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */  
+  background: -webkit-linear-gradient(top, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  background: linear-gradient(bottom, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);  
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: height;
+  transition-property: height;  
+}
+
+.curl-top:hover:before {
+  width: 100%;
+  height: 35%;
+}
+
+/* Curl Bottom */
+
+.curl-bottom {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.curl-bottom:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: white;
+  /* IE9 */  
+  background: -webkit-linear-gradient(bottom, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  background: linear-gradient(bottom, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);  
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: height;
+  transition-property: height;
+}
+
+.curl-bottom:hover:before {
+  width: 100%;
+  height: 35%;
+}
+
+
+/* Curl Full Left */
+
+.curl-full-left {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.curl-full-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  right: 100%;
+  background: white;
+  /* IE9 */  
+  background: -webkit-linear-gradient(90deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  background: linear-gradient(90deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);  
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+
+.curl-full-left:hover:before {
+  width: 15%;
+  height: 100%;
+}
+
+/* Curl Full Right */
+
+.curl-full-right {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.curl-full-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background: white;
+  /* IE9 */
+  background: -webkit-linear-gradient(270deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  background: linear-gradient(270deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+
+.curl-full-right:hover:before {
+  width: 15%;
+  height: 100%;
+}
+
 /* Curl Top Left */
 
 .curl-top-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1966,6 +1863,7 @@
 .curl-top-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -2001,6 +1899,7 @@
 .curl-bottom-right {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -2036,6 +1935,7 @@
 .curl-bottom-left {
   display: inline-block;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
