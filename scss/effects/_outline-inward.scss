@@ -9,6 +9,7 @@
 	@include hacks();
 
 	&:before {
+		pointer-events: none;
 		content: '';
 		position: absolute;
 		border: $primaryColour solid $outerBorderWidth;

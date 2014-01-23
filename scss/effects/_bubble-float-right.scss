@@ -8,7 +8,7 @@
 	@include hacks();
 
 	&:before {
-		pointer-events: none;
+		pointer-events: auto;
 		position: absolute;
 		z-index: -1;
 		top: calc(50% - #{$tipHeight});
