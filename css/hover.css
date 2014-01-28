@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -727,9 +727,9 @@
   animation-iteration-count: 1;
 }
 
-/* Wobble Top Left Bottom Right */
+/* Wobble To Bottom Right */
 
-@-webkit-keyframes wobble-top-left-bottom-right {
+@-webkit-keyframes wobble-to-bottom-right {
   16.65% {
     -webkit-transform: translate(8px, 8px);
     transform: translate(8px, 8px);
@@ -761,7 +761,7 @@
   }
 }
 
-@keyframes wobble-top-left-bottom-right {
+@keyframes wobble-to-bottom-right {
   16.65% {
     -webkit-transform: translate(8px, 8px);
     -ms-transform: translate(8px, 8px);
@@ -799,7 +799,7 @@
   }
 }
 
-.wobble-top-left-bottom-right {
+.wobble-to-bottom-right {
   display: inline-block;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -807,9 +807,9 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.wobble-top-left-bottom-right:hover {
-  -webkit-animation-name: wobble-top-left-bottom-right;
-  animation-name: wobble-top-left-bottom-right;
+.wobble-to-bottom-right:hover {
+  -webkit-animation-name: wobble-to-bottom-right;
+  animation-name: wobble-to-bottom-right;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
@@ -818,9 +818,9 @@
   animation-iteration-count: 1;
 }
 
-/* Wobble Bottom Left Top Right */
+/* Wobble To Top Right */
 
-@-webkit-keyframes wobble-bottom-left-top-right {
+@-webkit-keyframes wobble-to-top-right {
   16.65% {
     -webkit-transform: translate(8px, -8px);
     transform: translate(8px, -8px);
@@ -852,7 +852,7 @@
   }
 }
 
-@keyframes wobble-bottom-left-top-right {
+@keyframes wobble-to-top-right {
   16.65% {
     -webkit-transform: translate(8px, -8px);
     -ms-transform: translate(8px, -8px);
@@ -890,7 +890,7 @@
   }
 }
 
-.wobble-bottom-left-top-right {
+.wobble-to-top-right {
   display: inline-block;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -898,9 +898,9 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.wobble-bottom-left-top-right:hover {
-  -webkit-animation-name: wobble-bottom-left-top-right;
-  animation-name: wobble-bottom-left-top-right;
+.wobble-to-top-right:hover {
+  -webkit-animation-name: wobble-to-top-right;
+  animation-name: wobble-to-top-right;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;

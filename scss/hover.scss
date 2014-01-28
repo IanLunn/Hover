@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -115,14 +115,14 @@
 	@include wobble-horizontal();
 }
 
-@import "effects/wobble-top-left-bottom-right";
-.wobble-top-left-bottom-right {
-    @include wobble-top-left-bottom-right();
+@import "effects/wobble-to-bottom-right";
+.wobble-to-bottom-right {
+    @include wobble-to-bottom-right();
 }
 
-@import "effects/wobble-bottom-left-top-right";
-.wobble-bottom-left-top-right {
-    @include wobble-bottom-left-top-right();
+@import "effects/wobble-to-top-right";
+.wobble-to-top-right {
+    @include wobble-to-top-right();
 }
 
 @import "effects/wobble-top";

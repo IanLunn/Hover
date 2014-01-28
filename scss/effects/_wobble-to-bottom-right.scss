@@ -1,5 +1,5 @@
-/* Wobble Top Left Bottom Right */
-@keyframes wobble-top-left-bottom-right {
+/* Wobble To Bottom Right */
+@keyframes wobble-to-bottom-right {
 	16.65% {
 		transform: translate(8px, 8px);
 	}
@@ -25,13 +25,13 @@
 	}
 }
 
-@mixin wobble-top-left-bottom-right {
+@mixin wobble-to-bottom-right {
 	display: inline-block;
 
 	@include hacks();
 
 	&:hover {
-		animation-name: wobble-top-left-bottom-right;
+		animation-name: wobble-to-bottom-right;
 		animation-duration: 1s;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: 1;
