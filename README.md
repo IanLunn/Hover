@@ -6,10 +6,13 @@ A collection of CSS3 powered hover effects to be applied to call to actions, but
 
 [Demo](http://ianlunn.github.io/Hover) | [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
-##Author
+##Authors
 
-- [Ian Lunn](https://twitter.com/IanLunn)  
-- [ianlunn.co.uk](http://ianlunn.co.uk/)
+- [Ian Lunn](https://github.com/IanLunn)  
+- [Matthew Davis](https://github.com/mdavis1982)
+- [benbayard](https://github.com/benbayard)
+- [Zach Latta](https://github.com/zachlatta)
+- [Leandro D'Onofrio](https://github.com/dzignus)
 
 ##How To Use
 hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
