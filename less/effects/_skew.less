@@ -1,0 +1,12 @@
+/* Skew */
+.skew {
+	display: inline-block;
+	transition-duration: @defaultDuration;
+	transition-property: transform;
+
+	.hacks();
+
+	&:hover {
+		transform: skew(-10deg);
+	}
+}

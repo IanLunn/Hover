@@ -1,0 +1,23 @@
+/* Pop */
+@keyframes pop {
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.pop {
+	display: inline-block;
+
+	.hacks();
+
+	&:hover {
+		animation-name: pop;
+		animation-duration: @defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+}

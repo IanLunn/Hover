@@ -1,0 +1,23 @@
+/* Pulse */
+@keyframes pulse {
+	25% {
+		transform: scale(1.1);
+	}
+
+	75% {
+		transform: scale(.9);
+	}
+}
+
+.pulse {
+	display: inline-block;
+
+	.hacks();
+
+	&:hover {
+		animation-name: pulse;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+}
