@@ -1,4 +1,4 @@
-#hover.css
+#hover.css for "LESS"
 
 A collection of CSS3 powered hover effects to be applied to call to actions, buttons, logos, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS and SASS.
 
@@ -8,8 +8,12 @@ A collection of CSS3 powered hover effects to be applied to call to actions, but
 
 ##Author
 
+I just put the file Sass to Less
+Thanks to:
+
 - [Ian Lunn](https://twitter.com/IanLunn)  
 - [ianlunn.co.uk](http://ianlunn.co.uk/)
+
 
 ##How To Use
 hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
