@@ -1,0 +1,23 @@
+/* Buzz */
+@keyframes buzz {
+	50% {
+		transform: translateX(3px) rotate(2deg);
+	}
+
+	100% {
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+
+@mixin buzz {
+	display: inline-block;
+
+	@include hacks();
+
+	&:hover {
+		animation-name: buzz;
+		animation-duration: .15s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+}

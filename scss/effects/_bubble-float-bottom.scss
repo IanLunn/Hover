@@ -1,0 +1,31 @@
+/* Bubble Float Bottom */
+@mixin bubble-float-bottom {
+	display: inline-block;
+	position: relative;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		left: calc(50% - #{$tipWidth});
+		bottom: 0;
+		border-style: solid;
+		border-width: $tipHeight $tipWidth 0 $tipWidth;
+		border-color: $tipColour transparent transparent transparent;
+		transition-duration: $defaultDuration;
+		transition-property: bottom;
+	}
+
+	&:hover {
+		transform: translateY(-5px) translateZ(0);
+	}
+
+	&:hover:before {
+		bottom: -($tipHeight);
+	}
+}

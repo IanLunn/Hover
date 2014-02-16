@@ -1,0 +1,33 @@
+/* Curl Bottom Left */
+@mixin curl-bottom-left {
+	display: inline-block;
+	position: relative;
+	
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		content: '';
+		height: 0;
+		width: 0;
+		bottom: 0;
+		left: 0;
+		background: $revealAreaColour; /* IE9 */
+		background: linear-gradient(
+			45deg, 
+			$revealAreaColour 45%,
+			$curlLineColour 50%,		
+			$curlTransitionColour 56%,		
+			$curlLastColour 80%   
+		);
+		box-shadow: 1px -1px 1px rgba(0, 0, 0, .4);
+		transition-duration: $defaultDuration;
+		transition-property: width, height;
+	}
+
+	&:hover:before {
+		width: $curlWidth;
+		height: $curlHeight;
+	}
+}

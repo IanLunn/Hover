@@ -1,0 +1,23 @@
+/* Push */
+@keyframes push {
+	50% {
+		transform: scale(.8);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@mixin push {
+	display: inline-block;
+
+	@include hacks();
+
+	&:hover {
+		animation-name: push;
+		animation-duration: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+}

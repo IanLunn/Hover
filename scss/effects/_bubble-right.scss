@@ -1,0 +1,25 @@
+/* Bubble Right */
+@mixin bubble-right {
+	display: inline-block;
+	position: relative;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		border-style: solid;
+		transition-duration: $defaultDuration;
+		transition-property: right;
+		top: calc(50% - #{$tipHeight});
+		right: 0;
+		border-width: $tipHeight 0 $tipHeight $tipWidth;
+		border-color: transparent transparent transparent $tipColour ;
+	}
+
+	&:hover:before {
+		right: -($tipWidth);
+	}
+}

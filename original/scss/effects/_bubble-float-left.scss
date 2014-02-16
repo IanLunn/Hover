@@ -1,0 +1,31 @@
+/* Bubble Float Left */
+@mixin bubble-float-left {
+	display: inline-block;
+	position: relative;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		top: calc(50% - #{$tipHeight});
+		left: 0;
+		border-style: solid;
+		border-width: $tipHeight $tipWidth $tipHeight 0;
+		border-color: transparent $tipColour transparent transparent;
+		transition-duration: $defaultDuration;
+		transition-property: left;
+	}
+
+	&:hover {
+		transform: translateX(5px);
+	}
+
+	&:hover:before {
+		left: -($tipWidth);
+	}
+}

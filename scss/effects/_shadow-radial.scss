@@ -1,0 +1,37 @@
+/* Shadow Radial */
+@mixin shadow-radial {
+	display: inline-block;
+	position: relative;
+
+	@include hacks();
+
+	&:before,
+	&:after {
+		pointer-events: none;
+		position: absolute;
+		content: '';
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 5px;
+    opacity: 0;
+    transition-duration: $defaultDuration;
+    transition-property: opacity;
+	}
+
+	&:before {
+		bottom: 100%;
+    background: radial-gradient(ellipse at 50% 150%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
+	}
+
+	&:after {
+		top: 100%;
+		background: radial-gradient(ellipse at 50% -50%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
+	}
+
+	&:hover:before,
+	&:hover:after {
+		opacity: 1;
+	}
+}

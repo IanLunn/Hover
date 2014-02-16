@@ -1,0 +1,39 @@
+/* Wobble To Bottom Right */
+@keyframes wobble-to-bottom-right {
+	16.65% {
+		transform: translate(8px, 8px);
+	}
+
+	33.3% {
+		transform: translate(-6px, -6px);
+	}
+
+	49.95% {
+		transform: translate(4px, 4px);
+	}
+
+	66.6% {
+		transform: translate(-2px, -2px);
+	}
+
+	83.25% {
+		transform: translate(1px, 1px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@mixin wobble-to-bottom-right {
+	display: inline-block;
+
+	@include hacks();
+
+	&:hover {
+		animation-name: wobble-to-bottom-right;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+	}
+}

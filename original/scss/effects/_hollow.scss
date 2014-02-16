@@ -1,0 +1,17 @@
+/* Hollow */
+@mixin hollow {
+	display: inline-block;
+	$borderWidth: 4px;
+
+	transition-duration: $defaultDuration;
+	transition-property: background;
+
+	@include hardwareAccel();
+	box-shadow: 
+		inset 0 0 0 $borderWidth $primaryColour,
+		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+
+	&:hover {
+		background: none;
+	}
+}

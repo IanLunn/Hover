@@ -1,0 +1,20 @@
+// DEFAULT OPTIONS
+$defaultDuration: .3s;
+$primaryColour: #e1e1e1;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, .6);
+
+//Speech bubbles options
+$tipWidth: 10px;  //the width of the speech bubble tip
+$tipHeight: 10px; //the height of the speech bubble tip
+$tipColour: $primaryColour;
+
+// Curl dimensions
+$curlWidth: 25px;
+$curlHeight: 25px;
+
+// Curl colours
+$revealAreaColour: white;			// reveal area behind the curl
+$curlLineColour: #aaa;				// crease line
+$curlTransitionColour: #ccc;	// colour transitioning from crease line to final colour
+$curlLastColour: white;				// final colour of the back of the curl

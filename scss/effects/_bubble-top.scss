@@ -1,0 +1,24 @@
+/* Bubble Top */
+@mixin bubble-top {
+	display: inline-block;
+	position: relative;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		border-style: solid;
+		transition-duration: $defaultDuration;
+		left: calc(50% - #{$tipWidth});
+		border-width: 0 $tipWidth $tipHeight $tipWidth;
+		border-color: transparent transparent $tipColour transparent;
+		transition-property: top;
+	}
+
+	&:hover:before {
+		top: -($tipHeight);
+	}
+}

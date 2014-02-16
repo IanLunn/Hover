@@ -1,0 +1,279 @@
+/*!
+ * Hover.css (http://ianlunn.co.uk/)
+ * Version: 1.0.6
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014.
+ */
+
+
+@import "options";
+@import "defaults";
+@import "hacks";
+
+
+
+/* Default styles for the demo buttons */
+.button {
+	@include button();
+}
+
+
+/* 2D TRANSITIONS */
+@import "effects/grow";
+.grow {
+	@include grow();
+}
+
+@import "effects/shrink";
+.shrink {
+	@include shrink();
+}
+
+@import "effects/pulse";
+.pulse {
+	@include pulse();
+}
+
+@import "effects/pulse-grow";
+.pulse-grow {
+	@include pulse-grow();
+}
+
+@import "effects/pulse-shrink";
+.pulse-shrink {
+	@include pulse-shrink();
+}
+
+@import "effects/push";
+.push {
+	@include push();
+}
+
+@import "effects/pop";
+.pop {
+	@include pop();
+}
+
+@import "effects/rotate";
+.rotate {
+	@include rotate();
+}
+
+@import "effects/grow-rotate";
+.grow-rotate {
+	@include grow-rotate();
+}
+
+@import "effects/float";
+.float {
+	@include float();
+}
+
+@import "effects/sink";
+.sink {
+	@include sink();
+}
+
+@import "effects/hover";
+.hover {
+	@include hover();
+}
+
+@import "effects/hang";
+.hang {
+	@include hang();
+}
+
+@import "effects/skew";
+.skew {
+	@include skew();
+}
+
+@import "effects/skew-forward";
+.skew-forward {
+	@include skew-forward();
+}
+
+@import "effects/skew-backward";
+.skew-backward {
+    @include skew-backward();
+}
+
+@import "effects/wobble-vertical";
+.wobble-vertical {
+	@include wobble-vertical();
+}
+
+@import "effects/wobble-horizontal";
+.wobble-horizontal {
+	@include wobble-horizontal();
+}
+
+@import "effects/wobble-to-bottom-right";
+.wobble-to-bottom-right {
+    @include wobble-to-bottom-right();
+}
+
+@import "effects/wobble-to-top-right";
+.wobble-to-top-right {
+    @include wobble-to-top-right();
+}
+
+@import "effects/wobble-top";
+.wobble-top {
+	@include wobble-top();
+}
+
+@import "effects/wobble-bottom";
+.wobble-bottom {
+	@include wobble-bottom();
+}
+
+@import "effects/wobble-skew";
+.wobble-skew {
+    @include wobble-skew();
+}
+
+@import "effects/buzz";
+.buzz {
+    @include buzz();
+}
+
+@import "effects/buzz-out";
+.buzz-out {
+    @include buzz-out();
+}
+
+
+/* BORDER TRANSITIONS */
+@import "effects/border-fade";
+.border-fade {
+	@include border-fade();
+}
+
+@import "effects/hollow";
+.hollow {
+	@include hollow();
+}
+
+@import "effects/trim";
+.trim {
+	@include trim();
+}
+
+@import "effects/outline-outward";
+.outline-outward {
+	@include outline-outward();
+}
+
+@import "effects/outline-inward";
+.outline-inward {
+	@include outline-inward();
+}
+
+@import "effects/round-corners";
+.round-corners {
+	@include round-corners();
+}
+
+
+/* SHADOW/GLOW TRANSITIONS */
+@import "effects/glow";
+.glow {
+	@include glow();
+}
+
+@import "effects/box-shadow-outset";
+.box-shadow-outset {
+	@include box-shadow-outset();
+}
+
+@import "effects/box-shadow-inset";
+.box-shadow-inset {
+	@include box-shadow-inset();
+}
+
+@import "effects/float-shadow";
+.float-shadow {
+	@include float-shadow();
+}
+
+@import "effects/hover-shadow";
+.hover-shadow {
+	@include hover-shadow();
+}
+
+@import "effects/shadow-radial";
+.shadow-radial {
+	@include shadow-radial();
+}
+
+
+/* SPEECH BUBBLES */
+@import "effects/bubble-top";
+.bubble-top {
+	@include bubble-top();
+}
+
+@import "effects/bubble-right";
+.bubble-right {
+	@include bubble-right();
+}
+
+@import "effects/bubble-bottom";
+.bubble-bottom {
+	@include bubble-bottom();
+}
+
+@import "effects/bubble-left";
+.bubble-left {
+	@include bubble-left();
+}
+
+@import "effects/bubble-float-top";
+.bubble-float-top {
+	@include bubble-float-top();
+}
+
+@import "effects/bubble-float-right";
+.bubble-float-right {
+	@include bubble-float-right();
+}
+
+@import "effects/bubble-float-bottom";
+.bubble-float-bottom {
+	@include bubble-float-bottom();
+}
+
+@import "effects/bubble-float-left";
+.bubble-float-left {
+	@include bubble-float-left();
+}
+
+
+/* CURLS */
+@import "effects/curl-top-left";
+.curl-top-left {
+	@include curl-top-left();
+}
+
+@import "effects/curl-top-right";
+.curl-top-right {
+	@include curl-top-right();
+}
+
+@import "effects/curl-bottom-right";
+.curl-bottom-right {
+	@include curl-bottom-right();
+}
+
+@import "effects/curl-bottom-left";
+.curl-bottom-left {
+	@include curl-bottom-left();
+}

@@ -1,0 +1,13 @@
+/* Skew Backward */
+@mixin skew-backward {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hacks();
+
+	&:hover {
+		transform: skew(10deg);
+	}
+}

@@ -1,0 +1,12 @@
+/* Skew */
+@mixin skew {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@include hacks();
+
+	&:hover {
+		transform: skew(-10deg);
+	}
+}

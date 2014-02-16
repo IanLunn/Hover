@@ -1,0 +1,25 @@
+/* Bubble Left */
+@mixin bubble-left {
+	display: inline-block;
+	position: relative;
+
+	@include hacks();
+
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		border-style: solid;
+		transition-duration: $defaultDuration;
+		transition-property: left;
+		top: calc(50% - #{$tipHeight});
+		left: 0;
+		border-width: $tipHeight $tipWidth $tipHeight 0;
+		border-color: transparent $tipColour transparent transparent;
+	}
+
+	&:hover:before {
+		left: -($tipWidth);
+	}
+}

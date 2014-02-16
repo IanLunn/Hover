@@ -1,0 +1,16 @@
+/* Box Shadow Inset */
+@mixin box-shadow-inset {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: box-shadow;
+
+	box-shadow: inset 0 0 0 $shadowColour,
+		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+
+	@include hardwareAccel();
+
+	&:hover {
+		box-shadow: inset 2px 2px 2px $shadowColour,
+		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+	}
+}

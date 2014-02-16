@@ -1,0 +1,11 @@
+// Default styles for the demo buttons
+@mixin button {
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  background: $primaryColour;
+  text-decoration: none;
+  color: $secondaryColour;
+  /* Prevent highlight colour when element is tapped */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
