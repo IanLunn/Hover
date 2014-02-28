@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.co.uk/)
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -1485,6 +1485,7 @@
 }
 
 .outline-inward:before {
+  pointer-events: none;
   content: '';
   position: absolute;
   border: #e1e1e1 solid 4px;
@@ -1952,7 +1953,6 @@
 }
 
 .bubble-float-top:before {
-  pointer-events: none;
   position: absolute;
   z-index: -1;
   content: '';
@@ -1994,7 +1994,6 @@
 }
 
 .bubble-float-right:before {
-  pointer-events: none;
   position: absolute;
   z-index: -1;
   top: -webkit-calc(50% - 10px);
@@ -2036,7 +2035,6 @@
 }
 
 .bubble-float-bottom:before {
-  pointer-events: none;
   position: absolute;
   z-index: -1;
   content: '';
@@ -2078,7 +2076,6 @@
 }
 
 .bubble-float-left:before {
-  pointer-events: none;
   position: absolute;
   z-index: -1;
   content: '';

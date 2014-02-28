@@ -8,7 +8,6 @@
 	@include hacks();
 
 	&:before {
-		pointer-events: none;
 		position: absolute;
 		z-index: -1;
 		content: '';

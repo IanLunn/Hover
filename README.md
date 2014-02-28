@@ -6,14 +6,6 @@ A collection of CSS3 powered hover effects to be applied to call to actions, but
 
 [Demo](http://ianlunn.github.io/Hover) | [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
-##Authors
-
-- [Ian Lunn](https://github.com/IanLunn)  
-- [Matthew Davis](https://github.com/mdavis1982)
-- [benbayard](https://github.com/benbayard)
-- [Zach Latta](https://github.com/zachlatta)
-- [Leandro D'Onofrio](https://github.com/dzignus)
-
 ##How To Use
 hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
 
@@ -98,6 +90,15 @@ Many of hover.css' effects rely on CSS3 features such as transitions, animations
 - [Generated Content (pseudo-elements)](http://caniuse.com/#search=pseudo-elements) - not supported below Internet Explorer 8
 
 Aside from the above mentioned browsers, hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your webpages accordingly.
+
+##Authors
+
+- [Ian Lunn](https://github.com/IanLunn)  
+- [Matthew Davis](https://github.com/mdavis1982)
+- [benbayard](https://github.com/benbayard)
+- [Zach Latta](https://github.com/zachlatta)
+- [Leandro D'Onofrio](https://github.com/dzignus)
+- [curtisk](https://github.com/curtisk)
 
 ##License
 hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
