@@ -12,10 +12,12 @@
 		content: '';
 		border-style: solid;
 		transition-duration: $defaultDuration;
+		transition-property: top;
 		left: calc(50% - #{$tipWidth});
+		top: 0;
 		border-width: 0 $tipWidth $tipHeight $tipWidth;
 		border-color: transparent transparent $tipColour transparent;
-		transition-property: top;
+		
 	}
 
 	&:hover:before {

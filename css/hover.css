@@ -1827,12 +1827,13 @@
   border-style: solid;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  left: -webkit-calc(50% - 10px);
-  left: calc(50% - 10px);
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #e1e1e1 transparent;
   -webkit-transition-property: top;
   transition-property: top;
+  left: -webkit-calc(50% - 10px);
+  left: calc(50% - 10px);
+  top: 0;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #e1e1e1 transparent;
 }
 
 .bubble-top:hover:before {
