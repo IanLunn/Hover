@@ -105,7 +105,7 @@ hover.css is open source, and made available under a [MIT License](http://www.op
 
 Placing author information in your stylesheet, credits page or humans.txt is much appreciated.
 
-## <a name="support-development">Support Future Development</a>
+##Support Future Development
 
 To support the future development of Hover.css and other open source projects created by [Ian Lunn](https://github.com/IanLunn), please consider making a donation.
 
