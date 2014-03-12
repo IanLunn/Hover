@@ -16,7 +16,7 @@ Assuming you want to use the `Grow` effect:
 
 1. Download hover.css
 2. In hover.css, find the 'Grow' CSS (each effect is named using a comment above it):
-	
+
 ```css
 /* Grow */
 
@@ -44,7 +44,7 @@ Assuming you want to use the `Grow` effect:
 4. In the HTML file which you'd like the effect to appear, add the class of `.grow` to your chosen element.
 
 Example element before applying hover.css effect:
-	
+
 ```html
 <a class="button">Add to Basket</a>
 ```
@@ -61,7 +61,7 @@ If you plan on using many of hover.css' effects on your website, you may like to
 1. Download hover-min.css
 2. Add `hover-min.css` to your websites files, in a directory named `css` for example
 3. Reference hover-min.css in `<head>` of the HTML page you'd like to add hover.css effects to:
-	
+
 ```html
 <head>
 	<link href="css/hover-min.css" rel="stylesheet">
@@ -71,13 +71,13 @@ If you plan on using many of hover.css' effects on your website, you may like to
 4. Assuming you want to use the 'Grow' effect, in the HTML file you'd like to use this effect, add the class of `.grow` to your chosen element.
 
 Example element before applying hover.css effect:
-	
+
 ```html
 <a class="button">Add to Basket</a>
 ```
 
 Example element after applying hover.css effect:
-	
+
 ```html
 <a class="button grow">Add to Basket</a>
 ```
@@ -104,3 +104,20 @@ Aside from the above mentioned browsers, hover.css is supported across all major
 hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
 
 Placing author information in your stylesheet, credits page or humans.txt is much appreciated.
+
+## <a name="support-development">Support Future Development</a>
+
+To support the future development of Hover.css and other open source projects created by [Ian Lunn](https://github.com/IanLunn), please consider making a donation.
+
+Your donation is not-for-profit (or beer!), and will allow Ian to spend a little less time on client projects and more time supporting and creating open source software.
+
+Thank you.
+
+**Bitcoin:**
+
+Bitcoin donations may be sent to the following address:
+
+<div style="text-align: center;">
+<a href="bitcoin:1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd?label=Hover.css%20Development"><img src="http://ianlunn.co.uk/images/btc-donate.jpg" /></a>
+<p>1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd</p>
+</div>
