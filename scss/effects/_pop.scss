@@ -1,11 +1,11 @@
 /* Pop */
-@keyframes pop {
+@include keyframes(pop) {
 	50% {
-		transform: scale(1.2);
+		@include prefixed(transform, scale(1.2));
 	}
 
 	100% {
-		transform: scale(1);
+		@include prefixed(transform, scale(1));
 	}
 }
 
@@ -14,10 +14,12 @@
 
 	@include hacks();
 
-	&:hover {
-		animation-name: pop;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: 1;
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, pop);
+		@include prefixed(animation-duration, $defaultDuration);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, 1);
 	}
 }

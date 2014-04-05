@@ -15,20 +15,6 @@ module.exports = function(grunt) {
           }
         },
 
-
-        autoprefixer: {
-          options: {
-            browsers: ['last 2 version', 'ie 8', 'ie 9']
-          },
-          multiple_files: {
-            expand: true,
-            flatten: true,
-            src: 'css/*.css',
-            dest: 'css/'
-          }
-        },
-
-
         cssmin: {
           combine: {
             files: {
@@ -44,7 +30,7 @@ module.exports = function(grunt) {
           },
           css: {
             files: ['scss/**/*.scss', 'css/*.css', '*.html'],
-            tasks: ['sass', 'autoprefixer', 'cssmin'],
+            tasks: ['sass', 'cssmin'],
             options: {
               spawn: false,
             }

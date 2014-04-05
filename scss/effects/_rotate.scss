@@ -1,12 +1,14 @@
 /* Rotate */
 @mixin rotate {
 	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, transform);
 
 	@include hacks();
-	
-	&:hover {	
-		transform: rotate(4deg);
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, rotate(4deg));
 	}
 }

@@ -2,7 +2,7 @@
 @mixin curl-top-left {
 	display: inline-block;
 	position: relative;
-	
+
 	@include hacks();
 
 	&:before {
@@ -15,21 +15,23 @@
 		left: 0;
 		background: $revealAreaColour; /* IE9 */
 		background: linear-gradient(
-			135deg, 
+			135deg,
 			$revealAreaColour 45%,
-			$curlLineColour 50%,		
-			$curlTransitionColour 56%,		
-			$curlLastColour 80%   
+			$curlLineColour 50%,
+			$curlTransitionColour 56%,
+			$curlLastColour 80%
 		);
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');/*For IE7-8-9*/
 
 		z-index: 1000;
 		box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-		transition-duration: $defaultDuration;
-		transition-property: width, height;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, "width, height");
 	}
 
-	&:hover:before {
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
 		width: $curlWidth;
 		height: $curlHeight;
 	}

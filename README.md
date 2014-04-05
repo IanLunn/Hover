@@ -91,6 +91,47 @@ Many of hover.css' effects rely on CSS3 features such as transitions, animations
 
 Aside from the above mentioned browsers, hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your webpages accordingly.
 
+##Using Grunt for Development
+
+Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, SASS will be preprocessed and CSS files will be minified.
+
+Note that originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS mixin should be used for browser prefixing instead. See [Using SASS for Development](#using-sass-for-development).
+
+##Using SASS for Development
+
+SASS is non-essential but can speed up development. Preprocess SASS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
+
+SASS is used in the Hover.css project to separate various CSS into specific files. Each effect is within its own file in the `effects` directory. Hover.css also uses the following `.scss` files:
+
+###_hacks.scss
+Contains some hacks applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).
+
+###_mixins.scss
+Contains the default button style used on the example page, and `prefixed(property, value)` and `keyframes(keyframe-name)` mixins that apply the necessary prefixes you specify in _options.scss to properties and keyframes.
+
+`prefixed(property, value)` can be used like so:
+
+```
+@include prefixed(transition-duration, .3s);
+```
+
+The `prefixed(property, value)` mixin is passed the property you want to prefix, followed by its value.
+
+`keyframes(keyframe-name)` can be used like so:
+
+```
+@include keyframes(my-animation) {
+  to {
+    color: red;
+  }
+}
+```
+
+The `keyframes(keyframe-name)` mixin is passed the keyframe name, followed by the content of your keyframe within parenthesis `{}`.
+
+###_options.scss
+Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed()` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
+
 ##Authors
 
 - [Ian Lunn](https://github.com/IanLunn)  

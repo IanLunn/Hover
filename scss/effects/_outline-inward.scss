@@ -18,11 +18,13 @@
 		bottom: -($outerBorderWidth + $innerBorderWidth) * 2;
 		left: -($outerBorderWidth + $innerBorderWidth) * 2;
 		opacity: 0;
-		transition-duration: .3s;
-		transition-property: top, right, bottom, left;
+		@include prefixed(transition-duration, .3s);
+		@include prefixed(transition-property, "top, right, bottom, left");
 	}
 
-	&:hover:before {
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
 		top: -($outerBorderWidth + $innerBorderWidth);
 		right: -($outerBorderWidth + $innerBorderWidth);
 		bottom: -($outerBorderWidth + $innerBorderWidth);

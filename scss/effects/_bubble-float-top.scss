@@ -2,8 +2,8 @@
 @mixin bubble-float-top {
 	display: inline-block;
 	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, transform);
 
 	@include hacks();
 
@@ -16,16 +16,20 @@
 		border-style: solid;
 		border-width: 0 $tipWidth $tipHeight $tipWidth;
 		border-color: transparent transparent $tipColour transparent;
-		transition-duration: $defaultDuration;
-		transition-property: top;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, top);
 	}
 
 
-	&:hover {
-		transform: translateY(5px) translateZ(0);
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, translateY(5px) translateZ(0));
 	}
 
-	&:hover:before {
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
 		top: -($tipHeight);
 	}
 }

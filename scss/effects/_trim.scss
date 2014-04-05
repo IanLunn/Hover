@@ -17,11 +17,13 @@
 		right: $outerBorderWidth;
 		bottom: $outerBorderWidth;
 		opacity: 0;
-		transition-duration: $defaultDuration;
-		transition-property: opacity;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, opacity);
 	}
 
-	&:hover:before {
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
 		opacity: 1;
 	}
 }

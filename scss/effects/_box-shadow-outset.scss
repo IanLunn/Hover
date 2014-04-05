@@ -1,12 +1,14 @@
 /* Box Shadow Outset */
 @mixin box-shadow-outset {
 	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, box-shadow);
 
 	@include hacks();
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		box-shadow: 2px 2px 2px $shadowColour;
 	}
 }

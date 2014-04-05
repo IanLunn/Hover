@@ -3,16 +3,18 @@
 	display: inline-block;
 	$borderWidth: 4px;
 
-	transition-duration: $defaultDuration;
-	transition-property: box-shadow;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, box-shadow);
 
 	@include hardwareAccel();
-	box-shadow: 
+	box-shadow:
 			inset 0 0 0 $borderWidth $primaryColour,
-			0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */ 
-	
-	&:hover {
-		box-shadow: 
+			0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow:
 			inset 0 0 0 $borderWidth $secondaryColour,
 			0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
 	}

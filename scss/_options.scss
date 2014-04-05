@@ -15,6 +15,12 @@ $curlHeight: 25px;
 
 // Curl colours
 $revealAreaColour: white;			// reveal area behind the curl
-$curlLineColour: #aaa;				// crease line
-$curlTransitionColour: #ccc;	// colour transitioning from crease line to final colour
+$curlLineColour: #aaa;			   // crease line
+$curlTransitionColour: #ccc;	 // colour transitioning from crease line to final colour
 $curlLastColour: white;				// final colour of the back of the curl
+
+// Browser Prefixes
+$webkit: true;
+$moz: false;
+$ms: false;
+$o: false;

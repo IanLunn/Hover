@@ -4,7 +4,7 @@
 
 @mixin hardwareAccel() {
 	//Improve performance on mobile/tablet devices
-	transform: translateZ(0);
+	@include prefixed(transform, translateZ(0));
 }
 
 @mixin improveAntiAlias() {

@@ -2,8 +2,9 @@
 @mixin float-shadow {
 	display: inline-block;
 	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, transform);
+
 
 	@include hacks();
 
@@ -18,16 +19,18 @@
 	  width: 90%;
 	  opacity: 0;
 	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
-		transition-duration: $defaultDuration;
-		transition-property: transform, opacity;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, "transform, opacity");
 	}
 
-	&:hover {
-		transform: translateY(-5px); /* move the element up by 5px */
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, translateY(-5px)); /* move the element up by 5px */
 
 		&:before {
 			opacity: 1;
-			transform: translateY(5px); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+			@include prefixed(transform, translateY(5px)); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 		}
 	}
 }

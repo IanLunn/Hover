@@ -1,43 +1,43 @@
 /* Buzz Out */
-@keyframes buzz-out {
+@include keyframes(buzz-out) {
 	10% {
-		transform: translateX(3px) rotate(2deg);
+		@include prefixed(transform, translateX(3px) rotate(2deg));
 	}
 
 	20% {
-		transform: translateX(-3px) rotate(-2deg);
+		@include prefixed(transform, translateX(-3px) rotate(-2deg));
 	}
 
 	30% {
-		transform: translateX(3px) rotate(2deg);
+		@include prefixed(transform, translateX(3px) rotate(2deg));
 	}
 
 	40% {
-		transform: translateX(-3px) rotate(-2deg);
+		@include prefixed(transform, translateX(-3px) rotate(-2deg));
 	}
 
 	50% {
-		transform: translateX(2px) rotate(1deg);
+		@include prefixed(transform, translateX(2px) rotate(1deg));
 	}
 
 	60% {
-		transform: translateX(-2px) rotate(-1deg);
+		@include prefixed(transform, translateX(-2px) rotate(-1deg));
 	}
 
 	70% {
-		transform: translateX(2px) rotate(1deg);
+		@include prefixed(transform, translateX(2px) rotate(1deg));
 	}
 
 	80% {
-		transform: translateX(-2px) rotate(-1deg);
+		@include prefixed(transform, translateX(-2px) rotate(-1deg));
 	}
 
 	90% {
-		transform: translateX(1px) rotate(0);
+		@include prefixed(transform, translateX(1px) rotate(0));
 	}
 
 	100% {
-		transform: translateX(-1px) rotate(0);
+		@include prefixed(transform, translateX(-1px) rotate(0));
 	}
 }
 
@@ -46,10 +46,12 @@
 
 	@include hacks();
 
-	&:hover {
-		animation-name: buzz-out;
-		animation-duration: .75s;
-		animation-timing-function: linear;
-		animation-iteration-count: 1;
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, buzz-out);
+		@include prefixed(animation-duration, .75s);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, 1);
 	}
 }

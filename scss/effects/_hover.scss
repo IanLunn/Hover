@@ -1,28 +1,30 @@
 /* Hover */
-@keyframes hover {
+@include keyframes(hover) {
 	50% {
-		transform: translateY(-3px);
+		@include prefixed(transform, translateY(-3px));
 	}
 
 	100% {
-		transform: translateY(-6px);
+		@include prefixed(transform, translateY(-6px));
 	}
 }
 
 @mixin hover {
 	display: inline-block;
-	transition-duration: .5s;
-	transition-property: transform;
+	@include prefixed(transition-duration, .5s);
+	@include prefixed(transition-property, transform);
 
 	@include hacks();
 
-	&:hover {
-		transform: translateY(-6px);
-		animation-name: hover;
-		animation-duration: 1.5s;
-		animation-delay: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, translateY(-6px));
+		@include prefixed(animation-name, hover);
+		@include prefixed(animation-duration, 1.5s);
+		@include prefixed(animation-delay, $defaultDuration);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, infinite);
+		@include prefixed(animation-direction, alternate);
 	}
 }

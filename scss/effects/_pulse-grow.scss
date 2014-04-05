@@ -1,7 +1,7 @@
 /* Pulse Grow */
-@keyframes pulse-grow {
+@include keyframes(pulse-grow) {
 	to {
-		transform: scale(1.1);
+		@include prefixed(transform, scale(1.1));
 	}
 }
 
@@ -10,11 +10,13 @@
 
 	@include hacks();
 
-	&:hover {
-		animation-name: pulse-grow;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, pulse-grow);
+		@include prefixed(animation-duration, $defaultDuration);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, infinite);
+		@include prefixed(animation-direction, alternate);
 	}
 }

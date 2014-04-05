@@ -1,28 +1,28 @@
 /* Hover Shadow */
-@keyframes hover {
+@include keyframes(hover) {
 	50% {
-		transform: translateY(-3px);
+		@include prefixed(transform, translateY(-3px));
 	}
 
 	100% {
-		transform: translateY(-6px);
+		@include prefixed(transform, translateY(-6px));
 	}
 }
 
-@keyframes hover-shadow {
+@include keyframes(hover-shadow) {
 	0% {
-		transform: translateY(6px);
+		@include prefixed(transform, translateY(6px));
 		opacity: .4;
 	}
 
 	50% {
-		transform: translateY(3px);
+		@include prefixed(transform, translateY(3px));
 		opacity: 1;
 	}
 
 
 	100% {
-		transform: translateY(6px);
+		@include prefixed(transform, translateY(6px));
 		opacity: .4;
 	}
 }
@@ -30,8 +30,8 @@
 @mixin hover-shadow {
 	display: inline-block;
 	position: relative;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, transform);
 
 	@include hacks();
 
@@ -46,12 +46,14 @@
 	  width: 90%;
 	  opacity: 0;
 	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
-		transition-duration: $defaultDuration;
-		transition-property: transform, opacity;
+		@include prefixed(transition-duration, $defaultDuration);
+		@include prefixed(transition-property, "transform, opacity");
 	}
 
-	&:hover {
-		transform: translateY(-6px);
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, translateY(-6px));
 		animation-name: hover;
 		animation-duration: 1.5s;
 		animation-delay: $defaultDuration;
@@ -61,13 +63,13 @@
 
 		&:before {
 			opacity: .4;
-			transform: translateY(6px);
-			animation-name: hover-shadow;
-			animation-duration: 1.5s;
-			animation-delay: .3s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-direction: alternate;
+			@include prefixed(transform, translateY(6px));
+			@include prefixed(animation-name, hover-shadow);
+			@include prefixed(animation-duration, 1.5s);
+			@include prefixed(animation-delay, .3s);
+			@include prefixed(animation-timing-function, linear);
+			@include prefixed(animation-iteration-count, infinite);
+			@include prefixed(animation-direction, alternate);
 		}
 	}
 }

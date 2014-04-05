@@ -1,12 +1,14 @@
 /* Round Corners */
 @mixin round-corners {
 	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: border-radius;
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, border-radius);
 
 	@include hacks();
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		border-radius: 1em;
 	}
 }

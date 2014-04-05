@@ -32,7 +32,9 @@ img {
   font-size: .8em;
 }
 
-.tutorial:hover {
+.tutorial:hover,
+.tutorial:focus,
+.tutorial:active {
   text-decoration: none;
 }
 
@@ -86,7 +88,9 @@ h2 {
   font-size: .8em;
 }
 
-.footer a:hover {
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
   text-decoration: underline;
 }
 
@@ -125,7 +129,9 @@ h2 {
   transition: 0.5s;
 }
 
-#forkongithub a:hover {
+#forkongithub a:hover,
+#forkongithub a:focus,
+#forkongithub a:active {
   background: #060;
   color: #fff;
 }
@@ -163,9 +169,9 @@ h2 {
     position: absolute;
     top: 60px;
     right: -60px;
+    -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
   }
 }

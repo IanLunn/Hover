@@ -1,7 +1,7 @@
 /* Pulse Shrink */
-@keyframes pulse-shrink {
+@include keyframes(pulse-shrink) {
 	to {
-		transform: scale(.9);
+		@include prefixed(transform, scale(.9));
 	}
 }
 
@@ -10,11 +10,13 @@
 
 	@include hacks();
 
-	&:hover {
-		animation-name: pulse-shrink;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, pulse-shrink);
+		@include prefixed(animation-duration, $defaultDuration);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, infinite);
+		@include prefixed(animation-direction, alternate);
 	}
 }
