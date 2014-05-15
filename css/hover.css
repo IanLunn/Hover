@@ -1529,11 +1529,17 @@
 .hover-shadow:hover, .hover-shadow:focus, .hover-shadow:active {
   -webkit-transform: translateY(-6px);
   transform: translateY(-6px);
+  -webkit-animation-name: hover;
   animation-name: hover;
+  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 .hover-shadow:hover:before, .hover-shadow:focus:before, .hover-shadow:active:before {
