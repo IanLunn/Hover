@@ -34,30 +34,30 @@
 // prefix keyframes
 @mixin keyframes($name) {
   @if $webkit == true {
-    @-webkit-keyframes $name {
+    @-webkit-keyframes #{$name} {
       @content;
     }
   }
 
   @if $moz == true {
-    @-moz-keyframes $name {
+    @-moz-keyframes #{$name} {
       @content;
     }
   }
 
   @if $ms == true {
-    @-ms-keyframes $name {
+    @-ms-keyframes #{$name} {
       @content;
     }
   }
 
   @if $o == true {
-    @-o-keyframes $name {
+    @-o-keyframes #{$name} {
       @content;
     }
   }
 
-  @keyframes $name {
+  @keyframes #{$name} {
     @content;
   }
 }
