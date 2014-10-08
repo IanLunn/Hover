@@ -1,6 +1,5 @@
 /* Border Fade */
 @mixin border-fade {
-	display: inline-block;
 	$borderWidth: 4px;
 
 	@include prefixed(transition-duration, $defaultDuration);

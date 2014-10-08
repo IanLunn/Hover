@@ -12,7 +12,13 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
+@mixin webkitFontFix() {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
 @mixin hacks() {
-  @include hardwareAccel();
-  @include improveAntiAlias();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+	@include webkitFontFix();
 }

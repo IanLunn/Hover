@@ -1,34 +1,30 @@
-/* Hover Shadow */
-@include keyframes(hover) {
+/* Bob Shadow */
+
+@include keyframes(#{$nameSpace}-bob-shadow-bob) {
 	50% {
 		@include prefixed(transform, translateY(-3px));
 	}
-
 	100% {
 		@include prefixed(transform, translateY(-6px));
 	}
 }
 
-@include keyframes(hover-shadow) {
+@include keyframes(#{$nameSpace}-bob-shadow-shadow) {
 	0% {
 		@include prefixed(transform, translateY(6px));
 		opacity: .4;
 	}
-
 	50% {
 		@include prefixed(transform, translateY(3px));
 		opacity: 1;
 	}
-
-
 	100% {
 		@include prefixed(transform, translateY(6px));
 		opacity: .4;
 	}
 }
 
-@mixin hover-shadow {
-	display: inline-block;
+@mixin bob-shadow {
 	position: relative;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
@@ -36,7 +32,7 @@
 	@include hacks();
 
 	&:before {
-		pointer-events: none;
+	  pointer-events: none;
 	  position: absolute;
 	  z-index: -1;
 	  content: '';
@@ -46,15 +42,16 @@
 	  width: 90%;
 	  opacity: 0;
 	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
-		@include prefixed(transition-duration, $defaultDuration);
-		@include prefixed(transition-property, "transform, opacity");
+	@include prefixed(transform, translateY(6px));
+	@include prefixed(transition-duration, $defaultDuration);
+	@include prefixed(transition-property, "opacity");
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
 		@include prefixed(transform, translateY(-6px));
-		@include prefixed(animation-name, hover);
+		@include prefixed(animation-name, #{$nameSpace}-bob-shadow-bob);
 		@include prefixed(animation-duration, 1.5s);
 		@include prefixed(animation-delay, $defaultDuration);
 		@include prefixed(animation-timing-function, linear);
@@ -63,8 +60,8 @@
 
 		&:before {
 			opacity: .4;
-			@include prefixed(transform, translateY(6px));
-			@include prefixed(animation-name, hover-shadow);
+			// @include prefixed(transform, translateY(6px));
+			@include prefixed(animation-name, #{$nameSpace}-bob-shadow-shadow);
 			@include prefixed(animation-duration, 1.5s);
 			@include prefixed(animation-delay, .3s);
 			@include prefixed(animation-timing-function, linear);

@@ -1,6 +1,5 @@
 /* Bubble Left */
 @mixin bubble-left {
-	display: inline-block;
 	position: relative;
 
 	@include hacks();

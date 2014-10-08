@@ -1,6 +1,5 @@
 /* Grow Rotate */
 @mixin grow-rotate {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 
@@ -8,7 +7,7 @@
 
 	&:hover,
 	&:focus,
-	&:active {	
+	&:active {
 		@include prefixed(transform, scale(1.1) rotate(4deg));
 	}
 }

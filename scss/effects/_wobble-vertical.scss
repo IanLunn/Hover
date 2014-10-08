@@ -1,5 +1,5 @@
 /* Wobble Vertical */
-@include keyframes(wobble-vertical) {
+@include keyframes(#{$nameSpace}-wobble-vertical) {
 	16.65% {
 		@include prefixed(transform, translateY(8px));
 	}
@@ -26,14 +26,12 @@
 }
 
 @mixin wobble-vertical {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(animation-name, wobble-vertical);
+		@include prefixed(animation-name, #{$nameSpace}-wobble-vertical);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);
 		@include prefixed(animation-iteration-count, 1);

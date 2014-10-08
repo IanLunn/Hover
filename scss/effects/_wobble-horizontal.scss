@@ -1,5 +1,5 @@
 /* Wobble Horizontal */
-@include keyframes(wobble-horizontal) {
+@include keyframes(#{$nameSpace}-wobble-horizontal) {
 	16.65% {
 		@include prefixed(transform, translateX(8px));
 	}
@@ -26,14 +26,12 @@
 }
 
 @mixin wobble-horizontal {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(animation-name, wobble-horizontal);
+		@include prefixed(animation-name, #{$nameSpace}-wobble-horizontal);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);
 		@include prefixed(animation-iteration-count, 1);

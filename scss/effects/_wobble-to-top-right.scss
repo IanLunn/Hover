@@ -1,5 +1,5 @@
 /* Wobble To Top Right */
-@include keyframes(wobble-to-top-right) {
+@include keyframes(#{$nameSpace}-wobble-to-top-right) {
   16.65% {
     @include prefixed(transform, translate(8px, -8px));
   }
@@ -26,14 +26,12 @@
 }
 
 @mixin wobble-to-top-right {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
   &:focus,
   &:active {
-    @include prefixed(animation-name, wobble-to-top-right);
+    @include prefixed(animation-name, #{$nameSpace}-wobble-to-top-right);
     @include prefixed(animation-duration, 1s);
     @include prefixed(animation-timing-function, ease-in-out);
     @include prefixed(animation-iteration-count, 1);

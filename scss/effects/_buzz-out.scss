@@ -1,5 +1,5 @@
 /* Buzz Out */
-@include keyframes(buzz-out) {
+@include keyframes(#{$nameSpace}-buzz-out) {
 	10% {
 		@include prefixed(transform, translateX(3px) rotate(2deg));
 	}
@@ -42,14 +42,12 @@
 }
 
 @mixin buzz-out {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(animation-name, buzz-out);
+		@include prefixed(animation-name, #{$nameSpace}-buzz-out);
 		@include prefixed(animation-duration, .75s);
 		@include prefixed(animation-timing-function, linear);
 		@include prefixed(animation-iteration-count, 1);

@@ -1,6 +1,5 @@
 /* Hollow */
 @mixin hollow {
-	display: inline-block;
 	$borderWidth: 4px;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, background);

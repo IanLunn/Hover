@@ -1,6 +1,5 @@
 /* Shrink */
 @mixin shrink {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 

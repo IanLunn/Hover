@@ -1,4 +1,6 @@
 // DEFAULT OPTIONS
+
+$nameSpace: 'hvr'; // What to prefix each class name with
 $defaultDuration: .3s;
 $primaryColour: #e1e1e1;
 $secondaryColour: #666;
@@ -14,10 +16,10 @@ $curlWidth: 25px;
 $curlHeight: 25px;
 
 // Curl colours
-$revealAreaColour: white;			// reveal area behind the curl
-$curlLineColour: #aaa;			   // crease line
-$curlTransitionColour: #ccc;	 // colour transitioning from crease line to final colour
-$curlLastColour: white;				// final colour of the back of the curl
+$revealAreaColour: white;		// reveal area behind the curl
+$curlLineColour: #aaa;			// crease line
+$curlTransitionColour: #ccc;	// colour transitioning from crease line to final colour
+$curlLastColour: white;		    // final colour of the back of the curl
 
 // Browser Prefixes
 $webkit: true;

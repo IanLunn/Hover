@@ -1,6 +1,5 @@
 /* Bubble Float Top */
 @mixin bubble-float-top {
-	display: inline-block;
 	position: relative;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
@@ -19,7 +18,6 @@
 		@include prefixed(transition-duration, $defaultDuration);
 		@include prefixed(transition-property, top);
 	}
-
 
 	&:hover,
 	&:focus,
