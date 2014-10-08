@@ -1,6 +1,5 @@
 /* Bubble Float Left */
 @mixin bubble-float-left {
-	display: inline-block;
 	position: relative;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);

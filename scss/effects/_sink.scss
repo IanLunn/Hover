@@ -1,14 +1,14 @@
 /* Sink */
 @mixin sink {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
+	@include prefixed(transition-timing-function, ease-out);
 
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(transform, translateY(5px));
+		@include prefixed(transform, translateY(6px));
 	}
 }

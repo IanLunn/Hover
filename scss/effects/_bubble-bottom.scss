@@ -1,6 +1,5 @@
 /* Bubble Bottom */
 @mixin bubble-bottom {
-	display: inline-block;
 	position: relative;
 
 	@include hacks();

@@ -1,6 +1,5 @@
 /* Bubble Top */
 @mixin bubble-top {
-	display: inline-block;
 	position: relative;
 
 	@include hacks();

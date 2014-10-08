@@ -1,6 +1,5 @@
 /* Grow */
 @mixin grow {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 

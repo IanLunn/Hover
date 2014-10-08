@@ -1,6 +1,5 @@
 /* Box Shadow Inset */
 @mixin box-shadow-inset {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, box-shadow);
 

@@ -1,6 +1,5 @@
 /* Skew Backward */
 @mixin skew-backward {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 	@include prefixed(transform-origin, 0 100%);

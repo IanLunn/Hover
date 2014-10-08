@@ -20,8 +20,7 @@ Assuming you want to use the `Grow` effect:
 ```css
 /* Grow */
 
-.grow {
-  display: inline-block;
+.hvr-grow {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
@@ -33,7 +32,7 @@ Assuming you want to use the `Grow` effect:
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.grow:hover {
+.hvr-grow:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -41,21 +40,23 @@ Assuming you want to use the `Grow` effect:
 ```
 
 3. Copy this effect and then paste it into your own stylesheet.
-4. In the HTML file which you'd like the effect to appear, add the class of `.grow` to your chosen element.
+4. In the HTML file which you'd like the effect to appear, add the class of `.hvr-grow` to your chosen element.
 
 Example element before applying hover.css effect:
 
 ```html
-<a class="button">Add to Basket</a>
+<a href="#">Add to Basket</a>
 ```
 
 Example element after applying hover.css effect:
 
 ```html
-<a class="button grow">Add to Basket</a>
+<a href="#" class="hvr-grow">Add to Basket</a>
 ```
 
-###Reference hover.css
+Note: As of 2.0.0 all hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using SASS, this can easily be changed using the `$nameSpace` variable in `scss/_options.scss`.
+
+### Reference hover.css
 If you plan on using many of hover.css' effects on your website, you may like to reference the entire hover.css stylesheet.
 
 1. Download hover-min.css
@@ -68,7 +69,7 @@ If you plan on using many of hover.css' effects on your website, you may like to
 </head>
 ```
 
-4. Assuming you want to use the 'Grow' effect, in the HTML file you'd like to use this effect, add the class of `.grow` to your chosen element.
+4. Assuming you want to use the 'Grow' effect, in the HTML file you'd like to use this effect, add the class of `.hvr-grow` to your chosen element.
 
 Example element before applying hover.css effect:
 
@@ -82,7 +83,22 @@ Example element after applying hover.css effect:
 <a class="button grow">Add to Basket</a>
 ```
 
-##Browser Support
+## A Note on the `display` Property
+
+By default, any element that has a hover.css effect applied to it will be made inline-block via the `display` property:
+
+```css
+/* Make any element with a class beginning "hvr" inline-block */
+[class^=".hvr"] {
+    display: inline-block;
+}
+```
+
+This is to work around the fact that `inline` elements inconsistently render transitons/animations across browsers.
+
+Should you wish to override this behaviour, either remove the above CSS from hover.css or change the `display` property for the element. Be sure to declare the override after the hover.css declarations so the CSS cascade will take effect.
+
+## Browser Support
 Many of hover.css' effects rely on CSS3 features such as transitions, animations, transforms and pseudo-elements, for that reason, effects may not fully work in older browsers.
 
 - [Transitions](http://caniuse.com/#search=transitions) and [Animations](http://caniuse.com/#search=animations) - not supported below Internet Explorer 9
@@ -97,7 +113,7 @@ Grunt is non-essential but can speed up development. With [Grunt installed](http
 
 Note that originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS mixin should be used for browser prefixing instead. See [Using SASS for Development](#using-sass-for-development).
 
-##Using SASS for Development
+## Using SASS for Development
 
 SASS is non-essential but can speed up development. Preprocess SASS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
 
@@ -107,7 +123,7 @@ SASS is used in the Hover.css project to separate various CSS into specific file
 Contains some hacks applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).
 
 ###_mixins.scss
-Contains the default button style used on the example page, and `prefixed(property, value)` and `keyframes(keyframe-name)` mixins that apply the necessary prefixes you specify in _options.scss to properties and keyframes.
+Contains `prefixed(property, value)` and `keyframes(keyframe-name)` mixins that apply the necessary prefixes you specify in _options.scss to properties and keyframes.
 
 `prefixed(property, value)` can be used like so:
 
@@ -131,6 +147,8 @@ The `keyframes(keyframe-name)` mixin is passed the keyframe name, followed by th
 
 ###_options.scss
 Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed()` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
+
+As of 2.0.0, _options.scss also includes a `$nameSpace` option which allows you to change the name all classes are prefixed with. The default namespace is `hvr`.
 
 ##Authors
 

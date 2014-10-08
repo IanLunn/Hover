@@ -1,6 +1,5 @@
 /* Skew */
 @mixin skew {
-	display: inline-block;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 

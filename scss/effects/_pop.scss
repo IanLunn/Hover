@@ -1,5 +1,5 @@
 /* Pop */
-@include keyframes(pop) {
+@include keyframes(#{$nameSpace}-pop) {
 	50% {
 		@include prefixed(transform, scale(1.2));
 	}
@@ -10,14 +10,12 @@
 }
 
 @mixin pop {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(animation-name, pop);
+		@include prefixed(animation-name, #{$nameSpace}-pop);
 		@include prefixed(animation-duration, $defaultDuration);
 		@include prefixed(animation-timing-function, linear);
 		@include prefixed(animation-iteration-count, 1);

@@ -1,6 +1,5 @@
 /* Curl Top Left */
 @mixin curl-top-left {
-	display: inline-block;
 	position: relative;
 
 	@include hacks();

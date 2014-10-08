@@ -10,6 +10,13 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 
+/**
+ * The following are default styles for the demo page,
+ * you don't need to include these on your own site.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 body {
   margin: 0 auto;
   max-width: 800px;
@@ -23,13 +30,40 @@ img {
   border: none;
 }
 
+p,
+.effects a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.effects a {
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  background: #e1e1e1;
+  text-decoration: none;
+  color: #666;
+  /* Prevent highlight colour when element is tapped */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .aligncenter {
   text-align: center;
+}
+
+a {
+    color: #2098D1;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.tutorial:hover {
+    color: #207AD1;
 }
 
 .tutorial {
   display: block;
   font-size: .8em;
+  font-weight: bold;
 }
 
 .tutorial:hover,
@@ -40,7 +74,7 @@ img {
 
 .intro {
   max-width: 680px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .button.cta {
@@ -86,12 +120,7 @@ h2 {
 
 .credit {
   font-size: .8em;
-}
-
-.footer a:hover,
-.footer a:focus,
-.footer a:active {
-  text-decoration: underline;
+  font-weight: normal;
 }
 
 .social {
@@ -103,6 +132,16 @@ h2 {
   vertical-align: middle;
 }
 
+.twitter-follow-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.follow {
+    margin-bottom: 20px;
+    line-height: 200%;
+}
+
 .author {
   margin: 6em auto 0 auto;
   text-align: center;
@@ -112,6 +151,10 @@ h2 {
 .author .logo {
   display: block;
   margin-bottom: .8em;
+}
+
+#forkongithub {
+    display: none;
 }
 
 #forkongithub a {
@@ -132,7 +175,7 @@ h2 {
 #forkongithub a:hover,
 #forkongithub a:focus,
 #forkongithub a:active {
-  background: #060;
+  background: #2098D1;
   color: #fff;
 }
 
@@ -153,7 +196,7 @@ h2 {
   top: auto;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 640px) {
   #forkongithub {
     position: absolute;
     display: block;

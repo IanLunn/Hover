@@ -1,15 +1,13 @@
 /* Float Shadow */
 @mixin float-shadow {
-	display: inline-block;
 	position: relative;
 	@include prefixed(transition-duration, $defaultDuration);
 	@include prefixed(transition-property, transform);
 
-
 	@include hacks();
 
 	&:before {
-		pointer-events: none;
+	  pointer-events: none;
 	  position: absolute;
 	  z-index: -1;
 	  content: '';

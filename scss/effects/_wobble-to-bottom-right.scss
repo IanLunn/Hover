@@ -1,5 +1,5 @@
 /* Wobble To Bottom Right */
-@include keyframes(wobble-to-bottom-right) {
+@include keyframes(#{$nameSpace}-wobble-to-bottom-right) {
 	16.65% {
 		@include prefixed(transform, translate(8px, 8px));
 	}
@@ -26,14 +26,12 @@
 }
 
 @mixin wobble-to-bottom-right {
-	display: inline-block;
-
 	@include hacks();
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(animation-name, wobble-to-bottom-right);
+		@include prefixed(animation-name, #{$nameSpace}-wobble-to-bottom-right);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);
 		@include prefixed(animation-iteration-count, 1);
