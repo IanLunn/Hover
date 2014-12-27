@@ -18,6 +18,7 @@
 	  height: 10px;
 	  width: 90%;
 	  opacity: 0;
+	  background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,.35) 0%, rgba(0, 0, 0, 0) 80%);
 	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
 		@include prefixed(transition-duration, $defaultDuration);
 		@include prefixed(transition-property, "transform, opacity");
