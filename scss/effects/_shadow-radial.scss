@@ -22,11 +22,13 @@
 
 	&:before {
 		bottom: 100%;
+		background: -webkit-radial-gradient(50% 150%, ellipse, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
     background: radial-gradient(ellipse at 50% 150%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
 	}
 
 	&:after {
 		top: 100%;
+		background: -webkit-radial-gradient(50% -50%, ellipse, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
 		background: radial-gradient(ellipse at 50% -50%, $shadowColour 0%, rgba(0, 0, 0, 0) 80%);
 	}
 
