@@ -1,0 +1,39 @@
+/* Icon Drop */
+@include keyframes(#{$nameSpace}-icon-drop) {
+	0% {
+		opacity: 0;
+
+	}
+
+	50% {
+		opacity: 0;
+		@include prefixed(transform, translateY(-100%));
+	}
+}
+
+/* Icon Drop */
+@mixin icon-drop {
+	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
+
+	&:before {
+		content: "\f041";
+		position: absolute;
+		right: 1em;
+		font-family: FontAwesome;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(animation-name, #{$nameSpace}-icon-drop);
+			@include prefixed(animation-duration, .5s);
+			@include prefixed(animation-delay, .1s);
+			@include prefixed(animation-timing-function, ease-in-out);
+			@include prefixed(animation-timing-function, cubic-bezier(.52,1.64,.37,.66));
+		}
+	}
+}

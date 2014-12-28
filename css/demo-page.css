@@ -20,7 +20,7 @@
 body {
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   font-family: sans-serif;
   color: #333;
   line-height: 140%;
@@ -30,12 +30,18 @@ img {
   border: none;
 }
 
+small {
+    display: block;
+}
+
 p,
-.effects a {
+[class^="hvr-"] {
     font-family: 'Roboto', sans-serif;
 }
 
-.effects a {
+[class^="hvr-"] {
+  display: inline-block;
+  vertical-align: middle;
   margin: .4em;
   padding: 1em;
   cursor: pointer;
@@ -50,6 +56,21 @@ p,
   text-align: center;
 }
 
+.sup {
+    vertical-align: super;
+    margin-left: -1em;
+    padding: .21875em;
+    line-height: 100%;
+    font-size: .21875em;
+    border: #eee solid 1px;
+    border-radius: 4px;
+    color: inherit;
+}
+
+.sup:hover {
+    background: #eee;
+}
+
 a {
     color: #2098D1;
     text-decoration: none;
@@ -61,7 +82,7 @@ a {
 }
 
 .tutorial {
-  display: block;
+  display: inline-block;
   font-size: .8em;
   font-weight: bold;
 }
@@ -80,7 +101,7 @@ a {
 .button.cta {
   display: inline-block;
   position: relative;
-  margin: 2em 0 1em 0;
+  margin: 1.2em 0 1em 0;
   padding: 1em;
   background: #2098D1;
   border: none;
@@ -89,8 +110,8 @@ a {
   color: white;
 }
 
-#effects {
-  margin-top: 5em;
+.effects {
+  margin-top: 6em;
 }
 
 h1 {
@@ -124,7 +145,7 @@ h2 {
 }
 
 .social {
-  margin-top: 2em;
+  margin-top: 2.6em;
 }
 
 .social-button {
@@ -146,6 +167,10 @@ h2 {
   margin: 6em auto 0 auto;
   text-align: center;
   font-weight: 900;
+}
+
+.author [class^="hvr-"] {
+    background: transparent;
 }
 
 .author .logo {

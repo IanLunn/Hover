@@ -1,0 +1,44 @@
+/* Shutter In Vertical */
+@mixin shutter-in-vertical {
+	@include hacks();
+	background: $primaryColor;
+	position: relative;
+	overflow: hidden;
+	@include prefixed(transition-property, color);
+	@include prefixed(transition-duration, $mediumDuration);
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		height: 50%;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		background: $activeColor;
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:before {
+		top: 0;
+		@include prefixed(transform, translateY(-100%));
+	}
+
+	&:after {
+		top: 50%;
+		@include prefixed(transform, translateY(100%));
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before,
+		&:after {
+			@include prefixed(transform, translateY(0));
+		}
+	}
+}

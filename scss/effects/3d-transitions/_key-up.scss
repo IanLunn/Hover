@@ -1,0 +1,17 @@
+/* Key Up */
+@mixin key-up {
+	@include hacks();
+	position: relative;
+	box-shadow: 0 0 0 0 $highlightColor;
+	border-radius: 5px;
+	@include prefixed(transform, translateY(5px));
+	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-property, "transform, box-shadow");
+
+	&:hover,
+	&:focus,
+	&:active {	
+		box-shadow: 0 5px 0 0 $highlightColor;
+		@include prefixed(transform, translateY(0px));
+	}
+}

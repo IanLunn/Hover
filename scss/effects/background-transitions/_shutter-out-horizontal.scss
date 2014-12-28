@@ -1,0 +1,45 @@
+/* Shutter Out Horizontal */
+@mixin shutter-out-horizontal {
+	@include hacks();
+	background: $activeColor;
+	position: relative;
+	overflow: hidden;
+	@include prefixed(transition-property, color);
+	@include prefixed(transition-duration, $mediumDuration);
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		width: 50%;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		background: $primaryColor;
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:before {
+		left: 0;
+	}
+
+	&:after {
+		left: 50%;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+		@include prefixed(transform, translateX(-100%));
+		}
+
+		&:after {
+			@include prefixed(transform, translateX(100%));
+		}
+	}
+}
