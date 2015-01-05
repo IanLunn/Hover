@@ -10,17 +10,16 @@
 		content: '';
 		border-style: solid;
 		@include prefixed(transition-duration, $mediumDuration);
-		@include prefixed(transition-property, top);
+		@include prefixed(transition-property, transform);
 		left: calc(50% - #{$tipWidth});
 		top: 0;
 		border-width: 0 $tipWidth $tipHeight $tipWidth;
 		border-color: transparent transparent $tipColor transparent;
-
 	}
 
 	&:hover:before,
 	&:focus:before,
 	&:active:before {
-		top: -($tipHeight);
+		@include prefixed(transform, translateY(-($tipHeight)));
 	}
 }

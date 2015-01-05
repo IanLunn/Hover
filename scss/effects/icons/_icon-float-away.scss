@@ -1,5 +1,9 @@
 /* Icon Float Away */
 @include keyframes(#{$nameSpace}-icon-float-away) {
+	0% {
+		opacity: 1;
+	}
+
 	100% {
 		opacity: 0;
 		@include prefixed(transform, translateY(-1em));
@@ -17,12 +21,14 @@
 		content: "\f055";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
-
 	}
 
 	&:after {
-		@include prefixed(animation-duration, .5s);
+		opacity: 0;
+		@include prefixed(animation-duration, #{$slowDuration});
+		@include prefixed(animation-fill-mode, forwards);
 	}
 
 	&:hover,

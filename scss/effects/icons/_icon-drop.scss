@@ -9,6 +9,11 @@
 		opacity: 0;
 		@include prefixed(transform, translateY(-100%));
 	}
+
+	51%,
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Icon Drop */
@@ -21,7 +26,10 @@
 		content: "\f041";
 		position: absolute;
 		right: 1em;
+		opacity: 1;
+		padding: 0 1px;
 		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
 	}
 
 	&:hover,
@@ -29,9 +37,12 @@
 	&:active {
 
 		&:before {
+			opacity: 0;
+			@include prefixed(transition-duration, #{$mediumDuration});
 			@include prefixed(animation-name, #{$nameSpace}-icon-drop);
-			@include prefixed(animation-duration, .5s);
-			@include prefixed(animation-delay, .1s);
+			@include prefixed(animation-duration, #{$slowDuration});
+			@include prefixed(animation-delay, #{$mediumDuration});
+			@include prefixed(animation-fill-mode, forwards);
 			@include prefixed(animation-timing-function, ease-in-out);
 			@include prefixed(animation-timing-function, cubic-bezier(.52,1.64,.37,.66));
 		}

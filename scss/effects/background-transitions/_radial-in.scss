@@ -1,9 +1,9 @@
 /* Radial In */
 @mixin radial-in {
 	@include hacks();
-	background: $activeColor;
 	position: relative;
 	overflow: hidden;
+	background: $activeColor;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 

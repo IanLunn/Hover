@@ -9,16 +9,17 @@
 
 @mixin improveAntiAlias() {
 	//Improve aliasing on mobile/tablet devices
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-@mixin webkitFontFix() {
+@mixin fontSmooth() {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @mixin hacks() {
 	@include hardwareAccel();
 	@include improveAntiAlias();
-	@include webkitFontFix();
+	@include fontSmooth();
 }

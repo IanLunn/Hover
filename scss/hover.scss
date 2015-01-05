@@ -332,6 +332,11 @@
 	@include glow();
 }
 
+@import "effects/shadow-and-glow-transitions/shadow";
+.#{$nameSpace}-shadow {
+	@include shadow();
+}
+
 @import "effects/shadow-and-glow-transitions/grow-shadow";
 .#{$nameSpace}-grow-shadow {
 	@include grow-shadow();
@@ -355,27 +360,6 @@
 @import "effects/shadow-and-glow-transitions/shadow-radial";
 .#{$nameSpace}-shadow-radial {
 	@include shadow-radial();
-}
-
-/* 3D TRANSITIONS */
-@import "effects/3d-transitions/key-down";
-.#{$nameSpace}-key-down {
-	@include key-down();
-}
-
-@import "effects/3d-transitions/key-up";
-.#{$nameSpace}-key-up {
-	@include key-up();
-}
-
-@import "effects/3d-transitions/push-in";
-.#{$nameSpace}-push-in {
-	@include push-in();
-}
-
-@import "effects/3d-transitions/push-out";
-.#{$nameSpace}-push-out {
-	@include push-out();
 }
 
 /* SPEECH BUBBLES */

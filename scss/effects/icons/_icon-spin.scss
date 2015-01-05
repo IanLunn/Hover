@@ -8,6 +8,7 @@
 		content: "\f021";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
 		@include prefixed(transition-duration, 1s);
 		@include prefixed(transition-property, transform);

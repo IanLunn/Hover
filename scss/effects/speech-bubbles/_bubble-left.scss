@@ -10,7 +10,7 @@
 		content: '';
 		border-style: solid;
 		@include prefixed(transition-duration, $mediumDuration);
-		@include prefixed(transition-property, left);
+		@include prefixed(transition-property, transform);
 		top: calc(50% - #{$tipHeight});
 		left: 0;
 		border-width: $tipHeight $tipWidth $tipHeight 0;
@@ -20,6 +20,6 @@
 	&:hover:before,
 	&:focus:before,
 	&:active:before {
-		left: -($tipWidth);
+		@include prefixed(transform, translateX(-($tipWidth)));
 	}
 }

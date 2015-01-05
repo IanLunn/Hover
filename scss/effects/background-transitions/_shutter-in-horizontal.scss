@@ -1,35 +1,25 @@
 /* Shutter In Horizontal */
 @mixin shutter-in-horizontal {
 	@include hacks();
-	background: $primaryColor;
 	position: relative;
-	overflow: hidden;
+	background: $activeColor;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before,
-	&:after {
+	&:before {
 		content: "";
 		position: absolute;
-		width: 50%;
 		z-index: -1;
 		top: 0;
 		bottom: 0;
-
-		background: $activeColor;
+		left: 0;
+		right: 0;
+		background: $primaryColor;
+		@include prefixed(transform, scaleX(1));
+		@include prefixed(transform-origin, 50%);
 		@include prefixed(transition-property, transform);
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-timing-function, ease-out);
-	}
-
-	&:before {
-		left: 0;
-		@include prefixed(transform, translateX(-100%));
-	}
-
-	&:after {
-		left: 50%;
-		@include prefixed(transform, translateX(100%));
 	}
 
 	&:hover,
@@ -37,9 +27,8 @@
 	&:active {
 		color: white;
 
-		&:before,
-		&:after {
-			@include prefixed(transform, translateX(0));
+		&:before {
+			@include prefixed(transform, scaleX(0));
 		}
 	}
 }

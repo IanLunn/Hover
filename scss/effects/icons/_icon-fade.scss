@@ -8,7 +8,9 @@
 		content: "\f00c";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, .5s);
 		@include prefixed(transition-property, color);
 	}
@@ -19,7 +21,6 @@
 
 		&:before {
 			color: #0F9E5E;
-
 		}
 	}
 }

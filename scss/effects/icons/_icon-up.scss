@@ -21,7 +21,9 @@
 		content: "\f01b";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
 	}
 
 	&:hover,

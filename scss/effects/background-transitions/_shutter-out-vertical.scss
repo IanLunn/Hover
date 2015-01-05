@@ -1,32 +1,25 @@
 /* Shutter Out Vertical */
 @mixin shutter-out-vertical {
 	@include hacks();
-	background: $activeColor;
 	position: relative;
-	overflow: hidden;
+	background: $primaryColor;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before,
-	&:after {
+	&:before {
 		content: "";
 		position: absolute;
-		height: 50%;
 		z-index: -1;
+		top: 0;
+		bottom: 0;
 		left: 0;
 		right: 0;
-		background: $primaryColor;
+		background: $activeColor;
+		@include prefixed(transform, scaleY(0));
+		@include prefixed(transform-origin, 50%);
 		@include prefixed(transition-property, transform);
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-timing-function, ease-out);
-	}
-
-	&:before {
-		top: 0;
-	}
-
-	&:after {
-		top: 50%;
 	}
 
 	&:hover,
@@ -35,11 +28,7 @@
 		color: white;
 
 		&:before {
-		@include prefixed(transform, translateY(-100%));
-		}
-
-		&:after {
-			@include prefixed(transform, translateY(100%));
+			@include prefixed(transform, scaleY(1));
 		}
 	}
 }

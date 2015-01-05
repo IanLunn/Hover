@@ -2,9 +2,8 @@
 @mixin bounce-to-left {
 	@include hacks();
 	position: relative;
-	overflow: hidden;
 	@include prefixed(transition-property, color);
-	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-duration, $slowDuration);
 
 	&:before {
 		content: "";
@@ -15,9 +14,10 @@
 		right: 0;
 		bottom: 0;
 		background: $activeColor;
-		@include prefixed(transform, translateX(100%));
+		@include prefixed(transform, scaleX(0));
+		@include prefixed(transform-origin, 100% 50%);
 		@include prefixed(transition-property, transform);
-		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-duration, $slowDuration);
 		@include prefixed(transition-timing-function, ease-out);
 	}
 
@@ -27,7 +27,7 @@
 		color: white;
 
 		&:before {
-			@include prefixed(transform, translateX(0));
+			@include prefixed(transform, scaleX(1));
 			@include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
 		}
 	}

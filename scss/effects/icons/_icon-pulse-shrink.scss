@@ -14,7 +14,9 @@
 		content: "\f015";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-timing-function, ease-out);
 	}
 

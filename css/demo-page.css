@@ -26,6 +26,17 @@ body {
   line-height: 140%;
 }
 
+.browsehappy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
 img {
   border: none;
 }

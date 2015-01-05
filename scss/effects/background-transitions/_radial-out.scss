@@ -3,6 +3,7 @@
 	@include hacks();
 	position: relative;
 	overflow: hidden;
+	background: $primaryColor;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 

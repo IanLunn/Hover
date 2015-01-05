@@ -2,7 +2,6 @@
 @mixin sweep-to-top {
 	@include hacks();
 	position: relative;
-	overflow: hidden;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 
@@ -15,7 +14,8 @@
 		right: 0;
 		bottom: 0;
 		background: $activeColor;
-		@include prefixed(transform, translateY(100%));
+		@include prefixed(transform, scaleY(0));
+		@include prefixed(transform-origin, 50% 100%);
 		@include prefixed(transition-property, transform);
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-timing-function, ease-out);
@@ -27,7 +27,7 @@
 		color: white;
 
 		&:before {
-			@include prefixed(transform, translateY(0));
+			@include prefixed(transform, scaleY(1));
 		}
 	}
 }

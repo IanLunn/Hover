@@ -12,9 +12,13 @@
 	</head>
 	<body>
 
+		<!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
 		<span id="forkongithub"><a href="https://github.com/IanLunn/Hover">Fork me on GitHub</a></span>
 
-		<h1>Hover.css <a href="https://github.com/IanLunn/Hover/releases" class="sup" title="View release history">2.0</a></h1>
+		<h1>Hover.css <a href="https://github.com/IanLunn/Hover/releases" class="sup" title="View release history">v2</a></h1>
 
 		<p class="intro">A collection of CSS3 powered hover effects to be applied to call to actions, buttons, logos, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS and SASS.</p>
 
@@ -141,24 +145,15 @@
 			<a href="#" class="hvr-overline-from-right">Overline From Right</a>
 
 
-
 			<h2>Shadow and Glow Transitions</h2>
 
+			<a href="#" class="hvr-shadow">Shadow</a>
 			<a href="#" class="hvr-grow-shadow">Grow Shadow</a>
 			<a href="#" class="hvr-float-shadow">Float Shadow</a>
 			<a href="#" class="hvr-glow">Glow</a>
 			<a href="#" class="hvr-shadow-radial">Shadow Radial</a>
 			<a href="#" class="hvr-box-shadow-outset">Box Shadow Outset</a>
 			<a href="#" class="hvr-box-shadow-inset">Box Shadow Inset</a>
-
-
-
-			<h2>3D Transitions</h2>
-
-			<a href="#" class="hvr-key-down">Key Down</a>
-			<a href="#" class="hvr-key-up">Key Up</a>
-			<a href="#" class="hvr-push-in">Push In</a>
-			<a href="#" class="hvr-push-out">Push Out</a>
 
 
 			<h2>Speech Bubbles</h2>
@@ -179,7 +174,6 @@
 			<a href="#" class="hvr-curl-top-right">Curl Top Right</a>
 			<a href="#" class="hvr-curl-bottom-right">Curl Bottom Right</a>
 			<a href="#" class="hvr-curl-bottom-left">Curl Bottom Left</a>
-
 		</div>
 
 
@@ -207,6 +201,24 @@
 				<p class="credit">Created by <a href="http://ianlunn.co.uk/" title="Visit portfolio of Ian Lunn">Ian Lunn - Front End Web Developer</a></p>
 			</div>
 		</div>
+
+		<script>
+			/**
+			 * Used to demonstrate Hover.css only. Not required when adding
+			 * Hover.css to your own pages. Prevents a link from being
+			 * navigated and gaining focus.
+			 */
+			var effects = document.querySelectorAll('.effects')[0];
+
+			effects.addEventListener('click', function(e) {
+
+				if (e.target.className.indexOf('hvr') > -1) {
+					e.preventDefault();
+					e.target.blur();
+
+				}
+			});
+		</script>
 
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 

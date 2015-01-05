@@ -15,18 +15,16 @@
 		border-width: $tipHeight 0 $tipHeight $tipWidth;
 		border-color: transparent transparent transparent $tipColor;
 		@include prefixed(transition-duration, $mediumDuration);
-		@include prefixed(transition-property, right);
+		@include prefixed(transition-property, transform);
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		@include prefixed(transform, translateX(-5px));
-	}
+		@include prefixed(transform, translateX(-($tipWidth)));
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		right: -($tipWidth);
+		&:before {
+			@include prefixed(transform, translateX($tipWidth));
+		}
 	}
 }

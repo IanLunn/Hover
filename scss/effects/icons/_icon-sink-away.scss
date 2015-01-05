@@ -1,5 +1,9 @@
 /* Icon Sink Away */
 @include keyframes(#{$nameSpace}-icon-sink-away) {
+	0% {
+		opacity: 1;
+	}
+
 	100% {
 		opacity: 0;
 		@include prefixed(transform, translateY(1em));
@@ -17,12 +21,15 @@
 		content: "\f056";
 		position: absolute;
 		right: 1em;
+		padding: 0 1px;
 		font-family: FontAwesome;
-
+		@include prefixed(transform, translateZ(0));
 	}
 
 	&:after {
-		@include prefixed(animation-duration, .5s);
+		opacity: 0;
+		@include prefixed(animation-duration, #{$slowDuration});
+		@include prefixed(animation-fill-mode, forwards);
 	}
 
 	&:hover,

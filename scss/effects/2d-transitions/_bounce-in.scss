@@ -1,7 +1,7 @@
 /* Bounce In */
 @mixin bounce-in {
 	@include hacks();
-	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-duration, $slowDuration);
 
 	&:hover,
 	&:focus,
