@@ -51,8 +51,8 @@ p,
 }
 
 [class^="hvr-"] {
-  display: inline-block;
-  vertical-align: middle;
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
   margin: .4em;
   padding: 1em;
   cursor: pointer;

@@ -3,12 +3,12 @@
 // Find out more here: https://github.com/IanLunn/Hover/wiki/Hacks-Explained
 
 @mixin hardwareAccel() {
-	//Improve performance on mobile/tablet devices
+	// Improve performance on mobile/tablet devices
 	@include prefixed(transform, translateZ(0));
 }
 
 @mixin improveAntiAlias() {
-	//Improve aliasing on mobile/tablet devices
+	// Improve aliasing on mobile/tablet devices
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
@@ -18,7 +18,14 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+@mixin forceBlockLevel() {
+	// Transforms need to be block-level to work
+	display: inline-block;
+	vertical-align: middle;
+}
+
 @mixin hacks() {
+	@include forceBlockLevel();
 	@include hardwareAccel();
 	@include improveAntiAlias();
 	@include fontSmooth();

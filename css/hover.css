@@ -13,6 +13,8 @@
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -31,6 +33,8 @@
 
 /* Shrink */
 .hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -73,6 +77,8 @@
 }
 
 .hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -107,6 +113,8 @@
 }
 
 .hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -143,6 +151,8 @@
 }
 
 .hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -189,6 +199,8 @@
 }
 
 .hvr-push {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -223,6 +235,8 @@
 }
 
 .hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -243,6 +257,8 @@
 
 /* Bounce In */
 .hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -261,6 +277,8 @@
 
 /* Bounce Out */
 .hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -279,6 +297,8 @@
 
 /* Rotate */
 .hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -297,6 +317,8 @@
 
 /* Grow Rotate */
 .hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -315,6 +337,8 @@
 
 /* Float */
 .hvr-float {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -335,6 +359,8 @@
 
 /* Sink */
 .hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -403,6 +429,8 @@
 }
 
 .hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -477,6 +505,8 @@
 }
 
 .hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -503,6 +533,8 @@
 
 /* Skew */
 .hvr-skew {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -521,6 +553,8 @@
 
 /* Skew Forward */
 .hvr-skew-forward {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -541,6 +575,8 @@
 
 /* Skew Backward */
 .hvr-skew-backward {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -625,6 +661,8 @@
 }
 
 .hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -709,6 +747,8 @@
 }
 
 .hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -793,6 +833,8 @@
 }
 
 .hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -877,6 +919,8 @@
 }
 
 .hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -961,6 +1005,8 @@
 }
 
 .hvr-wobble-top {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1047,6 +1093,8 @@
 }
 
 .hvr-wobble-bottom {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1133,6 +1181,8 @@
 }
 
 .hvr-wobble-skew {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1177,6 +1227,8 @@
 }
 
 .hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1301,6 +1353,8 @@
 }
 
 .hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1322,6 +1376,8 @@
 /* BACKGROUND TRANSITIONS */
 /* Fade */
 .hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1341,6 +1397,8 @@
 
 /* Sweep To Right */
 .hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1383,6 +1441,8 @@
 
 /* Sweep To Left */
 .hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1425,6 +1485,8 @@
 
 /* Sweep To Bottom */
 .hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1467,6 +1529,8 @@
 
 /* Sweep To Top */
 .hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1509,6 +1573,8 @@
 
 /* Bounce To Right */
 .hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1553,6 +1619,8 @@
 
 /* Bounce To Left */
 .hvr-bounce-to-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1597,6 +1665,8 @@
 
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1641,6 +1711,8 @@
 
 /* Bounce To Top */
 .hvr-bounce-to-top {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1685,6 +1757,8 @@
 
 /* Radial Out */
 .hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1728,6 +1802,8 @@
 
 /* Radial In */
 .hvr-radial-in {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1771,6 +1847,8 @@
 
 /* Rectangle In */
 .hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1812,6 +1890,8 @@
 
 /* Rectangle Out */
 .hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1853,6 +1933,8 @@
 
 /* Shutter In Horizontal */
 .hvr-shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1896,6 +1978,8 @@
 
 /* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1939,6 +2023,8 @@
 
 /* Shutter In Vertical */
 .hvr-shutter-in-vertical {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -1982,6 +2068,8 @@
 
 /* Shutter Out Vertical */
 .hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2057,6 +2145,8 @@
 
 /* Trim */
 .hvr-trim {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2105,6 +2195,8 @@
 }
 
 .hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2151,6 +2243,8 @@
 }
 
 .hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2178,6 +2272,8 @@
 
 /* Outline Out */
 .hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2208,6 +2304,8 @@
 
 /* Outline In */
 .hvr-outline-in {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2241,6 +2339,8 @@
 
 /* Round Corners */
 .hvr-round-corners {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2258,6 +2358,8 @@
 
 /* Underline From Left */
 .hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2289,6 +2391,8 @@
 
 /* Underline From Center */
 .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2321,6 +2425,8 @@
 
 /* Underline From Right */
 .hvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2352,6 +2458,8 @@
 
 /* Overline From Left */
 .hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2383,6 +2491,8 @@
 
 /* Overline From Center */
 .hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2415,6 +2525,8 @@
 
 /* Overline From Right */
 .hvr-overline-from-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2446,6 +2558,8 @@
 
 /* Reveal */
 .hvr-reveal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2481,6 +2595,8 @@
 
 /* Underline Reveal */
 .hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2515,6 +2631,8 @@
 
 /* Overline Reveal */
 .hvr-overline-reveal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2550,6 +2668,8 @@
 /* SHADOW/GLOW TRANSITIONS */
 /* Glow */
 .hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2567,6 +2687,8 @@
 
 /* Shadow */
 .hvr-shadow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2584,6 +2706,8 @@
 
 /* Grow Shadow */
 .hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2603,6 +2727,8 @@
 
 /* Box Shadow Outset */
 .hvr-box-shadow-outset {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2636,6 +2762,8 @@
 
 /* Float Shadow */
 .hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2679,6 +2807,8 @@
 
 /* Shadow Radial */
 .hvr-shadow-radial {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2717,6 +2847,8 @@
 /* SPEECH BUBBLES */
 /* Bubble Top */
 .hvr-bubble-top {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2747,6 +2879,8 @@
 
 /* Bubble Right */
 .hvr-bubble-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2777,6 +2911,8 @@
 
 /* Bubble Bottom */
 .hvr-bubble-bottom {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2807,6 +2943,8 @@
 
 /* Bubble Left */
 .hvr-bubble-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2837,6 +2975,8 @@
 
 /* Bubble Float Top */
 .hvr-bubble-float-top {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2874,6 +3014,8 @@
 
 /* Bubble Float Right */
 .hvr-bubble-float-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2911,6 +3053,8 @@
 
 /* Bubble Float Bottom */
 .hvr-bubble-float-bottom {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2948,6 +3092,8 @@
 
 /* Bubble Float Left */
 .hvr-bubble-float-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2986,6 +3132,8 @@
 /* ICONS */
 /* Icon Back */
 .hvr-icon-back {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3019,6 +3167,8 @@
 
 /* Icon Forward */
 .hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3083,6 +3233,8 @@
 
 /* Icon Down */
 .hvr-icon-down {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3143,6 +3295,8 @@
 
 /* Icon Up */
 .hvr-icon-up {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3172,6 +3326,8 @@
 
 /* Icon Spin */
 .hvr-icon-spin {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3236,6 +3392,8 @@
 
 /* Icon Drop */
 .hvr-icon-drop {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3275,6 +3433,8 @@
 
 /* Icon Fade */
 .hvr-icon-fade {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3328,6 +3488,8 @@
 
 /* Icon Float Away */
 .hvr-icon-float-away {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3385,6 +3547,8 @@
 
 /* Icon Sink Away */
 .hvr-icon-sink-away {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3419,6 +3583,8 @@
 
 /* Icon Grow */
 .hvr-icon-grow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3452,6 +3618,8 @@
 
 /* Icon Shrink */
 .hvr-icon-shrink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3509,6 +3677,8 @@
 }
 
 .hvr-icon-pulse {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3556,6 +3726,8 @@
 }
 
 .hvr-icon-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3605,6 +3777,8 @@
 }
 
 .hvr-icon-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3654,6 +3828,8 @@
 }
 
 .hvr-icon-push {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3707,6 +3883,8 @@
 }
 
 .hvr-icon-pop {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3746,6 +3924,8 @@
 
 /* Icon Bounce */
 .hvr-icon-bounce {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3781,6 +3961,8 @@
 
 /* Icon Rotate */
 .hvr-icon-rotate {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3814,6 +3996,8 @@
 
 /* Icon Grow Rotate */
 .hvr-icon-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3847,6 +4031,8 @@
 
 /* Icon Float */
 .hvr-icon-float {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3880,6 +4066,8 @@
 
 /* Icon Sink */
 .hvr-icon-sink {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -3961,6 +4149,8 @@
 }
 
 .hvr-icon-bob {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4048,6 +4238,8 @@
 }
 
 .hvr-icon-hang {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4151,6 +4343,8 @@
 }
 
 .hvr-icon-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4248,6 +4442,8 @@
 }
 
 .hvr-icon-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4305,6 +4501,8 @@
 }
 
 .hvr-icon-buzz {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4442,6 +4640,8 @@
 }
 
 .hvr-icon-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4476,6 +4676,8 @@
 /* CURLS */
 /* Curl Top Left */
 .hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4511,6 +4713,8 @@
 
 /* Curl Top Right */
 .hvr-curl-top-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4543,6 +4747,8 @@
 
 /* Curl Bottom Right */
 .hvr-curl-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -4575,6 +4781,8 @@
 
 /* Curl Bottom Left */
 .hvr-curl-bottom-left {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
