@@ -1,6 +1,6 @@
 {
   "name": "Hover.css",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "author": "Ian Lunn",
   "devDependencies": {
     "grunt": "~0.4.1",
