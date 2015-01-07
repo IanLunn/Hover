@@ -52,7 +52,7 @@ Example element after applying Hover.css effect:
 <a href="#" class="hvr-grow">Add to Basket</a>
 ```
 
-Note: As of 2.0.0 all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using SASS, this can easily be changed using the `$nameSpace` variable in `scss/_options.scss`.
+Note: As of 2.0.0 all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using SASS/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
 
 ### Reference Hover.css
 
@@ -89,7 +89,7 @@ display: inline-block;
 vertical-align: middle;
 ```
 
-Should you wish to override this behavior, either remove the above CSS from Hover.css or change the `display` property for the element. Be sure to declare the override after the Hover.css declarations so the CSS cascade will take effect. Alternatively, if you are using the SASS version of Hover.css, you can remove/comment out the `forceBlockLevel()` mixin found in `scss/_hacks.scss`.
+Should you wish to override this behavior, either remove the above CSS from Hover.css or change the `display` property for the element. Be sure to declare the override after the Hover.css declarations so the CSS cascade will take effect. Alternatively, if you are using the SASS/LESS version of Hover.css, you can remove/comment out the `forceBlockLevel()` mixin found in `scss/_hacks.scss` or `less/_hacks.less`.
 
 For more information about Transformable elements, see the [CSS Transforms Module](http://www.w3.org/TR/css3-transforms/#transformable-element).
 
@@ -139,11 +139,11 @@ The project consists of the following folders and files:
 - **hover-min.css** - The minified/production version of Hover.css
 - **hover.css** - The development version of Hover.css
 
-### scss
+### scss/less
 
 - **effects** - Contains each individual effect sorted into categorized folders
-- **_hacks.scss, _mixins.scss, _options.scss** - SASS Utilities
-- **hover.scss** - Development/SCSS version of Hover.css
+- **_hacks.scss/_hacks.less, _mixins.scss/_mixins.less, _options.scss/_options.less** - SASS/LESS Utilities
+- **hover.scss/hover.less** - Development version of Hover.css in SCSS and LESS flavours
 
 ### Other
 
@@ -163,15 +163,15 @@ Aside from the above mentioned browsers, Hover.css is supported across all major
 
 ## Using Grunt for Development
 
-Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, SASS will be preprocessed and CSS files will be minified.
+Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, SASS or LESS will be preprocessed (depending on whether you work out of the `scss` or `less` folder) and CSS files will be minified.
 
-**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS mixin should be used for browser prefixing instead. See [Using SASS for Development](#using-sass-for-development).
+**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS/LESS mixin should be used for browser prefixing instead. See [Using SASS for Development](#using-sass-for-development).
 
-## Using SASS for Development
+## Using SASS/LESS for Development
 
-SASS is non-essential but can speed up development. Preprocess SASS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
+SASS/LESS is non-essential but can speed up development. Preprocess SASS/LESS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
 
-SASS is used in the Hover.css project to separate various CSS into specific files. Each effect is within its own file in the `effects` directory. Hover.css also uses the following `.scss` files:
+SASS/LESS is used in the Hover.css project to separate various CSS into specific files. Each effect is within its own file in the `effects` directory. Hover.css also uses the following `.scss` and `.less` files:
 
 ### _hacks.scss
 Contains some hacks applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).

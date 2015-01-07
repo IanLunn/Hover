@@ -1,6 +1,6 @@
 /* Box Shadow Inset */
 @mixin box-shadow-inset {
-	@include hardwareAccel();
+	@include hacks();
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, box-shadow);
 

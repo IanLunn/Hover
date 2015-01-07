@@ -32,7 +32,7 @@
 	&:hover,
 	&:focus,
 	&:active {
-	@include prefixed(animation-name, #{$nameSpace}-wobble-top);
+		@include prefixed(animation-name, #{$nameSpace}-wobble-top);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);
 		@include prefixed(animation-iteration-count, 1);

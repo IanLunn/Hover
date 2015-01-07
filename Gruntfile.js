@@ -15,6 +15,17 @@ module.exports = function(grunt) {
           }
         },
 
+        less: {
+            dist: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    'css/hover.css': 'less/hover.less'
+                }
+            }
+        },
+
         cssmin: {
           combine: {
             files: {
@@ -28,11 +39,27 @@ module.exports = function(grunt) {
           options: {
             livereload: true,
           },
-          css: {
-            files: ['scss/**/*.scss', 'css/*.css', '*.html'],
+
+          reload: {
+            files: ['*.html', 'css/*.css'],
+            options: {
+                spawn: false
+            }
+          },
+
+          scss: {
+            files: ['scss/**/*.scss'],
             tasks: ['sass', 'cssmin'],
             options: {
-              spawn: false,
+              spawn: false
+            }
+          },
+
+          less: {
+            files: ['less/**/*.less'],
+            tasks: ['less', 'cssmin'],
+            options: {
+              spawn: false
             }
           }
         },

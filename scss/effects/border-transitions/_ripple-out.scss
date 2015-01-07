@@ -24,7 +24,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		@include prefixed(animation-duration, .5s);
+		@include prefixed(animation-duration, 1s);
 	}
 
 	&:hover:before,

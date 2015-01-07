@@ -1,0 +1,39 @@
+/* Icon Up */
+.keyframes(~"@{nameSpace}-icon-up", {
+	0%,
+	50%,
+	100% {
+		.prefixed(transform, translateY(0));
+	}
+	25%,
+	75% {
+		.prefixed(transform, translateY(-6px));
+	}
+});
+
+/* Icon Up */
+.icon-up() {
+	.hacks();
+	position: relative;
+	padding-right: 2.2em;
+
+	&:before {
+		content: "\f01b";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		.prefixed(transform, translateZ(0));
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			.prefixed(animation-name, ~"@{nameSpace}-icon-up");
+			.prefixed(animation-duration, .75s);
+			.prefixed(animation-timing-function, ease-out);
+		}
+	}
+}

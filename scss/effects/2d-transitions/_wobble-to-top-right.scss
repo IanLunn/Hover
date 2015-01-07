@@ -29,11 +29,11 @@
 	@include hacks();
 
 	&:hover,
-  &:focus,
-  &:active {
-    @include prefixed(animation-name, #{$nameSpace}-wobble-to-top-right);
-    @include prefixed(animation-duration, 1s);
-    @include prefixed(animation-timing-function, ease-in-out);
-    @include prefixed(animation-iteration-count, 1);
+    &:focus,
+    &:active {
+        @include prefixed(animation-name, #{$nameSpace}-wobble-to-top-right);
+        @include prefixed(animation-duration, 1s);
+        @include prefixed(animation-timing-function, ease-in-out);
+        @include prefixed(animation-iteration-count, 1);
 	}
 }

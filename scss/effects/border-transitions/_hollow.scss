@@ -2,7 +2,7 @@
 @mixin hollow {
 	$borderWidth: 4px;
 
-	@include hardwareAccel();
+	@include hacks();
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, background);
 	box-shadow:

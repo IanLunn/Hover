@@ -2114,8 +2114,14 @@
 /* BORDER TRANSITIONS */
 /* Border Fade */
 .hvr-border-fade {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
@@ -2130,8 +2136,14 @@
 
 /* Hollow */
 .hvr-hollow {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: background;
@@ -2213,8 +2225,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
   -webkit-animation-name: hvr-ripple-out;
@@ -2262,8 +2274,8 @@
   bottom: -12px;
   left: -12px;
   opacity: 0;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 .hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
   -webkit-animation-name: hvr-ripple-in;
@@ -2746,8 +2758,14 @@
 
 /* Box Shadow Inset */
 .hvr-box-shadow-inset {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
