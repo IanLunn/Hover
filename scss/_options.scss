@@ -1,25 +1,39 @@
 // DEFAULT OPTIONS
-$defaultDuration: .3s;
-$primaryColour: #e1e1e1;
-$secondaryColour: #666;
-$shadowColour: rgba(0, 0, 0, .6);
 
-//Speech bubbles options
+// Prefix for Hover class names
+$nameSpace: 'hvr';
+
+// Durations
+$fastDuration: .1s;
+$mediumDuration: .3s;
+$slowDuration: .5s;
+
+// Colors
+$primaryColor: #e1e1e1;
+$secondaryColor: #666;
+$highlightColor: #ccc;
+$activeColor: #2098D1;
+$shadowColor: rgba(0, 0, 0, .6);
+
+// Speech bubbles options
 $tipWidth: 10px;  //the width of the speech bubble tip
 $tipHeight: 10px; //the height of the speech bubble tip
-$tipColour: $primaryColour;
+$tipColor: $primaryColor;
+
+// Arrows options
+$spaceBetweenTextAndArrows: 2.2em;
 
 // Curl dimensions
 $curlWidth: 25px;
 $curlHeight: 25px;
 
-// Curl colours
-$revealAreaColour: white;			// reveal area behind the curl
-$curlLineColour: #aaa;			   // crease line
-$curlTransitionColour: #ccc;	 // colour transitioning from crease line to final colour
-$curlLastColour: white;				// final colour of the back of the curl
+// Curl colors
+$revealAreaColor: white;    // reveal area behind the curl
+$curlLineColor: #aaa;       // crease line
+$curlTransitionColor: #ccc;	// color transitioning from crease line to final color
+$curlLastColor: white;		// final color of the back of the curl
 
-// Browser Prefixes
+// Browser Prefixes - Which CSS prefixes should be used?
 $webkit: true;
 $moz: false;
 $ms: false;

@@ -1,0 +1,26 @@
+/* Icon Spin */
+.icon-spin() {
+	.hacks();
+	position: relative;
+	padding-right: 2.2em;
+
+	&:before {
+		content: "\f021";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		.prefixed(transition-duration, 1s);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-timing-function, ease-in-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			.prefixed(transform, rotate(360deg));
+		}
+	}
+}

@@ -1,0 +1,28 @@
+/* Icon Float */
+@mixin icon-float {
+	@include hacks();
+	position: relative;
+	padding-right: 2.2em;
+	@include prefixed(transition-duration, $mediumDuration);
+
+	&:before {
+		content: "\f01b";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, translateY(-4px));
+		}
+	}
+}

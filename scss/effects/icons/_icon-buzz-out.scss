@@ -1,0 +1,70 @@
+/* Icon Buzz Out */
+@include keyframes(#{$nameSpace}-icon-buzz-out) {
+	10% {
+		@include prefixed(transform, translateX(3px) rotate(2deg));
+	}
+
+	20% {
+		@include prefixed(transform, translateX(-3px) rotate(-2deg));
+	}
+
+	30% {
+		@include prefixed(transform, translateX(3px) rotate(2deg));
+	}
+
+	40% {
+		@include prefixed(transform, translateX(-3px) rotate(-2deg));
+	}
+
+	50% {
+		@include prefixed(transform, translateX(2px) rotate(1deg));
+	}
+
+	60% {
+		@include prefixed(transform, translateX(-2px) rotate(-1deg));
+	}
+
+	70% {
+		@include prefixed(transform, translateX(2px) rotate(1deg));
+	}
+
+	80% {
+		@include prefixed(transform, translateX(-2px) rotate(-1deg));
+	}
+
+	90% {
+		@include prefixed(transform, translateX(1px) rotate(0));
+	}
+
+	100% {
+		@include prefixed(transform, translateX(-1px) rotate(0));
+	}
+}
+
+@mixin icon-buzz-out {
+	@include hacks();
+	position: relative;
+	padding-right: 2.2em;
+	@include prefixed(transition-duration, $mediumDuration);
+
+	&:before {
+		content: "\f023";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(animation-name, #{$nameSpace}-icon-buzz-out);
+			@include prefixed(animation-duration, .75s);
+			@include prefixed(animation-timing-function, linear);
+			@include prefixed(animation-iteration-count, 1);
+		}
+	}
+}

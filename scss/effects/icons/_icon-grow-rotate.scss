@@ -1,0 +1,30 @@
+/* Icon Grow Rotate */
+@mixin icon-grow-rotate {
+	$duration: $mediumDuration;
+
+	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
+	@include prefixed(transition-duration, $duration);
+
+	&:before {
+		content: "\f095";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, $duration);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, scale(1.5) rotate(12deg));
+		}
+	}
+}

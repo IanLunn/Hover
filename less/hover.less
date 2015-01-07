@@ -1,0 +1,562 @@
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.0
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with LESS.
+ */
+
+
+@import "_options";
+@import "_mixins";
+@import "_hacks";
+
+
+/* 2D TRANSITIONS */
+@import "effects/2d-transitions/_grow";
+.@{nameSpace}-grow {
+	.grow();
+}
+
+@import "effects/2d-transitions/_shrink";
+.@{nameSpace}-shrink {
+	.shrink();
+}
+
+@import "effects/2d-transitions/_pulse";
+.@{nameSpace}-pulse {
+	.pulse();
+}
+
+@import "effects/2d-transitions/_pulse-grow";
+.@{nameSpace}-pulse-grow {
+	.pulse-grow();
+}
+
+@import "effects/2d-transitions/_pulse-shrink";
+.@{nameSpace}-pulse-shrink {
+	.pulse-shrink();
+}
+
+@import "effects/2d-transitions/_push";
+.@{nameSpace}-push {
+	.push();
+}
+
+@import "effects/2d-transitions/_pop";
+.@{nameSpace}-pop {
+	.pop();
+}
+
+@import "effects/2d-transitions/_bounce-in";
+.@{nameSpace}-bounce-in {
+	.bounce-in();
+}
+
+@import "effects/2d-transitions/_bounce-out";
+.@{nameSpace}-bounce-out {
+	.bounce-out();
+}
+
+@import "effects/2d-transitions/_rotate";
+.@{nameSpace}-rotate {
+	.rotate();
+}
+
+@import "effects/2d-transitions/_grow-rotate";
+.@{nameSpace}-grow-rotate {
+	.grow-rotate();
+}
+
+@import "effects/2d-transitions/_float";
+.@{nameSpace}-float {
+	.float();
+}
+
+@import "effects/2d-transitions/_sink";
+.@{nameSpace}-sink {
+	.sink();
+}
+
+@import "effects/2d-transitions/_bob";
+.@{nameSpace}-bob {
+	.bob();
+}
+
+@import "effects/2d-transitions/_hang";
+.@{nameSpace}-hang {
+	.hang();
+}
+
+@import "effects/2d-transitions/_skew";
+.@{nameSpace}-skew {
+	.skew();
+}
+
+@import "effects/2d-transitions/_skew-forward";
+.@{nameSpace}-skew-forward {
+	.skew-forward();
+}
+
+@import "effects/2d-transitions/_skew-backward";
+.@{nameSpace}-skew-backward {
+    .skew-backward();
+}
+
+@import "effects/2d-transitions/_wobble-vertical";
+.@{nameSpace}-wobble-vertical {
+	.wobble-vertical();
+}
+
+@import "effects/2d-transitions/_wobble-horizontal";
+.@{nameSpace}-wobble-horizontal {
+	.wobble-horizontal();
+}
+
+@import "effects/2d-transitions/_wobble-to-bottom-right";
+.@{nameSpace}-wobble-to-bottom-right {
+    .wobble-to-bottom-right();
+}
+
+@import "effects/2d-transitions/_wobble-to-top-right";
+.@{nameSpace}-wobble-to-top-right {
+    .wobble-to-top-right();
+}
+
+@import "effects/2d-transitions/_wobble-top";
+.@{nameSpace}-wobble-top {
+	.wobble-top();
+}
+
+@import "effects/2d-transitions/_wobble-bottom";
+.@{nameSpace}-wobble-bottom {
+	.wobble-bottom();
+}
+
+@import "effects/2d-transitions/_wobble-skew";
+.@{nameSpace}-wobble-skew {
+    .wobble-skew();
+}
+
+@import "effects/2d-transitions/_buzz";
+.@{nameSpace}-buzz {
+    .buzz();
+}
+
+@import "effects/2d-transitions/_buzz-out";
+.@{nameSpace}-buzz-out {
+    .buzz-out();
+}
+
+/* BACKGROUND TRANSITIONS */
+@import "effects/background-transitions/_fade";
+.@{nameSpace}-fade {
+	.fade();
+}
+
+@import "effects/background-transitions/_sweep-to-right";
+.@{nameSpace}-sweep-to-right {
+	.sweep-to-right();
+}
+
+@import "effects/background-transitions/_sweep-to-left";
+.@{nameSpace}-sweep-to-left {
+	.sweep-to-left();
+}
+
+@import "effects/background-transitions/_sweep-to-bottom";
+.@{nameSpace}-sweep-to-bottom {
+	.sweep-to-bottom();
+}
+
+@import "effects/background-transitions/_sweep-to-top";
+.@{nameSpace}-sweep-to-top {
+	.sweep-to-top();
+}
+
+@import "effects/background-transitions/_bounce-to-right";
+.@{nameSpace}-bounce-to-right {
+	.bounce-to-right();
+}
+
+@import "effects/background-transitions/_bounce-to-left";
+.@{nameSpace}-bounce-to-left {
+	.bounce-to-left();
+}
+
+@import "effects/background-transitions/_bounce-to-bottom";
+.@{nameSpace}-bounce-to-bottom {
+	.bounce-to-bottom();
+}
+
+@import "effects/background-transitions/_bounce-to-top";
+.@{nameSpace}-bounce-to-top {
+	.bounce-to-top();
+}
+
+@import "effects/background-transitions/_radial-out";
+.@{nameSpace}-radial-out {
+	.radial-out();
+}
+
+@import "effects/background-transitions/_radial-in";
+.@{nameSpace}-radial-in {
+	.radial-in();
+}
+
+@import "effects/background-transitions/_rectangle-in";
+.@{nameSpace}-rectangle-in {
+	.rectangle-in();
+}
+
+@import "effects/background-transitions/_rectangle-out";
+.@{nameSpace}-rectangle-out {
+	.rectangle-out();
+}
+
+@import "effects/background-transitions/_shutter-in-horizontal";
+.@{nameSpace}-shutter-in-horizontal {
+	.shutter-in-horizontal();
+}
+
+@import "effects/background-transitions/_shutter-out-horizontal";
+.@{nameSpace}-shutter-out-horizontal {
+	.shutter-out-horizontal();
+}
+
+@import "effects/background-transitions/_shutter-in-vertical";
+.@{nameSpace}-shutter-in-vertical {
+	.shutter-in-vertical();
+}
+
+@import "effects/background-transitions/_shutter-out-vertical";
+.@{nameSpace}-shutter-out-vertical {
+	.shutter-out-vertical();
+}
+
+
+/* BORDER TRANSITIONS */
+@import "effects/border-transitions/_border-fade";
+.@{nameSpace}-border-fade {
+	.border-fade();
+}
+
+@import "effects/border-transitions/_hollow";
+.@{nameSpace}-hollow {
+	.hollow();
+}
+
+@import "effects/border-transitions/_trim";
+.@{nameSpace}-trim {
+	.trim();
+}
+
+@import "effects/border-transitions/_ripple-out";
+.@{nameSpace}-ripple-out {
+	.ripple-out();
+}
+
+@import "effects/border-transitions/_ripple-in";
+.@{nameSpace}-ripple-in {
+	.ripple-in();
+}
+
+@import "effects/border-transitions/_outline-out";
+.@{nameSpace}-outline-out {
+	.outline-out();
+}
+
+@import "effects/border-transitions/_outline-in";
+.@{nameSpace}-outline-in {
+	.outline-in();
+}
+
+@import "effects/border-transitions/_round-corners";
+.@{nameSpace}-round-corners {
+	.round-corners();
+}
+
+@import "effects/border-transitions/_underline-from-left";
+.@{nameSpace}-underline-from-left {
+	.underline-from-left();
+}
+
+@import "effects/border-transitions/_underline-from-center";
+.@{nameSpace}-underline-from-center {
+	.underline-from-center();
+}
+
+@import "effects/border-transitions/_underline-from-right";
+.@{nameSpace}-underline-from-right {
+	.underline-from-right();
+}
+
+@import "effects/border-transitions/_overline-from-left";
+.@{nameSpace}-overline-from-left {
+	.overline-from-left();
+}
+
+@import "effects/border-transitions/_overline-from-center";
+.@{nameSpace}-overline-from-center {
+	.overline-from-center();
+}
+
+@import "effects/border-transitions/_overline-from-right";
+.@{nameSpace}-overline-from-right {
+	.overline-from-right();
+}
+
+@import "effects/border-transitions/_reveal";
+.@{nameSpace}-reveal {
+	.reveal();
+}
+
+@import "effects/border-transitions/_underline-reveal";
+.@{nameSpace}-underline-reveal {
+	.underline-reveal();
+}
+
+@import "effects/border-transitions/_overline-reveal";
+.@{nameSpace}-overline-reveal {
+	.overline-reveal();
+}
+
+
+/* SHADOW/GLOW TRANSITIONS */
+@import "effects/shadow-and-glow-transitions/_glow";
+.@{nameSpace}-glow {
+	.glow();
+}
+
+@import "effects/shadow-and-glow-transitions/_shadow";
+.@{nameSpace}-shadow {
+	.shadow();
+}
+
+@import "effects/shadow-and-glow-transitions/_grow-shadow";
+.@{nameSpace}-grow-shadow {
+	.grow-shadow();
+}
+
+@import "effects/shadow-and-glow-transitions/_box-shadow-outset";
+.@{nameSpace}-box-shadow-outset {
+	.box-shadow-outset();
+}
+
+@import "effects/shadow-and-glow-transitions/_box-shadow-inset";
+.@{nameSpace}-box-shadow-inset {
+	.box-shadow-inset();
+}
+
+@import "effects/shadow-and-glow-transitions/_float-shadow";
+.@{nameSpace}-float-shadow {
+	.float-shadow();
+}
+
+@import "effects/shadow-and-glow-transitions/_shadow-radial";
+.@{nameSpace}-shadow-radial {
+	.shadow-radial();
+}
+
+/* SPEECH BUBBLES */
+@import "effects/speech-bubbles/_bubble-top";
+.@{nameSpace}-bubble-top {
+	.bubble-top();
+}
+
+@import "effects/speech-bubbles/_bubble-right";
+.@{nameSpace}-bubble-right {
+	.bubble-right();
+}
+
+@import "effects/speech-bubbles/_bubble-bottom";
+.@{nameSpace}-bubble-bottom {
+	.bubble-bottom();
+}
+
+@import "effects/speech-bubbles/_bubble-left";
+.@{nameSpace}-bubble-left {
+	.bubble-left();
+}
+
+@import "effects/speech-bubbles/_bubble-float-top";
+.@{nameSpace}-bubble-float-top {
+	.bubble-float-top();
+}
+
+@import "effects/speech-bubbles/_bubble-float-right";
+.@{nameSpace}-bubble-float-right {
+	.bubble-float-right();
+}
+
+@import "effects/speech-bubbles/_bubble-float-bottom";
+.@{nameSpace}-bubble-float-bottom {
+	.bubble-float-bottom();
+}
+
+@import "effects/speech-bubbles/_bubble-float-left";
+.@{nameSpace}-bubble-float-left {
+	.bubble-float-left();
+}
+
+/* ICONS */
+@import "effects/icons/_icon-back";
+.@{nameSpace}-icon-back {
+	.icon-back();
+}
+
+@import "effects/icons/_icon-forward";
+.@{nameSpace}-icon-forward {
+	.icon-forward();
+}
+
+@import "effects/icons/_icon-down";
+.@{nameSpace}-icon-down {
+	.icon-down();
+}
+
+@import "effects/icons/_icon-up";
+.@{nameSpace}-icon-up {
+	.icon-up();
+}
+
+@import "effects/icons/_icon-spin";
+.@{nameSpace}-icon-spin {
+	.icon-spin();
+}
+
+@import "effects/icons/_icon-drop";
+.@{nameSpace}-icon-drop {
+	.icon-drop();
+}
+
+@import "effects/icons/_icon-fade";
+.@{nameSpace}-icon-fade {
+	.icon-fade();
+}
+
+@import "effects/icons/_icon-float-away";
+.@{nameSpace}-icon-float-away {
+	.icon-float-away();
+}
+
+@import "effects/icons/_icon-sink-away";
+.@{nameSpace}-icon-sink-away {
+	.icon-sink-away();
+}
+
+@import "effects/icons/_icon-grow";
+.@{nameSpace}-icon-grow {
+	.icon-grow();
+}
+
+@import "effects/icons/_icon-shrink";
+.@{nameSpace}-icon-shrink {
+	.icon-shrink();
+}
+
+@import "effects/icons/_icon-pulse";
+.@{nameSpace}-icon-pulse {
+	.icon-pulse();
+}
+
+@import "effects/icons/_icon-pulse-grow";
+.@{nameSpace}-icon-pulse-grow {
+	.icon-pulse-grow();
+}
+
+@import "effects/icons/_icon-pulse-shrink";
+.@{nameSpace}-icon-pulse-shrink {
+	.icon-pulse-shrink();
+}
+
+@import "effects/icons/_icon-push";
+.@{nameSpace}-icon-push {
+	.icon-push();
+}
+
+@import "effects/icons/_icon-pop";
+.@{nameSpace}-icon-pop {
+	.icon-pop();
+}
+
+@import "effects/icons/_icon-bounce";
+.@{nameSpace}-icon-bounce {
+	.icon-bounce();
+}
+
+@import "effects/icons/_icon-rotate";
+.@{nameSpace}-icon-rotate {
+	.icon-rotate();
+}
+
+@import "effects/icons/_icon-grow-rotate";
+.@{nameSpace}-icon-grow-rotate {
+	.icon-grow-rotate();
+}
+
+@import "effects/icons/_icon-float";
+.@{nameSpace}-icon-float {
+	.icon-float();
+}
+
+@import "effects/icons/_icon-sink";
+.@{nameSpace}-icon-sink {
+	.icon-sink();
+}
+
+@import "effects/icons/_icon-bob";
+.@{nameSpace}-icon-bob {
+	.icon-bob();
+}
+
+@import "effects/icons/_icon-hang";
+.@{nameSpace}-icon-hang {
+	.icon-hang();
+}
+
+@import "effects/icons/_icon-wobble-horizontal";
+.@{nameSpace}-icon-wobble-horizontal {
+	.icon-wobble-horizontal();
+}
+
+@import "effects/icons/_icon-wobble-vertical";
+.@{nameSpace}-icon-wobble-vertical {
+	.icon-wobble-vertical();
+}
+
+@import "effects/icons/_icon-buzz";
+.@{nameSpace}-icon-buzz {
+	.icon-buzz();
+}
+
+@import "effects/icons/_icon-buzz-out";
+.@{nameSpace}-icon-buzz-out {
+	.icon-buzz-out();
+}
+
+/* CURLS */
+@import "effects/curls/_curl-top-left";
+.@{nameSpace}-curl-top-left {
+	.curl-top-left();
+}
+
+@import "effects/curls/_curl-top-right";
+.@{nameSpace}-curl-top-right {
+	.curl-top-right();
+}
+
+@import "effects/curls/_curl-bottom-right";
+.@{nameSpace}-curl-bottom-right {
+	.curl-bottom-right();
+}
+
+@import "effects/curls/_curl-bottom-left";
+.@{nameSpace}-curl-bottom-left {
+	.curl-bottom-left();
+}

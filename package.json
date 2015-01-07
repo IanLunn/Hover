@@ -1,13 +1,22 @@
 {
   "name": "Hover.css",
-  "version": "1.0.10",
+  "version": "2.0.0",
   "author": "Ian Lunn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IanLunn/Hover"
+  },
+  "bugs": {
+    "url": "https://github.com/IanLunn/Hover/issues"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-sass": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-connect": "~0.5.0"
+    "grunt-version": "^0.3.0"
   },
   "dependencies": {
     "load-grunt-tasks": "~0.2.0"

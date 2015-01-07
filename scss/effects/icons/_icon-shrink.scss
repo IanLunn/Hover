@@ -1,0 +1,28 @@
+/* Icon Shrink */
+@mixin icon-shrink {
+	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
+	@include prefixed(transition-duration, $mediumDuration);
+
+	&:before {
+		content: "\f119";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, scale(.8));
+		}
+	}
+}

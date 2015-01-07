@@ -1,0 +1,28 @@
+/* Icon Back */
+@mixin icon-back {
+	@include hacks();
+	position: relative;
+	padding-left: 2.2em;
+	@include prefixed(transition-duration, $fastDuration);
+
+	&:before {
+		content: "\f137";
+		position: absolute;
+		left: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, $fastDuration);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, translateX(-4px));
+		}
+	}
+}

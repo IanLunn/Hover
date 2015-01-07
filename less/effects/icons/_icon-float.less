@@ -1,0 +1,28 @@
+/* Icon Float */
+.icon-float() {
+	.hacks();
+	position: relative;
+	padding-right: 2.2em;
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "\f01b";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+		.prefixed(transform, translateZ(0));
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			.prefixed(transform, translateY(-4px));
+		}
+	}
+}

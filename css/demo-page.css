@@ -10,26 +10,92 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 
+/**
+ * The following are default styles for the demo page,
+ * you don't need to include these on your own site.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 body {
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   font-family: sans-serif;
   color: #333;
   line-height: 140%;
+}
+
+.browsehappy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    background: black;
+    color: white;
+    text-align: center;
 }
 
 img {
   border: none;
 }
 
+small {
+    display: block;
+}
+
+p,
+[class^="hvr-"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+[class^="hvr-"] {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  background: #e1e1e1;
+  text-decoration: none;
+  color: #666;
+  /* Prevent highlight colour when element is tapped */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .aligncenter {
   text-align: center;
 }
 
+.sup {
+    vertical-align: super;
+    margin-left: -1em;
+    padding: .21875em;
+    line-height: 100%;
+    font-size: .21875em;
+    border: #eee solid 1px;
+    border-radius: 4px;
+    color: inherit;
+}
+
+.sup:hover {
+    background: #eee;
+}
+
+a {
+    color: #2098D1;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.tutorial:hover {
+    color: #207AD1;
+}
+
 .tutorial {
-  display: block;
+  display: inline-block;
   font-size: .8em;
+  font-weight: bold;
 }
 
 .tutorial:hover,
@@ -40,13 +106,13 @@ img {
 
 .intro {
   max-width: 680px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .button.cta {
   display: inline-block;
   position: relative;
-  margin: 2em 0 1em 0;
+  margin: 1.2em 0 1em 0;
   padding: 1em;
   background: #2098D1;
   border: none;
@@ -55,8 +121,8 @@ img {
   color: white;
 }
 
-#effects {
-  margin-top: 5em;
+.effects {
+  margin-top: 6em;
 }
 
 h1 {
@@ -86,21 +152,26 @@ h2 {
 
 .credit {
   font-size: .8em;
-}
-
-.footer a:hover,
-.footer a:focus,
-.footer a:active {
-  text-decoration: underline;
+  font-weight: normal;
 }
 
 .social {
-  margin-top: 2em;
+  margin-top: 2.6em;
 }
 
 .social-button {
   display: inline-block;
   vertical-align: middle;
+}
+
+.twitter-follow-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.follow {
+    margin-bottom: 20px;
+    line-height: 200%;
 }
 
 .author {
@@ -109,9 +180,17 @@ h2 {
   font-weight: 900;
 }
 
+.author [class^="hvr-"] {
+    background: transparent;
+}
+
 .author .logo {
   display: block;
   margin-bottom: .8em;
+}
+
+#forkongithub {
+    display: none;
 }
 
 #forkongithub a {
@@ -132,7 +211,7 @@ h2 {
 #forkongithub a:hover,
 #forkongithub a:focus,
 #forkongithub a:active {
-  background: #060;
+  background: #2098D1;
   color: #fff;
 }
 
@@ -153,7 +232,7 @@ h2 {
   top: auto;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 640px) {
   #forkongithub {
     position: absolute;
     display: block;
