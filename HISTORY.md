@@ -1,6 +1,7 @@
-## 2.0.0 - Jan 6, 2014
+## 2.0.0 - Jan 7, 2014
 
 - Added lots of new effects
+- Added LESS support
 - Prefixed all effect names with `hvr-` (can be changed in `scss/_options.scss`)
 - Updated some effects for better performance and/or browser support
 - Moved default button styles out of library

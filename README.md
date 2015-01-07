@@ -1,6 +1,6 @@
 # Hover.css
 
-A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS and SASS.
+A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, SASS, and LESS.
 
 [Demo](http://ianlunn.github.io/Hover)  |
 [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
@@ -8,33 +8,31 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 ## How To Use
 Hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
 
-###Copy and Paste an Effect
+### Copy and Paste an Effect
 If you plan on only using one or several effects, it's better practice to copy and paste an effect into your own stylesheet, so a user doesn't have to download `css/hover.css` in its entirety.
 
-Assuming you want to use the `Grow` effect:
+Assuming you want to use the Grow effect:
 
 1. Download Hover.css
-2. In `css/hover.css`, find the 'Grow' CSS (each effect is named using a comment above it):
+2. In `css/hover.css`, find the Grow CSS (each effect is named using a comment above it):
 
     ```css
     /* Grow */
-
     .hvr-grow {
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-property: -webkit-transform;
-      transition-property: transform;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      -webkit-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      transform: translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
     }
 
-    .hvr-grow:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.1);
     }
     ```
 3. Copy this effect and then paste it into your own stylesheet.
@@ -52,7 +50,7 @@ Example element after applying Hover.css effect:
 <a href="#" class="hvr-grow">Add to Basket</a>
 ```
 
-Note: As of 2.0.0 all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using SASS/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
+**Note**: As of `2.0.0` all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using SASS/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
 
 ### Reference Hover.css
 
@@ -66,7 +64,7 @@ If you plan on using many Hover.css effects, you may like to reference the entir
 	<link href="css/hover-min.css" rel="stylesheet">
 </head>
 ```
-4. Assuming you want to use the 'Grow' effect, in the HTML file you'd like to use this effect, add the class of `.hvr-grow` to your chosen element.
+4. Assuming you want to use the Grow effect, in the HTML file you'd like to use this effect, add the class of `.hvr-grow` to your chosen element.
 
 Example element before applying Hover.css effect:
 
@@ -119,7 +117,7 @@ Hover.css icons are added to elements via the `:before` pseudo-element. Let's ta
 
 What's important in the above example are the `font-family` and `content` declarations. `font-family: FontAwesome` tells the browser we want to use a FontAwesome icon in this pseudo-element, and the `content` value says which one. Should you wish to change the icon, change the value of the `content` property. A [full list of the values and the icon they represent can be found here](http://astronautweb.co/snippet/font-awesome/#font-awesome-list).
 
-If you'd rather not tamper with Hover.css itself, you can override the default content value simply by declaring the same declaration again (providing it be declared after the default one either in Hover.css or your own stylesheet):
+If you'd rather not tamper with Hover.css itself, you can override the default content value simply by declaring the same declaration again (providing it be declared after the default one either in Hover.css or another stylesheet):
 
 ```css
 .hvr-icon-forward:before {
@@ -143,7 +141,7 @@ The project consists of the following folders and files:
 
 - **effects** - Contains each individual effect sorted into categorized folders
 - **_hacks.scss/_hacks.less, _mixins.scss/_mixins.less, _options.scss/_options.less** - SASS/LESS Utilities
-- **hover.scss/hover.less** - Development version of Hover.css in SCSS and LESS flavours
+- **hover.scss/hover.less** - Development version of Hover.css in SASS and LESS flavours
 
 ### Other
 
@@ -165,44 +163,61 @@ Aside from the above mentioned browsers, Hover.css is supported across all major
 
 Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, SASS or LESS will be preprocessed (depending on whether you work out of the `scss` or `less` folder) and CSS files will be minified.
 
-**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS/LESS mixin should be used for browser prefixing instead. See [Using SASS for Development](#using-sass-for-development).
+**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` SASS/LESS mixin should be used for browser prefixing instead. See [Using SASS/LESS for Development](#using-sass-less-for-development) and [Using LESS for Development].
 
 ## Using SASS/LESS for Development
 
-SASS/LESS is non-essential but can speed up development. Preprocess SASS/LESS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
+SASS/LESS are non-essential but can speed up development. Preprocess SASS/LESS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
 
 SASS/LESS is used in the Hover.css project to separate various CSS into specific files. Each effect is within its own file in the `effects` directory. Hover.css also uses the following `.scss` and `.less` files:
 
-### _hacks.scss
-Contains some hacks applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).
+### _hacks
+Contains hacks (undesirable but usually necessary lines of code) applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).
 
-### _mixins.scss
-Contains `prefixed(property, value)` and `keyframes(keyframe-name)` mixins that apply the necessary prefixes you specify in `_options.scss` to properties and keyframes.
+### _mixins
+Contains `prefixed` and `keyframes` mixins that apply the necessary prefixes you specify in `_options.scss` / `_options.ess` to properties and keyframes.
 
-`prefixed(property, value)` can be used like so:
+Properties can be prefixed like so:
 
-```
+- SASS:
+```css
 @include prefixed(transition-duration, .3s);
 ```
-
-The `prefixed(property, value)` mixin is passed the property you want to prefix, followed by its value.
-
-`keyframes(keyframe-name)` can be used like so:
-
+- LESS:
+```css
+.prefixed(transition-duration, .3s);
 ```
+
+The `prefixed` mixin is passed the property you want to prefix, followed by its value.
+
+Keyframes can be prefixed like so:
+
+- SASS:
+```css
 @include keyframes(my-animation) {
-  to {
-    color: red;
-  }
+    to {
+        color: red;
+    }
 }
 ```
+The `keyframes` mixin is passed the keyframe name, followed by the content using the @content directive.
 
-The `keyframes(keyframe-name)` mixin is passed the keyframe name, followed by the content of your keyframe within parenthesis `{}`.
 
-### _options.scss
-Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed()` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
+- LESS:
+```css
+.keyframes(my-animation, {
+    to {
+        color: red;
+    }
+});
+```
+The `keyframes` mixin is passed the keyframe name, followed by the content, both as arguments.
 
-As of 2.0.0, `_options.scss` also includes a `$nameSpace` option which allows you to change the name all classes are prefixed with. The default namespace is `hvr`.
+
+### _options
+Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
+
+As of `2.0.0`, `_options` also includes a `$nameSpace` / `@nameSpace` option which allows you to change the name all classes are prefixed with. The default namespace is `hvr`.
 
 ## License
 Hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
@@ -213,7 +228,7 @@ Retaining the author information at the top of `css/hover.css` and placing it on
 
 [Ian Lunn](http://ianlunn.co.uk) is a Freelance Front-end Developer and author of [CSS3 Foundations](http://css3foundations.com/).
 
-Hire [Ian](http://ianlunn.co.uk) for responsive websites, WordPress websites, animation, and optimization.
+Hire [Ian](http://ianlunn.co.uk) for responsive websites, WordPress websites, JavaScript, animation, and optimization.
 
 ## Support Future Development
 
