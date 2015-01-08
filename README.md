@@ -169,7 +169,7 @@ Aside from the above mentioned browsers, Hover.css is supported across all major
 
 Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, Sass or LESS will be preprocessed (depending on whether you work out of the `scss` or `less` folder) and CSS files will be minified.
 
-**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` Sass/LESS mixin should be used for browser prefixing instead. See [Using Sass/LESS for Development](#using-Sassless-for-development) and [Using LESS for Development].
+**Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` Sass/LESS mixin should be used for browser prefixing instead. See [Using Sass/LESS for Development](#using-sassless-for-development) and [Using LESS for Development].
 
 ## Using Sass/LESS for Development
 
