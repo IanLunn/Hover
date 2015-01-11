@@ -20,189 +20,189 @@
 /* 2D TRANSITIONS */
 @import "effects/2d-transitions/grow";
 @if $include-classes {
-		.#{$nameSpace}-grow {
+	.#{$nameSpace}-grow {
 		@include grow();
 	}
 }
 
 @import "effects/2d-transitions/shrink";
 @if $include-classes {
-		.#{$nameSpace}-shrink {
+	.#{$nameSpace}-shrink {
 		@include shrink();
 	}
 }
 
 @import "effects/2d-transitions/pulse";
 @if $include-classes {
-		.#{$nameSpace}-pulse {
+	.#{$nameSpace}-pulse {
 		@include pulse();
 	}
 }
 
 @import "effects/2d-transitions/pulse-grow";
 @if $include-classes {
-		.#{$nameSpace}-pulse-grow {
+	.#{$nameSpace}-pulse-grow {
 		@include pulse-grow();
 	}
 }
 
 @import "effects/2d-transitions/pulse-shrink";
 @if $include-classes {
-		.#{$nameSpace}-pulse-shrink {
+	.#{$nameSpace}-pulse-shrink {
 		@include pulse-shrink();
 	}
 }
 
 @import "effects/2d-transitions/push";
 @if $include-classes {
-		.#{$nameSpace}-push {
+	.#{$nameSpace}-push {
 		@include push();
 	}
 }
 
 @import "effects/2d-transitions/pop";
 @if $include-classes {
-		.#{$nameSpace}-pop {
+	.#{$nameSpace}-pop {
 		@include pop();
 	}
 }
 
 @import "effects/2d-transitions/bounce-in";
 @if $include-classes {
-		.#{$nameSpace}-bounce-in {
+	.#{$nameSpace}-bounce-in {
 		@include bounce-in();
 	}
 }
 
 @import "effects/2d-transitions/bounce-out";
 @if $include-classes {
-		.#{$nameSpace}-bounce-out {
+	.#{$nameSpace}-bounce-out {
 		@include bounce-out();
 	}
 }
 
 @import "effects/2d-transitions/rotate";
 @if $include-classes {
-		.#{$nameSpace}-rotate {
+	.#{$nameSpace}-rotate {
 		@include rotate();
 	}
 }
 
 @import "effects/2d-transitions/grow-rotate";
 @if $include-classes {
-		.#{$nameSpace}-grow-rotate {
+	.#{$nameSpace}-grow-rotate {
 		@include grow-rotate();
 	}
 }
 
 @import "effects/2d-transitions/float";
 @if $include-classes {
-		.#{$nameSpace}-float {
+	.#{$nameSpace}-float {
 		@include float();
 	}
 }
 
 @import "effects/2d-transitions/sink";
 @if $include-classes {
-		.#{$nameSpace}-sink {
+	.#{$nameSpace}-sink {
 		@include sink();
 	}
 }
 
 @import "effects/2d-transitions/bob";
 @if $include-classes {
-		.#{$nameSpace}-bob {
+	.#{$nameSpace}-bob {
 		@include bob();
 	}
 }
 
 @import "effects/2d-transitions/hang";
 @if $include-classes {
-		.#{$nameSpace}-hang {
+	.#{$nameSpace}-hang {
 		@include hang();
 	}
 }
 
 @import "effects/2d-transitions/skew";
 @if $include-classes {
-		.#{$nameSpace}-skew {
+	.#{$nameSpace}-skew {
 		@include skew();
 	}
 }
 
 @import "effects/2d-transitions/skew-forward";
 @if $include-classes {
-		.#{$nameSpace}-skew-forward {
+	.#{$nameSpace}-skew-forward {
 		@include skew-forward();
 	}
 }
 
 @import "effects/2d-transitions/skew-backward";
 @if $include-classes {
-		.#{$nameSpace}-skew-backward {
+	.#{$nameSpace}-skew-backward {
 	    @include skew-backward();
 	}
 }
 
 @import "effects/2d-transitions/wobble-vertical";
 @if $include-classes {
-		.#{$nameSpace}-wobble-vertical {
+	.#{$nameSpace}-wobble-vertical {
 		@include wobble-vertical();
 	}
 }
 
 @import "effects/2d-transitions/wobble-horizontal";
 @if $include-classes {
-		.#{$nameSpace}-wobble-horizontal {
+	.#{$nameSpace}-wobble-horizontal {
 		@include wobble-horizontal();
 	}
 }
 
 @import "effects/2d-transitions/wobble-to-bottom-right";
 @if $include-classes {
-		.#{$nameSpace}-wobble-to-bottom-right {
+	.#{$nameSpace}-wobble-to-bottom-right {
 	    @include wobble-to-bottom-right();
 	}
 }
 
 @import "effects/2d-transitions/wobble-to-top-right";
 @if $include-classes {
-		.#{$nameSpace}-wobble-to-top-right {
+	.#{$nameSpace}-wobble-to-top-right {
 	    @include wobble-to-top-right();
 	}
 }
 
 @import "effects/2d-transitions/wobble-top";
 @if $include-classes {
-		.#{$nameSpace}-wobble-top {
+	.#{$nameSpace}-wobble-top {
 		@include wobble-top();
 	}
 }
 
 @import "effects/2d-transitions/wobble-bottom";
 @if $include-classes {
-		.#{$nameSpace}-wobble-bottom {
+	.#{$nameSpace}-wobble-bottom {
 		@include wobble-bottom();
 	}
 }
 
 @import "effects/2d-transitions/wobble-skew";
 @if $include-classes {
-		.#{$nameSpace}-wobble-skew {
+	.#{$nameSpace}-wobble-skew {
 	    @include wobble-skew();
 	}
 }
 
 @import "effects/2d-transitions/buzz";
 @if $include-classes {
-		.#{$nameSpace}-buzz {
+	.#{$nameSpace}-buzz {
 	    @include buzz();
 	}
 }
 
 @import "effects/2d-transitions/buzz-out";
 @if $include-classes {
-		.#{$nameSpace}-buzz-out {
+	.#{$nameSpace}-buzz-out {
 	    @include buzz-out();
 	}
 }
