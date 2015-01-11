@@ -38,3 +38,6 @@ $webkit: true;
 $moz: false;
 $ms: false;
 $o: false;
+
+// Compile with or without classes
+$include-classes: true !default;
