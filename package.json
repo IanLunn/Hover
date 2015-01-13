@@ -20,5 +20,12 @@
   },
   "dependencies": {
     "load-grunt-tasks": "~0.2.0"
+  },
+  "spm": {
+    "main": "css/hover.css",
+    "ignore": [
+      "logo-transparent.png",
+      "hover.jpg"
+    ]
   }
 }
