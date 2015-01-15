@@ -14,7 +14,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 ## How To Use
 Hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
 
-### Copy and Paste an Effect
+### A. Copy and Paste an Effect
 If you plan on only using one or several effects, it's better practice to copy and paste an effect into your own stylesheet, so a user doesn't have to download `css/hover.css` in its entirety.
 
 Assuming you want to use the Grow effect:
@@ -58,7 +58,7 @@ Example element after applying Hover.css effect:
 
 **Note**: As of `2.0.0` all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using Sass/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
 
-### Reference Hover.css
+### B. Reference Hover.css
 
 If you plan on using many Hover.css effects, you may like to reference the entire Hover.css stylesheet.
 
@@ -69,6 +69,10 @@ If you plan on using many Hover.css effects, you may like to reference the entir
 <head>
 	<link href="css/hover-min.css" rel="stylesheet">
 </head>
+```
+Alternatively you can add a reference into an existing stylesheet like so (this may be useful to WordPress users who are unable to edit HTML):
+```css
+@import url("hover-min.css");
 ```
 4. Assuming you want to use the Grow effect, in the HTML file you'd like to use this effect, add the class of `.hvr-grow` to your chosen element.
 
