@@ -185,7 +185,7 @@ Sass/LESS is used in the Hover.css project to separate various CSS into specific
 Contains hacks (undesirable but usually necessary lines of code) applied to certain effects. [Hacks explained here](https://github.com/IanLunn/Hover/wiki/Hacks-Explained).
 
 ### _mixins
-Contains `prefixed` and `keyframes` mixins that apply the necessary prefixes you specify in `_options.scss` / `_options.ess` to properties and keyframes.
+Contains `prefixed` and `keyframes` mixins that apply the necessary prefixes you specify in `_options.scss` / `_options.less` to properties and keyframes.
 
 Properties can be prefixed like so:
 
