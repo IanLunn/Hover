@@ -1,6 +1,6 @@
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.0.1
+ * Version: 2.0.2
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
@@ -211,6 +211,13 @@
 @if $includeClasses {
 	.#{$nameSpace}-fade {
 		@include fade();
+	}
+}
+
+@import "effects/background-transitions/back-pulse";
+@if $includeClasses {
+	.#{$nameSpace}-back-pulse {
+		@include back-pulse();
 	}
 }
 

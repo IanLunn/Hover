@@ -1,4 +1,13 @@
-## 2.0.0 - Jan 7, 2014
+## 2.0.2 - Jan 27, 2015
+
+- Added `back-pulse` effect
+
+## 2.0.1 - Jan 26, 2015
+
+- Added `includeClasses` option to Sass/LESS so you can now generate CSS with or without Hover.css default class names
+- Added `!default` flags to Sass variables in `_options.scss`
+
+## 2.0.0 - Jan 7, 2015
 
 - Added lots of new effects
 - Added LESS support
