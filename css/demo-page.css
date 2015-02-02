@@ -134,6 +134,10 @@ h2 {
   margin-top: 2em;
 }
 
+h3 {
+  margin: 0;
+}
+
 .about {
   border-top: #333 solid 2px;
   border-bottom: #333 solid 2px;
@@ -184,9 +188,59 @@ h2 {
     background: transparent;
 }
 
-.author .logo {
-  display: block;
-  margin-bottom: .8em;
+@-webkit-keyframes circle {
+  50% {
+    -webkit-transform: scale(1.26923077);
+  }
+}
+
+@-webkit-keyframes initials {
+  50% {
+    -webkit-transform: translateY(-8px) translateZ(0);
+  }
+}
+
+@keyframes circle {
+  50% {
+    transform: scale(1.26923077);
+  }
+}
+
+@keyframes initials {
+  50% {
+    transform: translateY(-8px) translateZ(0);
+  }
+}
+
+.ild-ident svg {
+    overflow: visible;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.ild-ident .circle-holder {
+  -webkit-transform: translate(-7px, -7px);
+  transform: translate(-7px, -7px);
+}
+
+.ild-ident .circle {
+  -webkit-transform: translate(7px, 7px);
+  transform: translate(7px, 7px);
+}
+
+.ild-ident svg.active .i {
+  -webkit-animation: initials .4s ease-in-out;
+  animation: initials .4s ease-in-out;
+}
+
+.ild-ident svg.active .l {
+  -webkit-animation: initials .4s .2s ease-in-out;
+  animation: initials .4s .2s ease-in-out;
+}
+
+.ild-ident svg.active .circle {
+  -webkit-animation: circle .5s .1s ease-in-out;
+  animation: circle .5s .1s ease-in-out;
 }
 
 #forkongithub {
