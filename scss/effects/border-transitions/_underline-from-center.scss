@@ -23,7 +23,7 @@
 	&:hover,
 	&:focus,
 	&:active,
-	&.#{nameSpace}-active {
+	&.#{$nameSpace}-active {
 
 		&:before {
 			left: 0;
