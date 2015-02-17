@@ -8,9 +8,7 @@
 @mixin pulse-shrink {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-pulse-shrink);
 		@include prefixed(animation-duration, $mediumDuration);
 		@include prefixed(animation-timing-function, linear);

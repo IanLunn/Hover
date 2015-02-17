@@ -28,9 +28,7 @@
 @mixin wobble-skew {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-wobble-skew);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);

@@ -32,9 +32,7 @@
 		@include prefixed(animation-fill-mode, forwards);
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:after {
 			@include prefixed(animation-name, #{$nameSpace}-icon-sink-away);

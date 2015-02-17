@@ -8,9 +8,7 @@
 @mixin pop {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-pop);
 		@include prefixed(animation-duration, $mediumDuration);
 		@include prefixed(animation-timing-function, linear);

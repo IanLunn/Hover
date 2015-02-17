@@ -15,9 +15,7 @@
 		@include prefixed(transition-timing-function, ease-in-out);
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:before {
 			@include prefixed(transform, rotate(360deg));

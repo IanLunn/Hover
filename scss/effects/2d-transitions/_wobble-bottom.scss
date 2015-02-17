@@ -29,9 +29,7 @@
 	@include hacks();
 	@include prefixed(transform-origin, 100% 0);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-wobble-bottom);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);

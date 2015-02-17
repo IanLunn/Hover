@@ -19,9 +19,9 @@
 		@include prefixed(transition-property, opacity);
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		opacity: 1;
+	#{$hoverSelector} {
+		&:before {
+			opacity: 1;
+		}
 	}
 }

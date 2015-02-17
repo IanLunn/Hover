@@ -27,10 +27,10 @@
 		@include prefixed(transition-property, "width, height");
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		width: $curlWidth;
-		height: $curlHeight;
+	#{$hoverSelector} {
+		&:before {
+			width: $curlWidth;
+			height: $curlHeight;
+		}
 	}
 }

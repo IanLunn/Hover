@@ -4,9 +4,7 @@
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, box-shadow);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		box-shadow: 2px 2px 2px $shadowColor;
 	}
 }

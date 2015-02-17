@@ -30,12 +30,9 @@
 	  background: radial-gradient(ellipse at 50% -50%, $shadowColor 0%, rgba(0, 0, 0, 0) 80%);
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before,
-	&:hover:after,
-	&:focus:after,
-	&:active:after {
-	  opacity: 1;
+	#{$hoverSelector} {
+		&:before, &:after {
+			opacity: 1;
+		}
 	}
 }

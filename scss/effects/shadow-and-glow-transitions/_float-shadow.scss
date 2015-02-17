@@ -21,9 +21,7 @@
 		@include prefixed(transition-property, "transform, opacity");
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(transform, translateY(-5px)); /* move the element up by 5px */
 
 		&:before {

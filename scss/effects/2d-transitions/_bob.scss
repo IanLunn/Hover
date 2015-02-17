@@ -20,9 +20,7 @@
 @mixin bob {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, "#{$nameSpace}-bob-float, #{$nameSpace}-bob");
 		@include prefixed(animation-duration, ".3s, 1.5s");
 		@include prefixed(animation-delay, "0s, .3s");

@@ -17,9 +17,9 @@
 		border-color: transparent $tipColor transparent transparent;
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		@include prefixed(transform, translateX(-($tipWidth)));
+	#{$hoverSelector} {
+		&:before {
+			@include prefixed(transform, translateX(-($tipWidth)));
+		}
 	}
 }

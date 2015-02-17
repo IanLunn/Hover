@@ -5,9 +5,7 @@
 	@include prefixed(transition-property, transform);
 	@include prefixed(transform-origin, 0 100%);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(transform, skew(-10deg));
 	}
 }

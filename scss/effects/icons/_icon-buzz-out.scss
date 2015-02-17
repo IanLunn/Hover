@@ -56,9 +56,7 @@
 		@include prefixed(transform, translateZ(0));
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:before {
 			@include prefixed(animation-name, #{$nameSpace}-icon-buzz-out);

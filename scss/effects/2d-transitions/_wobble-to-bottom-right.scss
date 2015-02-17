@@ -28,9 +28,7 @@
 @mixin wobble-to-bottom-right {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-wobble-to-bottom-right);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-timing-function, ease-in-out);

@@ -4,9 +4,7 @@
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, border-radius);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		border-radius: 1em;
 	}
 }

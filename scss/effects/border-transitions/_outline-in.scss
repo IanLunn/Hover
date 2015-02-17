@@ -20,13 +20,13 @@
 		@include prefixed(transition-property, "top, right, bottom, left");
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		top: -($outerBorderWidth + $innerBorderWidth);
-		right: -($outerBorderWidth + $innerBorderWidth);
-		bottom: -($outerBorderWidth + $innerBorderWidth);
-		left: -($outerBorderWidth + $innerBorderWidth);
-		opacity: 1;
+	#{$hoverSelector} {
+		&:before {
+			top: -($outerBorderWidth + $innerBorderWidth);
+			right: -($outerBorderWidth + $innerBorderWidth);
+			bottom: -($outerBorderWidth + $innerBorderWidth);
+			left: -($outerBorderWidth + $innerBorderWidth);
+			opacity: 1;
+		}
 	}
 }

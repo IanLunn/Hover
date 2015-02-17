@@ -9,9 +9,7 @@
 		inset 0 0 0 $borderWidth $primaryColor,
 		0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		background: none;
 	}
 }
