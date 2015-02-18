@@ -1,7 +1,16 @@
 // DEFAULT OPTIONS
 
+// Compile with or without classes
+@includeClasses: true;
+
 // Prefix for Hover class names
 @nameSpace: hvr;
+
+// Selector used to trigger the animations to an active state
+@hoverSelector: ~"&:hover, &:focus, &:active";
+& when(@includeClasses = true) {
+	@hoverSelector: ~"#{@hoverSelector}, &.#{@nameSpace}-active";
+}
 
 // Durations
 @fastDuration: .1s;
@@ -38,6 +47,3 @@
 @moz: false;
 @ms: false;
 @o: false;
-
-// Compile with or without classes
-@includeClasses: true;

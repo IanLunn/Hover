@@ -20,9 +20,7 @@
 .bob() {
 	.hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	@{hoverSelector} {
 		.prefixed(animation-name, ~"@{nameSpace}-bob-float, @{nameSpace}-bob");
 		.prefixed(animation-duration, ~".3s, 1.5s");
 		.prefixed(animation-delay, ~"0s, .3s");
