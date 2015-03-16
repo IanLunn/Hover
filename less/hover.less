@@ -613,6 +613,13 @@
 	}
 }
 
+@import "effects/icons/_icon-fade-away";
+& when(@includeClasses = true) {
+	.@{nameSpace}-icon-fade-away {
+		.icon-fade-away();
+	}
+}
+
 @import "effects/icons/_icon-float-away";
 & when(@includeClasses = true) {
 	.@{nameSpace}-icon-float-away {

@@ -3526,6 +3526,65 @@
   color: #0F9E5E;
 }
 
+/* Icon Fade Away */
+@-webkit-keyframes hvr-icon-fade-away {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@keyframes hvr-icon-fade-away {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+/* Icon Fade Away */
+.hvr-icon-fade-away {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-right: 2.2em;
+}
+.hvr-icon-fade-away:before, .hvr-icon-fade-away:after {
+  content: "\f00c";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+}
+.hvr-icon-fade-away:after {
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hvr-icon-fade-away:hover:after, .hvr-icon-fade-away:focus:after, .hvr-icon-fade-away:active:after {
+  -webkit-animation-name: hvr-icon-fade-away;
+  animation-name: hvr-icon-fade-away;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
 /* Icon Float Away */
 @-webkit-keyframes hvr-icon-float-away {
   0% {
