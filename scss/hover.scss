@@ -612,6 +612,13 @@
 	}
 }
 
+@import "effects/icons/icon-fade-away";
+@if $includeClasses {
+	.#{$nameSpace}-icon-fade-away {
+		@include icon-fade-away();
+	}
+}
+
 @import "effects/icons/icon-float-away";
 @if $includeClasses {
 	.#{$nameSpace}-icon-float-away {
