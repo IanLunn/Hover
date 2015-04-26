@@ -14,12 +14,7 @@
 	position: relative;
 	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before {
-		content: "\f015";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-timing-function, ease-out);
 	}
@@ -28,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pulse");
 			.prefixed(animation-duration, 1s);
 			.prefixed(animation-timing-function, linear);

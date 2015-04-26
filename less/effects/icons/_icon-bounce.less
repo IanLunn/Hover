@@ -6,12 +6,7 @@
 	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f087";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -22,7 +17,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			.prefixed(transform, scale(1.5));
 			.prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36));
 		}

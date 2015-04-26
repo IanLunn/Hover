@@ -2,15 +2,10 @@
 .icon-back() {
 	.hacks();
 	position: relative;
-	padding-left: 2.2em;
+	padding-left: 0;
 	.prefixed(transition-duration, @fastDuration);
 
-	&:before {
-		content: "\f137";
-		position: absolute;
-		left: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @fastDuration);
 		.prefixed(transition-property, transform);
@@ -21,7 +16,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			.prefixed(transform, translateX(-4px));
 		}
 	}

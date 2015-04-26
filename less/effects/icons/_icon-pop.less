@@ -11,12 +11,7 @@
 	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f005";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -27,7 +22,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pop");
 			.prefixed(animation-duration, @mediumDuration);
 			.prefixed(animation-timing-function, linear);

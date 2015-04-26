@@ -16,16 +16,7 @@
 	position: relative;
 	padding-right: #{$spaceBetweenTextAndArrows};
 
-	&:before,
-	&:after {
-		content: "\f055";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
-	}
-
-	&:after {
+	.fa, .hover-icon {
 		opacity: 0;
 		@include prefixed(animation-duration, #{$slowDuration});
 		@include prefixed(animation-fill-mode, forwards);
@@ -35,7 +26,7 @@
 	&:focus,
 	&:active {
 
-		&:after {
+		.fa, .hover-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-float-away);
 			@include prefixed(animation-timing-function, ease-out);
 		}

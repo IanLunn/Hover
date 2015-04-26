@@ -22,13 +22,7 @@
 	position: relative;
 	padding-right: #{$spaceBetweenTextAndArrows};
 
-	&:before {
-		content: "\f041";
-		position: absolute;
-		right: 1em;
-		opacity: 1;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -36,7 +30,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			opacity: 0;
 			@include prefixed(transition-duration, #{$mediumDuration});
 			@include prefixed(animation-name, #{$nameSpace}-icon-drop);

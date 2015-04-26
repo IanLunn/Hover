@@ -17,12 +17,7 @@
 	position: relative;
 	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before {
-		content: "\f01a";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -30,7 +25,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-down");
 			.prefixed(animation-duration, .75s);
 			.prefixed(animation-timing-function, ease-out);

@@ -12,15 +12,10 @@
 @mixin icon-buzz {
 	@include hacks();
 	position: relative;
-	padding-right: 2.2em;
+	padding-right: 0;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before {
-		content: "\f017";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -28,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-buzz);
 			@include prefixed(animation-duration, .15s);
 			@include prefixed(animation-timing-function, linear);

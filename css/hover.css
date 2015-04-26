@@ -3206,16 +3206,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-left: 2.2em;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-.hvr-icon-back:before {
-  content: "\f137";
-  position: absolute;
-  left: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-back .fa, .hvr-icon-back .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.1s;
@@ -3225,7 +3219,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-back:hover:before, .hvr-icon-back:focus:before, .hvr-icon-back:active:before {
+.hvr-icon-back:hover .fa, .hvr-icon-back:hover  .hover-icon, 
+.hvr-icon-back:focus .fa, .hvr-icon-back:focus .hover-icon, 
+.hvr-icon-back:active .fa, .hvr-icon-back:active .hover-icon {
   -webkit-transform: translateX(-4px);
   transform: translateX(-4px);
 }
@@ -3241,16 +3237,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-.hvr-icon-forward:before {
-  content: "\f138";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-forward .fa, .hvr-icon-forward .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.1s;
@@ -3260,7 +3250,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-forward:hover:before, .hvr-icon-forward:focus:before, .hvr-icon-forward:active:before {
+.hvr-icon-forward:hover .fa, .hvr-icon-forward:hover  .hover-icon, 
+.hvr-icon-forward:focus .fa, .hvr-icon-forward:focus .hover-icon, 
+.hvr-icon-forward:active .fa, .hvr-icon-forward:active .hover-icon {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
@@ -3307,18 +3299,14 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-down:before {
-  content: "\f01a";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-down .fa, .hvr-icon-down .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-down:hover:before, .hvr-icon-down:focus:before, .hvr-icon-down:active:before {
+.hvr-icon-down:hover .fa, .hvr-icon-down:hover  .hover-icon, 
+.hvr-icon-down:focus .fa, .hvr-icon-down:focus .hover-icon, 
+.hvr-icon-down:active .fa, .hvr-icon-down:active .hover-icon {
   -webkit-animation-name: hvr-icon-down;
   animation-name: hvr-icon-down;
   -webkit-animation-duration: 0.75s;
@@ -3369,18 +3357,14 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-up:before {
-  content: "\f01b";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-up .fa, .hvr-icon-up .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-up:hover:before, .hvr-icon-up:focus:before, .hvr-icon-up:active:before {
+.hvr-icon-up:hover .fa, .hvr-icon-up:hover  .hover-icon, 
+.hvr-icon-up:focus .fa, .hvr-icon-up:focus .hover-icon, 
+.hvr-icon-up:active .fa, .hvr-icon-up:active .hover-icon {
   -webkit-animation-name: hvr-icon-up;
   animation-name: hvr-icon-up;
   -webkit-animation-duration: 0.75s;
@@ -3400,14 +3384,8 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-spin:before {
-  content: "\f021";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-spin .fa, .hvr-icon-spin .hover-icon {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
   -webkit-transition-property: transform;
@@ -3415,7 +3393,9 @@
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-.hvr-icon-spin:hover:before, .hvr-icon-spin:focus:before, .hvr-icon-spin:active:before {
+.hvr-icon-spin:hover .fa, .hvr-icon-spin:hover  .hover-icon, 
+.hvr-icon-spin:focus .fa, .hvr-icon-spin:focus .hover-icon, 
+.hvr-icon-spin:active .fa, .hvr-icon-spin:active .hover-icon {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
@@ -3466,19 +3446,14 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-drop:before {
-  content: "\f041";
-  position: absolute;
-  right: 1em;
-  opacity: 1;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-drop .fa, .hvr-icon-drop .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-drop:hover:before, .hvr-icon-drop:focus:before, .hvr-icon-drop:active:before {
+.hvr-icon-drop:hover .fa, .hvr-icon-drop:hover  .hover-icon, 
+.hvr-icon-drop:focus .fa, .hvr-icon-drop:focus .hover-icon, 
+.hvr-icon-drop:active .fa, .hvr-icon-drop:active .hover-icon {
   opacity: 0;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -3507,14 +3482,8 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-fade:before {
-  content: "\f00c";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-fade .fa, .hvr-icon-fade .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.5s;
@@ -3522,7 +3491,9 @@
   -webkit-transition-property: color;
   transition-property: color;
 }
-.hvr-icon-fade:hover:before, .hvr-icon-fade:focus:before, .hvr-icon-fade:active:before {
+.hvr-icon-fade:hover .fa, .hvr-icon-fade:hover  .hover-icon, 
+.hvr-icon-fade:focus .fa, .hvr-icon-fade:focus .hover-icon, 
+.hvr-icon-fade:active .fa, .hvr-icon-fade:active .hover-icon {
   color: #0F9E5E;
 }
 
@@ -3562,23 +3533,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-float-away:before, .hvr-icon-float-away:after {
-  content: "\f055";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
-}
-.hvr-icon-float-away:after {
-  opacity: 0;
+.hvr-icon-float-away .fa, .hvr-icon-float-away .hover-icon {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.hvr-icon-float-away:hover:after, .hvr-icon-float-away:focus:after, .hvr-icon-float-away:active:after {
+.hvr-icon-float-away:hover .fa, .hvr-icon-float-away:hover  .hover-icon, 
+.hvr-icon-float-away:focus .fa, .hvr-icon-float-away:focus .hover-icon, 
+.hvr-icon-float-away:active .fa, .hvr-icon-float-away:active .hover-icon {
   -webkit-animation-name: hvr-icon-float-away;
   animation-name: hvr-icon-float-away;
   -webkit-animation-timing-function: ease-out;
@@ -3621,25 +3585,18 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-sink-away:before, .hvr-icon-sink-away:after {
-  content: "\f056";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-sink-away .fa, .hvr-icon-sink-away .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-}
-.hvr-icon-sink-away:after {
-  opacity: 0;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.hvr-icon-sink-away:hover:after, .hvr-icon-sink-away:focus:after, .hvr-icon-sink-away:active:after {
+.hvr-icon-sink-away:hover .fa, .hvr-icon-sink-away:hover  .hover-icon, 
+.hvr-icon-sink-away:focus .fa, .hvr-icon-sink-away:focus .hover-icon, 
+.hvr-icon-sink-away:active .fa, .hvr-icon-sink-away:active .hover-icon {
   -webkit-animation-name: hvr-icon-sink-away;
   animation-name: hvr-icon-sink-away;
   -webkit-animation-timing-function: ease-out;
@@ -3657,16 +3614,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-grow:before {
-  content: "\f118";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-grow .fa, .hvr-icon-grow .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -3676,7 +3627,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-grow:hover:before, .hvr-icon-grow:focus:before, .hvr-icon-grow:active:before {
+.hvr-icon-grow:hover .fa, .hvr-icon-grow:hover  .hover-icon, 
+.hvr-icon-grow:focus .fa, .hvr-icon-grow:focus .hover-icon, 
+.hvr-icon-grow:active .fa, .hvr-icon-grow:active .hover-icon {
   -webkit-transform: scale(1.3) translateZ(0);
   transform: scale(1.3) translateZ(0);
 }
@@ -3692,16 +3645,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-shrink:before {
-  content: "\f119";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-shrink .fa, .hvr-icon-shrink .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -3711,7 +3658,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-shrink:hover:before, .hvr-icon-shrink:focus:before, .hvr-icon-shrink:active:before {
+.hvr-icon-shrink:hover .fa, .hvr-icon-shrink:hover  .hover-icon, 
+.hvr-icon-shrink:focus .fa, .hvr-icon-shrink:focus .hover-icon, 
+.hvr-icon-shrink:active .fa, .hvr-icon-shrink:active .hover-icon {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
@@ -3751,20 +3700,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-pulse:before {
-  content: "\f015";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-pulse .fa, .hvr-icon-pulse .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-pulse:hover:before, .hvr-icon-pulse:focus:before, .hvr-icon-pulse:active:before {
+.hvr-icon-pulse:hover .fa, .hvr-icon-pulse:hover  .hover-icon, 
+.hvr-icon-pulse:focus .fa, .hvr-icon-pulse:focus .hover-icon, 
+.hvr-icon-pulse:active .fa, .hvr-icon-pulse:active .hover-icon {
   -webkit-animation-name: hvr-icon-pulse;
   animation-name: hvr-icon-pulse;
   -webkit-animation-duration: 1s;
@@ -3800,20 +3745,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-pulse-grow:before {
-  content: "\f015";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-pulse-grow .fa, .hvr-icon-pulse-grow .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-pulse-grow:hover:before, .hvr-icon-pulse-grow:focus:before, .hvr-icon-pulse-grow:active:before {
+.hvr-icon-pulse-grow:hover .fa, .hvr-icon-pulse-grow:hover  .hover-icon, 
+.hvr-icon-pulse-grow:focus .fa, .hvr-icon-pulse-grow:focus .hover-icon, 
+.hvr-icon-pulse-grow:active .fa, .hvr-icon-pulse-grow:active .hover-icon {
   -webkit-animation-name: hvr-icon-pulse-grow;
   animation-name: hvr-icon-pulse-grow;
   -webkit-animation-duration: 0.3s;
@@ -3851,20 +3792,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
 }
-.hvr-icon-pulse-shrink:before {
-  content: "\f015";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-pulse-shrink .fa, .hvr-icon-pulse-shrink .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-pulse-shrink:hover:before, .hvr-icon-pulse-shrink:focus:before, .hvr-icon-pulse-shrink:active:before {
+.hvr-icon-pulse-shrink:hover .fa, .hvr-icon-pulse-shrink:hover  .hover-icon, 
+.hvr-icon-pulse-shrink:focus .fa, .hvr-icon-pulse-shrink:focus .hover-icon, 
+.hvr-icon-pulse-shrink:active .fa, .hvr-icon-pulse-shrink:active .hover-icon {
   -webkit-animation-name: hvr-icon-pulse-shrink;
   animation-name: hvr-icon-pulse-shrink;
   -webkit-animation-duration: 0.3s;
@@ -3902,16 +3839,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-push:before {
-  content: "\f006";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-push .fa, .hvr-icon-push .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -3921,7 +3852,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-push:hover:before, .hvr-icon-push:focus:before, .hvr-icon-push:active:before {
+.hvr-icon-push:hover .fa, .hvr-icon-push:hover  .hover-icon, 
+.hvr-icon-push:focus .fa, .hvr-icon-push:focus .hover-icon, 
+.hvr-icon-push:active .fa, .hvr-icon-push:active .hover-icon {
   -webkit-animation-name: hvr-icon-push;
   animation-name: hvr-icon-push;
   -webkit-animation-duration: 0.3s;
@@ -3957,16 +3890,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-pop:before {
-  content: "\f005";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-pop .fa, .hvr-icon-pop .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -3976,7 +3903,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-pop:hover:before, .hvr-icon-pop:focus:before, .hvr-icon-pop:active:before {
+.hvr-icon-pop:hover .fa, .hvr-icon-pop:hover  .hover-icon, 
+.hvr-icon-pop:focus .fa, .hvr-icon-pop:focus .hover-icon, 
+.hvr-icon-pop:active .fa, .hvr-icon-pop:active .hover-icon {
   -webkit-animation-name: hvr-icon-pop;
   animation-name: hvr-icon-pop;
   -webkit-animation-duration: 0.3s;
@@ -3998,16 +3927,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-bounce:before {
-  content: "\f087";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-bounce .fa, .hvr-icon-bounce .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -4017,7 +3940,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-bounce:hover:before, .hvr-icon-bounce:focus:before, .hvr-icon-bounce:active:before {
+.hvr-icon-bounce:hover .fa, .hvr-icon-bounce:hover  .hover-icon, 
+.hvr-icon-bounce:focus .fa, .hvr-icon-bounce:focus .hover-icon, 
+.hvr-icon-bounce:active .fa, .hvr-icon-bounce:active .hover-icon {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -4035,16 +3960,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-rotate:before {
-  content: "\f0c6";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-rotate .fa, .hvr-icon-rotate .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -4054,7 +3973,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-rotate:hover:before, .hvr-icon-rotate:focus:before, .hvr-icon-rotate:active:before {
+.hvr-icon-rotate:hover .fa, .hvr-icon-rotate:hover  .hover-icon, 
+.hvr-icon-rotate:focus .fa, .hvr-icon-rotate:focus .hover-icon, 
+.hvr-icon-rotate:active .fa, .hvr-icon-rotate:active .hover-icon {
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
@@ -4070,16 +3991,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-grow-rotate:before {
-  content: "\f095";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-grow-rotate .fa, .hvr-icon-grow-rotate .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -4089,7 +4004,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-grow-rotate:hover:before, .hvr-icon-grow-rotate:focus:before, .hvr-icon-grow-rotate:active:before {
+.hvr-icon-grow-rotate:hover .fa, .hvr-icon-grow-rotate:hover  .hover-icon, 
+.hvr-icon-grow-rotate:focus .fa, .hvr-icon-grow-rotate:focus .hover-icon, 
+.hvr-icon-grow-rotate:active .fa, .hvr-icon-grow-rotate:active .hover-icon {
   -webkit-transform: scale(1.5) rotate(12deg);
   transform: scale(1.5) rotate(12deg);
 }
@@ -4105,16 +4022,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-float:before {
-  content: "\f01b";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-float .fa, .hvr-icon-float .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -4124,7 +4035,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-float:hover:before, .hvr-icon-float:focus:before, .hvr-icon-float:active:before {
+.hvr-icon-float:hover .fa, .hvr-icon-float:hover  .hover-icon, 
+.hvr-icon-float:focus .fa, .hvr-icon-float:focus .hover-icon, 
+.hvr-icon-float:active .fa, .hvr-icon-float:active .hover-icon {
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
 }
@@ -4140,16 +4053,10 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-sink:before {
-  content: "\f01a";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-sink .fa, .hvr-icon-sink .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -4159,7 +4066,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-sink:hover:before, .hvr-icon-sink:focus:before, .hvr-icon-sink:active:before {
+.hvr-icon-sink:hover .fa, .hvr-icon-sink:hover  .hover-icon, 
+.hvr-icon-sink:focus .fa, .hvr-icon-sink:focus .hover-icon, 
+.hvr-icon-sink:active .fa, .hvr-icon-sink:active .hover-icon {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
@@ -4223,20 +4132,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-bob:before {
-  content: "\f077";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-bob .fa, .hvr-icon-bob .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-bob:hover:before, .hvr-icon-bob:focus:before, .hvr-icon-bob:active:before {
+.hvr-icon-bob:hover .fa, .hvr-icon-bob:hover  .hover-icon, 
+.hvr-icon-bob:focus .fa, .hvr-icon-bob:focus .hover-icon, 
+.hvr-icon-bob:active .fa, .hvr-icon-bob:active .hover-icon {
   -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
   animation-name: hvr-icon-bob-float, hvr-icon-bob;
   -webkit-animation-duration: .3s, 1.5s;
@@ -4312,20 +4217,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-hang:before {
-  content: "\f078";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-hang .fa, .hvr-icon-hang .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
+.hvr-icon-hang:hover .fa, .hvr-icon-hang:hover  .hover-icon, 
+.hvr-icon-hang:focus .fa, .hvr-icon-hang:focus .hover-icon, 
+.hvr-icon-hang:active .fa, .hvr-icon-hang:active .hover-icon {
   -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   -webkit-animation-duration: .3s, 1.5s;
@@ -4417,20 +4318,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-wobble-horizontal:before {
-  content: "\f061";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-wobble-horizontal .fa, .hvr-icon-wobble-horizontal .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-wobble-horizontal:hover:before, .hvr-icon-wobble-horizontal:focus:before, .hvr-icon-wobble-horizontal:active:before {
+.hvr-icon-wobble-horizontal:hover .fa, .hvr-icon-wobble-horizontal:hover  .hover-icon, 
+.hvr-icon-wobble-horizontal:focus .fa, .hvr-icon-wobble-horizontal:focus .hover-icon, 
+.hvr-icon-wobble-horizontal:active .fa, .hvr-icon-wobble-horizontal:active .hover-icon {
   -webkit-animation-name: hvr-icon-wobble-horizontal;
   animation-name: hvr-icon-wobble-horizontal;
   -webkit-animation-duration: 1s;
@@ -4516,20 +4413,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-wobble-vertical:before {
-  content: "\f062";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-wobble-vertical .fa, .hvr-icon-wobble-vertical .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-wobble-vertical:hover:before, .hvr-icon-wobble-vertical:focus:before, .hvr-icon-wobble-vertical:active:before {
+.hvr-icon-wobble-vertical:hover .fa, .hvr-icon-wobble-vertical:hover  .hover-icon, 
+.hvr-icon-wobble-vertical:focus .fa, .hvr-icon-wobble-vertical:focus .hover-icon, 
+.hvr-icon-wobble-vertical:active .fa, .hvr-icon-wobble-vertical:active .hover-icon {
   -webkit-animation-name: hvr-icon-wobble-vertical;
   animation-name: hvr-icon-wobble-vertical;
   -webkit-animation-duration: 1s;
@@ -4575,20 +4468,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-buzz:before {
-  content: "\f017";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-buzz .fa, .hvr-icon-buzz .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-buzz:hover:before, .hvr-icon-buzz:focus:before, .hvr-icon-buzz:active:before {
+.hvr-icon-buzz:hover .fa, .hvr-icon-buzz:hover  .hover-icon, 
+.hvr-icon-buzz:focus .fa, .hvr-icon-buzz:focus .hover-icon, 
+.hvr-icon-buzz:active .fa, .hvr-icon-buzz:active .hover-icon {
   -webkit-animation-name: hvr-icon-buzz;
   animation-name: hvr-icon-buzz;
   -webkit-animation-duration: 0.15s;
@@ -4714,20 +4603,16 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-icon-buzz-out:before {
-  content: "\f023";
-  position: absolute;
-  right: 1em;
-  padding: 0 1px;
-  font-family: FontAwesome;
+.hvr-icon-buzz-out .fa, .hvr-icon-buzz-out .hover-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-.hvr-icon-buzz-out:hover:before, .hvr-icon-buzz-out:focus:before, .hvr-icon-buzz-out:active:before {
+.hvr-icon-buzz-out:hover .fa, .hvr-icon-buzz-out:hover  .hover-icon, 
+.hvr-icon-buzz-out:focus .fa, .hvr-icon-buzz-out:focus .hover-icon, 
+.hvr-icon-buzz-out:active .fa, .hvr-icon-buzz-out:active .hover-icon {
   -webkit-animation-name: hvr-icon-buzz-out;
   animation-name: hvr-icon-buzz-out;
   -webkit-animation-duration: 0.75s;
