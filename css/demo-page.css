@@ -185,7 +185,7 @@ h3 {
 
 .made-by {
   display: block;
-  margin-top: 5em;
+  margin-top: 3em;
   padding-top: 3em;
   padding-bottom: 1em;
   font-family: $fontFeature;
@@ -355,6 +355,38 @@ h3 {
   top: auto;
 }
 
+.ad {
+  margin-top: 3.5em;
+  padding: 3em 1.5em;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.ad h2 {
+  margin: 0;
+  margin-bottom: 2em;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+
+.ad a {
+  display: inline-block;
+  margin: 0 auto 2em auto;
+}
+
+.ad__preview {
+  font-size: 0;
+}
+
+.ad__preview a {
+  display: block;
+  width: 75%;
+}
+
+.ad__preview img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 360px) {
   h1 {
     font-size: 4em;
@@ -381,5 +413,14 @@ h3 {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+  }
+
+  .ad__preview a {
+    display: inline-block;
+    width: 32%;
+  }
+
+  .ad__preview .second {
+    margin: 0 2%;
   }
 }
