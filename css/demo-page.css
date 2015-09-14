@@ -18,12 +18,17 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 body {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 40px 20px 20px 20px;
+  margin: 0;
+  padding: 40px 0 0 0;
   font-family: sans-serif;
   color: #333;
   line-height: 140%;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .browsehappy {
@@ -127,7 +132,7 @@ a {
 
 h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
@@ -178,25 +183,83 @@ h3 {
     line-height: 200%;
 }
 
-.author {
-  margin: 6em auto 0 auto;
+.made-by {
+  display: block;
+  margin-top: 5em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-family: $fontFeature;
+  font-size: 1.125em;
   text-align: center;
-  font-weight: 900;
+  line-height: 1.6;
+  background: #181818;
+  color: #777;
 }
 
-.author [class^="hvr-"] {
-    background: transparent;
+.made-by svg {
+  display: block;
+}
+
+.made-by ul,
+.made-by p {
+  margin: 0;
+  padding: 0;
+}
+
+.made-by ul {
+  margin-bottom: .25em;
+}
+
+.made-by li {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.made-by p {
+  margin-top: .4em;
+  font-size: .875em;
+}
+
+.made-by a {
+  display: inline-block;
+  padding: 0 .125em;
+  color: #B1B1B1;
+  transition-duration: .2s;
+  transition-property: color;
+}
+
+.made-by a:focus,
+.made-by a:hover {
+  color: white;
+}
+
+.made-by i {
+  font-size: 26px;
+  height: 30px;
+}
+
+.made-by .follow {
+  margin-top: 2em;
+}
+
+.made-by .follow iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .5em;
+}
+
+.made-by small {
+  display: block;
+  margin-top: 3em;
+  font-size: .625em;
 }
 
 @-webkit-keyframes circle {
   50% {
     -webkit-transform: scale(1.26923077);
-  }
-}
-
-@-webkit-keyframes initials {
-  50% {
-    -webkit-transform: translateY(-8px) translateZ(0);
+    transform: scale(1.26923077);
   }
 }
 
@@ -206,40 +269,46 @@ h3 {
   }
 }
 
+@-webkit-keyframes initials {
+  50% {
+    -webkit-transform: translateY(-8px) translateZ(0);
+    transform: translateY(-8px) translateZ(0);
+  }
+}
+
 @keyframes initials {
   50% {
     transform: translateY(-8px) translateZ(0);
   }
 }
 
+.ild-ident {
+  display: block;
+}
+
 .ild-ident svg {
-    overflow: visible;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+  display: block;
+  overflow: visible;
+  transform: scale(1) translateZ(0);
 }
 
 .ild-ident .circle-holder {
-  -webkit-transform: translate(-7px, -7px);
   transform: translate(-7px, -7px);
 }
 
 .ild-ident .circle {
-  -webkit-transform: translate(7px, 7px);
   transform: translate(7px, 7px);
 }
 
-.ild-ident svg.active .i {
-  -webkit-animation: initials .4s ease-in-out;
+.ild-ident .active .i {
   animation: initials .4s ease-in-out;
 }
 
-.ild-ident svg.active .l {
-  -webkit-animation: initials .4s .2s ease-in-out;
+.ild-ident .active .l {
   animation: initials .4s .2s ease-in-out;
 }
 
-.ild-ident svg.active .circle {
-  -webkit-animation: circle .5s .1s ease-in-out;
+.ild-ident .active .circle {
   animation: circle .5s .1s ease-in-out;
 }
 
@@ -284,6 +353,12 @@ h3 {
 #forkongithub a::after {
   bottom: 1px;
   top: auto;
+}
+
+@media only screen and (min-width: 360px) {
+  h1 {
+    font-size: 4em;
+  }
 }
 
 @media screen and (min-width: 640px) {
