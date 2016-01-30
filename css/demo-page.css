@@ -25,6 +25,59 @@ body {
   line-height: 140%;
 }
 
+hr {
+  margin-top: 2em;
+  background-color: #ddd;
+  border: none;
+  height: 1px;
+}
+
+.sep {
+  color: #ddd;
+  margin: 0 4px;
+}
+
+.carbon-ad.ad {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 6em;
+  padding: 1em 2.5em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.carbon-ad-label {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 11px;
+  text-align: center;
+  color: #999;
+}
+
+.carbon-ad .carbon-poweredby {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.carbon-ad .carbon-img {
+  margin: 0 auto;
+  margin-bottom: .625em;
+  background: white;
+}
+
+.carbon-ad img {
+  display: block;
+  border: solid 1px #ddd;
+}
+
 .main {
   max-width: 800px;
   margin: 0 auto;
@@ -93,19 +146,28 @@ a {
 }
 
 .footer a:hover,
-.tutorial:hover {
+.nav:hover {
     color: #207AD1;
 }
 
-.tutorial {
+.nav {
   display: inline-block;
   font-size: .8em;
-  font-weight: bold;
 }
 
-.tutorial:hover,
-.tutorial:focus,
-.tutorial:active {
+.nav.hvr-icon-down,
+.nav.hvr-icon-forward {
+  padding-right: 1.2em;
+}
+
+.nav.hvr-icon-down::before,
+.nav.hvr-icon-forward::before {
+  right: 0;
+}
+
+.nav:hover,
+.nav:focus,
+.nav:active {
   text-decoration: none;
 }
 
