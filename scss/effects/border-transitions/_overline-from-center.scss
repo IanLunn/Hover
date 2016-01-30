@@ -20,9 +20,7 @@
 		@include prefixed(transition-timing-function, ease-out);
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:before {
 			left: 0;

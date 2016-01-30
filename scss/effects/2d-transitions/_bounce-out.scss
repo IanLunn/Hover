@@ -3,9 +3,7 @@
 	@include hacks();
 	@include prefixed(transition-duration, $slowDuration);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(transform, scale(.8));
 		@include prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36));
 	}

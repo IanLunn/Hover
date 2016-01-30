@@ -11,9 +11,7 @@
 	@include prefixed(transition-duration, $slowDuration);
 	@include prefixed(transition-property, "color, background-color");
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-back-pulse);
 		@include prefixed(animation-duration, 1s);
 		@include prefixed(animation-delay, $slowDuration);

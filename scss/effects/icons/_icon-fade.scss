@@ -15,9 +15,7 @@
 		@include prefixed(transition-property, color);
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:before {
 			color: #0F9E5E;

@@ -20,9 +20,7 @@
 @mixin hang {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, "#{$nameSpace}-hang-sink, #{$nameSpace}-hang");
 		@include prefixed(animation-duration, ".3s, 1.5s");
 		@include prefixed(animation-delay, "0s, .3s");

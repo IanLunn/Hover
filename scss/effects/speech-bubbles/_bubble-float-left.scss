@@ -18,9 +18,7 @@
 		@include prefixed(transition-property, transform);
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(transform, translateX($tipWidth));
 
 		&:before {

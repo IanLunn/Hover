@@ -44,9 +44,7 @@
 @mixin buzz-out {
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(animation-name, #{$nameSpace}-buzz-out);
 		@include prefixed(animation-duration, .75s);
 		@include prefixed(animation-timing-function, linear);

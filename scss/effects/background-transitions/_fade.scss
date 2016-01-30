@@ -5,9 +5,7 @@
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, "color, background-color");
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		background-color: $activeColor;
 		color: white;
 	}

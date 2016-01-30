@@ -32,9 +32,7 @@
 		@include prefixed(transform, translateZ(0));
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 
 		&:before {
 			opacity: 0;

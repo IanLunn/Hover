@@ -1,7 +1,16 @@
 // DEFAULT OPTIONS
 
+// Compile with or without classes
+$includeClasses: true !default;
+
 // Prefix for Hover class names
 $nameSpace: 'hvr' !default;
+
+// Selector used to trigger the animations to an active state
+$hoverSelector: "&:hover, &:focus, &:active" !default;
+@if $includeClasses {
+  $hoverSelector: "#{$hoverSelector}, &.#{$nameSpace}-active";
+}
 
 // Durations
 $fastDuration: .1s !default;
@@ -38,6 +47,3 @@ $webkit: true !default;
 $moz: false !default;
 $ms: false !default;
 $o: false !default;
-
-// Compile with or without classes
-$includeClasses: true !default;

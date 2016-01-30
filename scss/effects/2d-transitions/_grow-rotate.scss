@@ -4,9 +4,7 @@
 	@include prefixed(transition-duration, $mediumDuration);
 	@include prefixed(transition-property, transform);
 
-	&:hover,
-	&:focus,
-	&:active {
+	#{$hoverSelector} {
 		@include prefixed(transform, scale(1.1) rotate(4deg));
 	}
 }

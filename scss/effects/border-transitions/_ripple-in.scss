@@ -28,9 +28,9 @@
 		@include prefixed(animation-duration, 1s);
 	}
 
-	&:hover:before,
-	&:focus:before,
-	&:active:before {
-		@include prefixed(animation-name, #{$nameSpace}-ripple-in);
+	#{$hoverSelector} {
+		&:before {
+			@include prefixed(animation-name, #{$nameSpace}-ripple-in);
+		}
 	}
 }
