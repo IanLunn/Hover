@@ -1,11 +1,15 @@
 /* Buzz */
 .keyframes(~"@{nameSpace}-buzz", {
-	50% {
+	25% {
 		.prefixed(transform, translateX(3px) rotate(2deg));
 	}
 
-	100% {
+	75% {
 		.prefixed(transform, translateX(-3px) rotate(-2deg));
+	}
+
+	100% {
+		.prefixed(transform, translateX(0) rotate(0));
 	}
 });
 
