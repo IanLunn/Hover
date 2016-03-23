@@ -1,35 +1,37 @@
 /* Icon Pulse Shrink */
-@include keyframes(#{$nameSpace}-icon-pulse-shrink) {
-	to {
-		@include prefixed(transform, scale(.8));
-	}
-}
+
 
 @mixin icon-pulse-shrink {
-	@include hacks();
-	position: relative;
-	padding-right: #{$spaceBetweenTextAndArrows};
+    @include keyframes(#{$nameSpace}-icon-pulse-shrink) {
+        to {
+            @include prefixed(transform, scale(.8));
+        }
+    }
 
-	&:before {
-		content: "\f015";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
-		@include prefixed(transform, translateZ(0));
-		@include prefixed(transition-timing-function, ease-out);
-	}
+    @include hacks();
+    position: relative;
+    padding-right: #{$spaceBetweenTextAndArrows};
 
-	&:hover,
-	&:focus,
-	&:active {
+    &:before {
+        content: "\f015";
+        position: absolute;
+        right: 1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        @include prefixed(transform, translateZ(0));
+        @include prefixed(transition-timing-function, ease-out);
+    }
 
-		&:before {
-			@include prefixed(animation-name, #{$nameSpace}-icon-pulse-shrink);
-			@include prefixed(animation-duration, $mediumDuration);
-			@include prefixed(animation-timing-function, linear);
-			@include prefixed(animation-iteration-count, infinite);
-			@include prefixed(animation-direction, alternate);
-		}
-	}
+    &:hover,
+    &:focus,
+    &:active {
+
+        &:before {
+            @include prefixed(animation-name, #{$nameSpace}-icon-pulse-shrink);
+            @include prefixed(animation-duration, $mediumDuration);
+            @include prefixed(animation-timing-function, linear);
+            @include prefixed(animation-iteration-count, infinite);
+            @include prefixed(animation-direction, alternate);
+        }
+    }
 }
