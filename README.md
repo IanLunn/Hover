@@ -99,7 +99,7 @@ display: inline-block;
 vertical-align: middle;
 ```
 
-Should you wish to override this behavior, either remove the above CSS from Hover.css or change the `display` property for the element. Be sure to declare the override after the Hover.css declarations so the CSS cascade will take effect. Alternatively, if you are using the Sass/LESS version of Hover.css, you can remove/comment out the `forceBlockLevel()` mixin found in `scss/_hacks.scss` or `less/_hacks.less`.
+Should you wish to override this behavior, either remove the above CSS from Hover.css or change the `display` property for the element. Be sure to declare the override after the Hover.css declarations so the CSS cascade will take effect. Alternatively, if you are using the Sass/Stylus/LESS version of Hover.css, you can remove/comment out the `forceBlockLevel()` mixin found in `scss/_hacks.scss`, `styl/hacks.styl` or `less/_hacks.less`.
 
 For more information about Transformable elements, see the [CSS Transforms Module](http://www.w3.org/TR/css3-transforms/#transformable-element).
 
