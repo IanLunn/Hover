@@ -206,6 +206,20 @@
 	}
 }
 
+@import "effects/2d-transitions/forward";
+@if $includeClasses {
+	.#{$nameSpace}-forward {
+		@include forward();
+	}
+}
+
+@import "effects/2d-transitions/backward";
+@if $includeClasses {
+	.#{$nameSpace}-backward {
+		@include backward();
+	}
+}
+
 /* BACKGROUND TRANSITIONS */
 @import "effects/background-transitions/fade";
 @if $includeClasses {
