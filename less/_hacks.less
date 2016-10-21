@@ -4,18 +4,13 @@
 
 .hardwareAccel() {
 	// Improve performance on mobile/tablet devices
-	.prefixed(transform, translateZ(0));
+	// Perspective reduces blurryness of text in Chrome
+	.prefixed(transform, perspective(1px) translateZ(0));
 }
 
 .improveAntiAlias() {
 	// Improve aliasing on mobile/tablet devices
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.fontSmooth() {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .forceBlockLevel() {
@@ -28,5 +23,4 @@
 	.forceBlockLevel();
 	.hardwareAccel();
 	.improveAntiAlias();
-	.fontSmooth();
 }
