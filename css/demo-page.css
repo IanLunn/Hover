@@ -109,8 +109,6 @@ p,
 }
 
 [class^="hvr-"] {
-  /*display: inline-block;*/
-  /*vertical-align: middle;*/
   margin: .4em;
   padding: 1em;
   cursor: pointer;
@@ -119,6 +117,10 @@ p,
   color: #666;
   /* Prevent highlight colour when element is tapped */
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  /* Smooth fonts */
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .aligncenter {
