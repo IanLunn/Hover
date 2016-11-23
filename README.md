@@ -11,6 +11,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 
 - NPM: `npm install --save hover.css`
 - Bower: `bower install Hover`
+- [spm](http://spmjs.io/package/hover.css): `spm install Hover`
 - [Download Zip](https://github.com/IanLunn/Hover/archive/master.zip)
 
 ## How To Use
