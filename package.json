@@ -19,6 +19,6 @@
     "grunt-version": "^0.3.0"
   },
   "dependencies": {
-    "load-grunt-tasks": "~0.2.0"
+    "load-grunt-tasks": "~3.3.0"
   }
 }
