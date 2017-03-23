@@ -16,9 +16,7 @@
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-sass": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-version": "^0.3.0"
-  },
-  "dependencies": {
+    "grunt-version": "^0.3.0",
     "load-grunt-tasks": "~3.3.0"
   }
 }
