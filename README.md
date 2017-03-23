@@ -9,8 +9,8 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 
 ## Download/Install
 
-- NPM: `npm install --save hover.css`
-- Bower: `bower install Hover`
+- NPM: `npm install hover.css --save`
+- Bower: `bower install hover --save`
 - [Download Zip](https://github.com/IanLunn/Hover/archive/master.zip)
 
 ## How To Use
@@ -237,30 +237,16 @@ The `$includeClasses` / `@includeClasses` option by default is set to `true` and
 
 If you'd like to contribute your own effects, please see the [Contributing Guide](https://github.com/IanLunn/Hover/blob/master/CONTRIBUTING.md).
 
-## License
-Hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
+## Licenses
 
-Retaining the author information at the top of `css/hover.css` and placing it on your credits page or humans.txt is much appreciated.
+### Commercial License
+If you want to use Hover.css to develop commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a Hover.css Commercial License at https://site.uplabs.com/posts/hover-css-a-collection-of-css3-hover-effects
+
+### Open-Source License
+If you are creating an open source application under a license compatible with the GNU GPL license v3, you may use this project under the terms of the GPLv3.
 
 ## Hire Ian Lunn
 
 [Ian Lunn](http://ianlunn.co.uk) is a Freelance Front-end Developer and author of [CSS3 Foundations](http://css3foundations.com/).
 
 Hire [Ian](http://ianlunn.co.uk) for responsive websites, WordPress websites, JavaScript, animation, and optimization.
-
-## Support Future Development
-
-To support the future development of Hover.css and other open source projects created by [Ian Lunn](https://github.com/IanLunn), please consider making a donation.
-
-Your donation is not-for-profit (or beer!), and will allow Ian to spend a little less time on client projects and more time supporting and creating open source software.
-
-Thank you.
-
-**Bitcoin:**
-
-Bitcoin donations may be sent to the following address:
-
-<div style="text-align: center;">
-<a href="bitcoin:1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd?label=Hover.css%20Development"><img src="http://ianlunn.co.uk/images/btc-donate.jpg" /></a>
-<p>1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd</p>
-</div>

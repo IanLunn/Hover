@@ -3,11 +3,7 @@
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
-
- * Made available under a MIT License:
- * http://www.opensource.org/licenses/mit-license.php
-
- * Hover.css Copyright Ian Lunn 2014.
+ * Hover.css Copyright Ian Lunn 2017.
  */
 
 /**
@@ -30,6 +26,26 @@ hr {
   background-color: #ddd;
   border: none;
   height: 1px;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: .875em;
+  font-weight: 700;
+}
+nav li {
+  list-style: none;
+  display: block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+@media only screen and (min-width: 768px) {
+  nav li {
+    display: inline-block;
+  }
 }
 
 .sep {
@@ -228,7 +244,79 @@ h3 {
   font-weight: normal;
 }
 
-.social {
+.licenses {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.licenses:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.license {
+  display: block !important;
+  margin-bottom: 20px;
+  text-align: center;
+  border: #2098D1 solid 1px;
+}
+
+.license:focus,
+.license:hover {
+  border-color: #207AD1;
+}
+
+.license:focus .button,
+.license:hover .button {
+  background-color: #207AD1;
+  color: white;
+}
+
+.license__content {
+  padding: 25px 10px;
+}
+
+.license__title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.license__title div {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.license__desc {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.license__button.cta {
+  display: block;
+  margin: 0;
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 568px) {
+  .license {
+    width: 48%;
+    float: left;
+  }
+
+  .license:nth-child(2) {
+    float: right;
+  }
+
+  .license__content {
+    padding: 40px 10px;
+  }
+}
+
+.download {
   margin-top: 2.6em;
 }
 
