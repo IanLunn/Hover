@@ -1,7 +1,7 @@
 /* Back Pulse */
 @include keyframes(#{$nameSpace}-back-pulse) {
 	50% {
-		background-color: rgba(32, 152, 209, .75);
+		background-color: rgba($activeColor, .75);
 	}
 }
 
@@ -20,7 +20,6 @@
 		@include prefixed(animation-timing-function, linear);
 		@include prefixed(animation-iteration-count, infinite);
 		background-color: $activeColor;
-		background-color: rgba(32, 152, 209, 1);
 		color: white;
 	}
 }
