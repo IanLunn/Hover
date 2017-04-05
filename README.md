@@ -8,7 +8,28 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
 ## Contents
-- [Download/Install](#download-install)
+- [Download/Install](#downloadinstall)
+- [How To Use](#how-to-use)
+    - [A. Copy and Paste an Effect](#acopy-and-paste-an-effect)
+    - [B. Reference Hover.css](#b-reference-hovercss)
+    - [A Note on the display property](#a-note-on-the-display-property)
+    - [Using FontAwesome with Icon Effects](#using-fontawesome-with-icon-effects)
+- [What's Included?](#whats-included)
+    - [css](#css)
+    - [scss/less](scssless)
+    - [Other](#other)
+- [Browser Support](browser-support)
+- [Using Grunt for Development](using-grunt-for-development)
+- [Using Sass/LESS for Development](using-sassless-for-development)
+    - [_hacks](#hacks)
+    - [_mixins](#mixins)
+    - [_options](#options)
+- [Contribute to Hover.css](#contribute-to-hovercss)
+- [Licenses](#licenses)
+    - [Commercial License](#commercial-license)
+    - [Open-Source License](#open-source-license)
+- [Hire Ian Lunn](#hire-ian-lunn)
+
 ## Download/Install
 
 - NPM: `npm install hover.css --save`
