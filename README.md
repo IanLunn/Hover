@@ -8,7 +8,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
 ## Contents
-- [Download/Install](#download-/-install)
+- [Download/Install](#download-install)
 ## Download/Install
 
 - NPM: `npm install hover.css --save`
