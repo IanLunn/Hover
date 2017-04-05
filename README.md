@@ -10,7 +10,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 ## Contents
 - [Download/Install](#downloadinstall)
 - [How To Use](#how-to-use)
-    - [A. Copy and Paste an Effect](#acopy-and-paste-an-effect)
+    - [A. Copy and Paste an Effect](#a-copy-and-paste-an-effect)
     - [B. Reference Hover.css](#b-reference-hovercss)
     - [A Note on the display property](#a-note-on-the-display-property)
     - [Using FontAwesome with Icon Effects](#using-fontawesome-with-icon-effects)
