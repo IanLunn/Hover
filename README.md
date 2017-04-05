@@ -16,7 +16,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
     - [Using FontAwesome with Icon Effects](#using-fontawesome-with-icon-effects)
 - [What's Included?](#whats-included)
     - [css](#css)
-    - [scss/less](scssless)
+    - [scss/less](#scssless)
     - [Other](#other)
 - [Browser Support](browser-support)
 - [Using Grunt for Development](using-grunt-for-development)
