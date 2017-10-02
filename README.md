@@ -1,6 +1,8 @@
 # Hover.css
 
 [![Join the chat at https://gitter.im/IanLunn/Hover](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IanLunn/Hover?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![CDNJS](https://img.shields.io/cdnjs/v/hover.css.svg)](https://cdnjs.com/libraries/hover.css)
+[![npm](https://img.shields.io/npm/v/hover.css.svg)](https://www.npmjs.com/package/hover.css)
 
 A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.
 
