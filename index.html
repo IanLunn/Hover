@@ -21,7 +21,20 @@
 
 			<h1>Hover.css <a href="https://github.com/IanLunn/Hover/releases" class="sup" title="View release history">v2</a></h1>
 
+			<nav>
+				<ul>
+					<li><a href="#effects" title="Effects">Effects</a></li>
+					<li><a href="https://github.com/IanLunn/Hover/blob/master/README.md#hovercss" title="Setup">Setup</a></li>
+					<li><a href="http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/" title="hover.css Tutorial and Introduction">Tutorial</a></li>
+					<li><a href="#licenses" title="Licenses">Licenses</a></li>
+				</ul>
+			</nav>
+
 			<p class="intro">A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.</p>
+
+			<div class="download aligncenter">
+				<a class="button cta hvr-float-shadow" href="https://github.com/IanLunn/Hover">Download on GitHub</a>
+			</div>
 
 			<div class="social aligncenter">
 				<div class="social-button">
@@ -33,16 +46,10 @@
 				</div>
 			</div>
 
-			<div class="aligncenter">
-				<a class="button cta hvr-float-shadow" href="https://github.com/IanLunn/Hover">Download on GitHub</a><br />
-				<a class="nav hvr-icon-down" href="#effects">View Effects</a> <span class="sep">|</span>
-				<a class="nav hvr-icon-forward" href="http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/">Read Tutorial</a>
-			</div>
-
 			<hr />
 
 			<div class="ad carbon-ad">
-				<p class="carbon-ad-label">Support Hover.css by visiting an ad:</p>
+				<p class="carbon-ad-label">Advertisement:</p>
 				<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=ianlunngithubiohover" id="_carbonads_js"></script>
 			</div>
 
@@ -78,6 +85,8 @@
 				<a href="#" class="hvr-wobble-skew">Wobble Skew</a>
 				<a href="#" class="hvr-buzz">Buzz</a>
 				<a href="#" class="hvr-buzz-out">Buzz Out</a>
+				<a href="#" class="hvr-forward">Forward</a>
+				<a href="#" class="hvr-backward">Backward</a>
 
 
 				<h2>Background Transitions</h2>
@@ -194,16 +203,80 @@
 
 					<p>All Hover.css effects make use of a single element (with the help of some pseudo-elements where necessary), are self contained so you can easily copy and paste them, and come in CSS, Sass, and LESS flavours.</p>
 
-					<p>For best results, hover effects use a couple of "hacks" (undesirable but usually necessary lines of code). For more information on these hacks and whether you need them, <a href="https://github.com/IanLunn/Hover/wiki/Hacks-Explained">please read the FAQ</a>.</p>
-
 					<p>Many effects use CSS3 features such as transitions, transforms and animations. Old browsers that don't support these features may need some extra attention to be certain a fallback hover effect is still in place.</p>
 
 					<br />
-					<h3>License</h3>
+					<h3 id="licenses">Licenses</h3>
 
-					<p>Hover.css is open source, and made available under a <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>. Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
+					<p>Hover.css is made available under a free personal/open source or paid commercial licenses depending on your requirements. To compare licenses please visit the <a href="https://ianlunn.co.uk/store/licenses/">Ian Lunn Design Limited Store</a> and <a href="https://ianlunn.co.uk/store/hover-css/">purchase a commercial license</a>.</p>
 
-					<p>Placing author information in your stylesheet, credits page or humans.txt is much appreciated.</p>
+					<h4 id="personal">Personal/Open Source</h4>
+
+					<p>For personal/open source use, Hover.css is made available under a <a href="https://opensource.org/licenses/MIT">MIT license</a>:</p>
+
+					<ul>
+						<li>Use in unlimited personal applications</li>
+						<li>Your application can't be sold</li>
+						<li>Your modifications remain open-source</li>
+						<li>Free updates</li>
+					</ul>
+
+					<p><a href="https://ianlunn.co.uk/store/licenses/personal/">Read full license</a></p>
+
+					<h3 id="commercial-licenses">Commercial</h3>
+
+					<p>For commercial use, Hover.css is made available under Commercial, Extended Commercial, and OEM Commercial licenses.</p>
+
+					<h4 id="commercial">Commercial License</h4>
+
+					<ul>
+						<li>Use in 1 application</li>
+						<li>Sell your application once only (e.g. a website sold to a client)</li>
+						<li>Your code is kept proprietary, to yourself</li>
+						<li>Free updates to the major version</li>
+					</ul>
+
+					<p><a href="https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial">Purchase<a/> | <a href="https://ianlunn.co.uk/store/licenses/commercial/">Read full license</a></p>
+
+					<h4 id="extended-commercial">Extended Commercial License</h4>
+
+					<ul>
+						<li>Use in unlimited applications</li>
+						<li>Sell your applications an unlimited number of times (e.g. a website template sold on a theme store)*</li>
+						<li>Your code is kept proprietary, to yourself</li>
+						<li>Free updates to the major version</li>
+					</ul>
+
+					<p><small>*With the exception of applications that allow end users to produce separate applications. See the OEM Commercial License.</small></p>
+
+					<p><a href="https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=extended-commercial">Purchase<a/> | <a href="https://ianlunn.co.uk/store/licenses/extended-commercial/">Read full license</a></p>
+
+					<div class="licenses">
+						<a target="_blank" href="https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial" title="Commercial License" class="license hvr-float">
+							<div class="license__content">
+								<h5 class="license__title"><div>Hover.css</div> Commercial <div>License</div></h5>
+								<p class="license__desc">For 1 Project</p>
+							</div>
+							<span class="license__button button cta">$14</span>
+						</a>
+
+						<a target="_blank" href="https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=extended-commercial" title="Extended Commercial License" class="license hvr-float">
+							<div class="license__content">
+								<h5 class="license__title"><div>Hover.css</div> Extended Commercial <div>License</div></h5>
+								<p class="license__desc">For Unlimited Projects</p>
+							</div>
+							<span class="license__button button cta">$18</span>
+						</a>
+					</div>
+
+					<h4 id="oem-commercial">OEM Commercial License</h4>
+
+					<p>Should your application enable end users to produce separate applications that incorporate Ian Lunn Design Limited's software, for example, a development toolkit, library, or application builder, you must obtain an OEM Commercial License. Please <a href="https://ianlunn.co.uk/contact/">contact us</a> for more information about the OEM Commercial License.</p>
+
+					<h4>MIT License (Pre v2.2.0 / 24th March 2017)</h4>
+					<p>Hover.css was previously made available under a MIT License for both commercial and non-commercial use. Anyone that obtained a MIT license for commercial use before v2.2.0 (24th March 2017) may continue to use Hover.css versions prior to v2.2.0 under that same license.</p>
+
+					<p>If you'd like to upgrade to v2.2.0 or above, or would like to simply show your support for Hover.css (we'd much appreciate it!), please purchase an up-to-date commercial license. <a href="https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial" title="Commercial License">Commercial License</a>.</p>
 
 					<br />
 					<h3>Hover.css is now available as an Eager App</h3>
@@ -228,8 +301,8 @@
 		<div class="made-by group">
 			<ul>
 				<li>
-					<!-- "IL" logo Copyright (c) Ian Lunn Design Limited 2015 -->
-					<a cass="icon__ild" href="http://ianlunn.co.uk/" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer" target="_blank" class="ild-ident">
+					<!-- "IL" logo Copyright (c) Ian Lunn Design Limited 2017 -->
+					<a cass="icon__ild" href="http://ianlunn.co.uk/" title="Ian Lunn - WordPress &amp; Front End Developer" target="_blank" class="ild-ident">
 						<svg class="" onmouseenter="el=this;el.classList.add('active');setTimeout(function(){el.classList.remove('active')},600);" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 52 52">
 							<g class="circle-holder">
 								<path class="circle" fill="#2E96D6" d="M5.4 26c0-11.4 9.2-20.6 20.6-20.6s20.6 9.2 20.6 20.6c0 11.4-9.2 20.6-20.6 20.6s-20.6-9.2-20.6-20.6zm-5.4 0c0 14.4 11.6 26 26 26s26-11.6 26-26-11.6-26-26-26-26 11.6-26 26z"></path>
@@ -242,10 +315,10 @@
 				<li><a class="icon__twitter" href="https://twitter.com/IanLunn/" title="Ian Lunn on Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				<li><a class="icon__github" href="https://github.com/IanLunn/Hover/" title="Hover.css on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
 			</ul>
-			<p>Made by<br /><a href="http://ianlunn.co.uk/" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer" target="_blank">Ian Lunn - Web Designer &amp; Front End Developer</a></p>
+			<p>Made by<br /><a href="http://ianlunn.co.uk/" title="Ian Lunn - WordPress &amp; Front End Developer" target="_blank">Ian Lunn - WordPress &amp; Front-end Developer</a></p>
 
 			<p class="follow"><a href="https://twitter.com/IanLunn" class="twitter-follow-button" data-show-count="false" data-dnt="true" data-size="large">Follow @IanLunn</a> for Hover.css news, web design &amp;<br /> development links, tips, and opinions</p>
-			<small>Copyright &copy; 2015 <a href="http://ianlunn.co.uk/" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer" target="_blank">Ian Lunn Design Limited</a></small>
+			<small>Copyright &copy; 2017 <a href="http://ianlunn.co.uk/" title="Ian Lunn - WordPress &amp; Front End Developer" target="_blank">Ian Lunn Design Limited</a></small>
 		</div>
 
 		<script>

@@ -9,8 +9,8 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 
 ## Download/Install
 
-- NPM: `npm install --save hover.css`
-- Bower: `bower install Hover`
+- NPM: `npm install hover.css --save`
+- Bower: `bower install hover --save`
 - [Download Zip](https://github.com/IanLunn/Hover/archive/master.zip)
 
 ## How To Use
@@ -173,7 +173,7 @@ Aside from the above mentioned browsers, Hover.css is supported across all major
 
 ## Using Grunt for Development
 
-Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, Sass, Stylus or LESS will be preprocessed (depending on whether you work out of the `scss`, `styl` or `less` folder) and CSS files will be minified.
+Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/) or your local IP for network testing. With Grunt running, Sass or LESS will be preprocessed (depending on whether you work out of the `scss`, `styl` or `less` folder) and CSS files will be minified.
 
 **Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` Sass/Stylus/LESS mixin should be used for browser prefixing instead. See [Using Sass/Stylus/LESS for Development](#using-sassstylusless-for-development) and [Using LESS for Development].
 
@@ -252,30 +252,57 @@ The `$includeClasses` / `@includeClasses` option by default is set to `true` and
 
 If you'd like to contribute your own effects, please see the [Contributing Guide](https://github.com/IanLunn/Hover/blob/master/CONTRIBUTING.md).
 
-## License
-Hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
+## Licenses
 
-Retaining the author information at the top of `css/hover.css` and placing it on your credits page or humans.txt is much appreciated.
+Hover.css is made available under a free personal/open source or paid commercial licenses depending on your requirements. To compare licenses please visit the [Ian Lunn Design Limited Store](https://ianlunn.co.uk/store/licenses/) and [purchase a commercial license here](https://ianlunn.co.uk/store/hover-css/).
+
+### Personal/Open Source
+
+For personal/open source use, Hover.css is made available under a [MIT license](https://opensource.org/licenses/MIT)
+
+- Use in unlimited personal applications
+- Your application can't be sold
+- Your modifications remain open-source
+- Free updates
+
+[Read full license](https://ianlunn.co.uk/store/licenses/personal/)
+
+### Commercial
+
+For commercial use, Hover.css is made available under Commercial, Extended Commercial, and OEM Commercial licenses.
+
+#### Commercial License
+
+- Use in 1 application
+- Sell your application once only (e.g. a website sold to a client)
+- Your code is kept proprietary, to yourself
+- Free updates to the major version
+
+[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/commercial/)
+
+#### Extended Commercial License
+
+- Use in unlimited applications
+- Sell your applications an unlimited number of times (e.g. a website template sold on a theme store)*
+- Your code is kept proprietary, to yourself
+- Free updates to the major version
+
+*With the exception of applications that allow end users to produce separate applications. See the OEM Commercial License.
+
+[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=extended-commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/extended-commercial/)
+
+#### OEM Commercial License
+
+Should your application enable end users to produce separate applications that incorporate Ian Lunn Design Limited's software, for example, a development toolkit, library, or application builder, you must obtain an OEM Commercial License. Please [contact us](https://ianlunn.co.uk/contact/) for more information about the OEM Commercial License.
+
+### MIT License (Pre v2.2.0 / 24th March 2017)
+
+Hover.css was previously made available under a MIT License for both commercial and non-commercial use. Anyone that obtained a MIT license for commercial use before v2.2.0 (24th March 2017) may continue to use Hover.css versions prior to v2.2.0 under that same license.
+
+If you'd like to upgrade to v2.2.0 or above, or would like to simply show your support for Hover.css (we'd much appreciate it!), please purchase an up-to-date commercial license. [Purchase a Commercial License](https://ianlunn.co.uk/store/hover-css/).
 
 ## Hire Ian Lunn
 
 [Ian Lunn](http://ianlunn.co.uk) is a Freelance Front-end Developer and author of [CSS3 Foundations](http://css3foundations.com/).
 
 Hire [Ian](http://ianlunn.co.uk) for responsive websites, WordPress websites, JavaScript, animation, and optimization.
-
-## Support Future Development
-
-To support the future development of Hover.css and other open source projects created by [Ian Lunn](https://github.com/IanLunn), please consider making a donation.
-
-Your donation is not-for-profit (or beer!), and will allow Ian to spend a little less time on client projects and more time supporting and creating open source software.
-
-Thank you.
-
-**Bitcoin:**
-
-Bitcoin donations may be sent to the following address:
-
-<div style="text-align: center;">
-<a href="bitcoin:1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd?label=Hover.css%20Development"><img src="http://ianlunn.co.uk/images/btc-donate.jpg" /></a>
-<p>1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd</p>
-</div>

@@ -1,14 +1,11 @@
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.0.2
+ * Version: 2.2.1
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
 
- * Made available under a MIT License:
- * http://www.opensource.org/licenses/mit-license.php
-
- * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
  */
 
 @import "options";
@@ -203,6 +200,20 @@
 @if $includeClasses {
 	.#{$nameSpace}-buzz-out {
 	    @include buzz-out();
+	}
+}
+
+@import "effects/2d-transitions/forward";
+@if $includeClasses {
+	.#{$nameSpace}-forward {
+		@include forward();
+	}
+}
+
+@import "effects/2d-transitions/backward";
+@if $includeClasses {
+	.#{$nameSpace}-backward {
+		@include backward();
 	}
 }
 

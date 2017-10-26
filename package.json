@@ -1,6 +1,6 @@
 {
   "name": "hover.css",
-  "version": "2.0.2",
+  "version": "2.2.1",
   "author": "Ian Lunn",
   "repository": {
     "type": "git",
@@ -17,9 +17,7 @@
     "grunt-contrib-sass": "~0.6.0",
     "grunt-contrib-stylus": "~1.2.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-version": "^0.3.0"
-  },
-  "dependencies": {
-    "load-grunt-tasks": "~0.2.0"
+    "grunt-version": "^0.3.0",
+    "load-grunt-tasks": "~3.3.0"
   }
 }
