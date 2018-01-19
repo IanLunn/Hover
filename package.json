@@ -9,6 +9,9 @@
   "bugs": {
     "url": "https://github.com/IanLunn/Hover/issues"
   },
+  "style": "css/hover.css",
+  "sass": "scss/hover.scss",
+  "main": "css/hover.css",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.5.0",
