@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
         version: {
             json: {
-              src: ['bower.json']
+              src: ['package.json']
             },
 
             css: {
