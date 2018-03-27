@@ -8,7 +8,7 @@ Thanks for considering to contribute to Hover.css. To improve your chances of ha
 
 2. Aim to provide subtle effects that enhance user experience.
 
-3. Hover.css is available in Sass, LESS, and CSS formats. If you can, please submit your effects in as many of these formats as possible. Don't worry if you're unfamiliar with any though, we'll convert them for you.
+3. Hover.css is available in Sass, LESS, Stylus, and CSS formats. If you can, please submit your effects in as many of these formats as possible. Don't worry if you're unfamiliar with any though, we'll convert them for you.
 
 4. Try not to use transitions and animations together on the same effect, [we've found this is buggy in Webkit/Blink browsers](https://github.com/IanLunn/Hover/issues/24).
 
