@@ -16,18 +16,9 @@
 	position: relative;
 	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before,
-	&:after {
-		content: "\f056";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
-		.prefixed(transform, translateZ(0));
-	}
-
-	&:after {
+	.fa, .hover-icon {
 		opacity: 0;
+		.prefixed(transform, translateZ(0));
 		.prefixed(animation-duration, @slowDuration);
 		.prefixed(animation-fill-mode, forwards);
 	}
@@ -36,7 +27,7 @@
 	&:focus,
 	&:active {
 
-		&:after {
+		.fa, .hover-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-sink-away");
 			.prefixed(animation-timing-function, ease-out);
 		}

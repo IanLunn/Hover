@@ -10,12 +10,7 @@
 	position: relative;
 	padding-right: #{$spaceBetweenTextAndArrows};
 
-	&:before {
-		content: "\f015";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-timing-function, ease-out);
 	}
@@ -24,7 +19,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-pulse-shrink);
 			@include prefixed(animation-duration, $mediumDuration);
 			@include prefixed(animation-timing-function, linear);

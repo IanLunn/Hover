@@ -134,33 +134,16 @@ Hover.css uses [FontAwesome](https://fortawesome.github.io/Font-Awesome/) for it
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 ```
 
-Hover.css icons are added to elements via the `:before` pseudo-element. Let's take the Icon Forward effect as an example (browser prefixes and additional styles removed for brevity):
+Hover.css icons are added to elements via the classes .fa or .hover-icon:
 
-```css
-.hvr-icon-forward:before {
-    content: "\f138";
-    position: absolute;
-    right: 1em;
-    padding: 0 1px;
-    font-family: FontAwesome;
-    transform: translateZ(0);
-    transition-duration: 0.1s;
-    transition-property: transform;
-    transition-timing-function: ease-out;
-}
+```
+<a href="#" class="hvr-icon-spin"><i class="fa fa-refresh"></i> My Text</a>
+```
+OR
+```
+<a href="#" class="hvr-icon-spin"><span class="glyphicon glyphicon-search hover-icon"></span> My Text</a>
 ```
 
-What's important in the above example are the `font-family` and `content` declarations. `font-family: FontAwesome` tells the browser we want to use a FontAwesome icon in this pseudo-element, and the `content` value says which one. Should you wish to change the icon, change the value of the `content` property. A [full list of the values and the icon they represent can be found here](http://astronautweb.co/snippet/font-awesome/#font-awesome-list).
-
-If you'd rather not tamper with Hover.css itself, you can override the default content value simply by declaring the same declaration again (providing it be declared after the default one either in Hover.css or another stylesheet):
-
-```css
-.hvr-icon-forward:before {
-    content: "\f001";
-}
-```
-
-The Icon Forward effect will then display a musical note that moves forward when hovered over (instead of the default arrow in a circle).
 
 ## What's Included?
 

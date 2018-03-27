@@ -44,15 +44,10 @@
 @mixin icon-buzz-out {
 	@include hacks();
 	position: relative;
-	padding-right: 2.2em;
+	padding-right: 0;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before {
-		content: "\f023";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.fa, .hover-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -60,7 +55,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.fa, .hover-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-buzz-out);
 			@include prefixed(animation-duration, .75s);
 			@include prefixed(animation-timing-function, linear);
