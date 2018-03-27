@@ -19,10 +19,8 @@
 /* Icon Drop */
 @mixin icon-drop {
 	@include hacks();
-	position: relative;
-	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -30,7 +28,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			opacity: 0;
 			@include prefixed(transition-duration, #{$mediumDuration});
 			@include prefixed(animation-name, #{$nameSpace}-icon-drop);

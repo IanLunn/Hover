@@ -14,10 +14,8 @@
 /* Icon Down */
 .icon-down() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -25,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-down");
 			.prefixed(animation-duration, .75s);
 			.prefixed(animation-timing-function, ease-out);

@@ -2,11 +2,9 @@
 
 .icon-bounce() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -17,7 +15,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(transform, scale(1.5));
 			.prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36));
 		}

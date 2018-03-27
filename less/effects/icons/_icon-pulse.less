@@ -11,10 +11,8 @@
 
 .icon-pulse() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-timing-function, ease-out);
 	}
@@ -23,7 +21,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pulse");
 			.prefixed(animation-duration, 1s);
 			.prefixed(animation-timing-function, linear);

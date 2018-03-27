@@ -19,11 +19,9 @@
 
 .icon-hang() {
 	.hacks();
-	position: relative;
-	padding-right: 0;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -31,7 +29,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-hang-sink, @{nameSpace}-icon-hang");
 			.prefixed(animation-duration, ~".3s, 1.5s");
 			.prefixed(animation-delay, ~"0s, .3s");

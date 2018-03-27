@@ -11,11 +11,9 @@
 
 .icon-buzz() {
 	.hacks();
-	position: relative;
-	padding-right: 0;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -23,7 +21,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-buzz");
 			.prefixed(animation-duration, .15s);
 			.prefixed(animation-timing-function, linear);

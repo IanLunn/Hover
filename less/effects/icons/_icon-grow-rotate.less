@@ -3,11 +3,9 @@
 	@duration: @mediumDuration;
 
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @duration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @duration);
 		.prefixed(transition-property, transform);
@@ -18,7 +16,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(transform, scale(1.5) rotate(12deg));
 		}
 	}

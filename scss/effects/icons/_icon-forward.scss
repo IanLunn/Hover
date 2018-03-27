@@ -1,11 +1,9 @@
 /* Icon Forward */
 @mixin icon-forward {
 	@include hacks();
-	position: relative;
-	padding-right: 0;
 	@include prefixed(transition-duration, $fastDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $fastDuration);
 		@include prefixed(transition-property, transform);
@@ -16,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			@include prefixed(transform, translateX(4px));
 		}
 	}

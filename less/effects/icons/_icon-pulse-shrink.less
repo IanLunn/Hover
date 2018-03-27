@@ -7,10 +7,8 @@
 
 .icon-pulse-shrink() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-timing-function, ease-out);
 	}
@@ -19,7 +17,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pulse-shrink");
 			.prefixed(animation-duration, @mediumDuration);
 			.prefixed(animation-timing-function, linear);

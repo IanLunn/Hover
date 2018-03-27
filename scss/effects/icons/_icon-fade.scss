@@ -1,10 +1,8 @@
 /* Icon Fade */
 @mixin icon-fade {
 	@include hacks();
-	position: relative;
-	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, .5s);
 		@include prefixed(transition-property, color);
@@ -14,7 +12,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			color: #0F9E5E;
 		}
 	}

@@ -13,11 +13,9 @@
 /* Icon Float Away */
 .icon-float-away() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	.fa, .hover-icon {
-		opacity: 0;
+	.hvr-icon {
+		.prefixed(transform, translateZ(0));
 		.prefixed(animation-duration, @slowDuration);
 		.prefixed(animation-fill-mode, forwards);
 	}
@@ -26,7 +24,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-float-away");
 			.prefixed(animation-timing-function, ease-out);
 		}

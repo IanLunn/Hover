@@ -13,7 +13,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
     - [A. Copy and Paste an Effect](#a-copy-and-paste-an-effect)
     - [B. Reference Hover.css](#b-reference-hovercss)
     - [A Note on the display property](#a-note-on-the-display-property)
-    - [Using FontAwesome with Icon Effects](#using-fontawesome-with-icon-effects)
+    - [Using Icon Effects](#using-icon-effects)
 - [What's Included?](#whats-included)
     - [css](#css)
     - [scss/less](#scssless)
@@ -126,24 +126,44 @@ Should you wish to override this behavior, either remove the above CSS from Hove
 
 For more information about Transformable elements, see the [CSS Transforms Module](http://www.w3.org/TR/css3-transforms/#transformable-element).
 
-### Using FontAwesome with Icon Effects
+### Using Icon Effects
 
-Hover.css uses [FontAwesome](https://fortawesome.github.io/Font-Awesome/) for its icon effects. For these effects to work, a reference to the FontAwesome stylesheet must be added by placing the following in the `<head></head>` of your web page:
+To add a Hover.css icon, place the icon HTML inside the element that a Hover.css effect is applied to. For example:
+
+```
+<a href="#" class="hvr-icon-forward">
+  Icon Forward
+  <i class="fa fa-chevron-circle-right hvr-icon"></i>
+</a>
+```
+
+In the above code, we have given a link element a class of `hvr-icon-forward` which will make an icon move forward when the link is hovered over. The icon itself is given a class of `hvr-icon` to let Hover.css know that this is the icon we want to animate. In this example, our icon is from FontAwesome, which we've loaded into the `<head></head>` of our web page as per FontAwesome's instructions, like so:
 
 ```html
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 ```
 
-Hover.css icons are added to elements via the classes .fa or .hover-icon:
+Note: As of Hover.css v2.3.0 you can use any method you like for adding icons (previously, only FontAwesome was supported out-of-the-box.) For example, you could use another icon library or instead, use an image like so:
 
 ```
-<a href="#" class="hvr-icon-spin"><i class="fa fa-refresh"></i> My Text</a>
-```
-OR
-```
-<a href="#" class="hvr-icon-spin"><span class="glyphicon glyphicon-search hover-icon"></span> My Text</a>
+<a href="#" class="hvr-icon-spin">
+  Icon Spin
+  <img src="myicon.svg" class="hvr-icon" />
+</a>
 ```
 
+Here, the image will act as the icon because it has the `hvr-icon` class applied to it, and when hovered over, the icon will spin as defined by the `hvr-icon-spin` class on the parent element.
+
+Position of the icon is entirely in your control. You could place it before the text, like so:
+
+```
+<a href="#" class="hvr-icon-spin">
+  <img src="myicon.svg" class="hvr-icon" />
+  Icon Spin
+</a>
+```
+
+Or use custom CSS to position the icon as you see fit.
 
 ## What's Included?
 

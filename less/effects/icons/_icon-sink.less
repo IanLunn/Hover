@@ -1,11 +1,9 @@
 /* Icon Sink */
 .icon-sink() {
 	.hacks();
-	position: relative;
-	padding-right: 0;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -16,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(transform, translateY(4px));
 		}
 	}

@@ -1,11 +1,9 @@
 /* Icon Sink */
 @mixin icon-sink {
 	@include hacks();
-	position: relative;
-	padding-right: 0;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-property, transform);
@@ -16,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			@include prefixed(transform, translateY(4px));
 		}
 	}

@@ -1,10 +1,8 @@
 /* Icon Spin */
 .icon-spin() {
 	.hacks();
-	position: relative;
-	padding-right: 0;
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transition-duration, 1s);
 		.prefixed(transition-property, transform);
 		.prefixed(transition-timing-function, ease-in-out);
@@ -14,7 +12,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(transform, rotate(360deg));
 		}
 	}

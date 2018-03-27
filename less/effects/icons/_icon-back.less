@@ -1,11 +1,9 @@
 /* Icon Back */
 .icon-back() {
 	.hacks();
-	position: relative;
-	padding-left: 0;
 	.prefixed(transition-duration, @fastDuration);
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @fastDuration);
 		.prefixed(transition-property, transform);
@@ -16,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(transform, translateX(-4px));
 		}
 	}

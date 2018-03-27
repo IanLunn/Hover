@@ -14,10 +14,8 @@
 /* Icon Up */
 .icon-up() {
 	.hacks();
-	position: relative;
-	padding-right: 0;
 
-	.fa, .hover-icon {
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -25,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		.fa, .hover-icon {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-up");
 			.prefixed(animation-duration, .75s);
 			.prefixed(animation-timing-function, ease-out);
