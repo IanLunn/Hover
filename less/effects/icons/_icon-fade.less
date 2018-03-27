@@ -1,15 +1,8 @@
 /* Icon Fade */
 .icon-fade() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before {
-		content: "\f00c";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, .5s);
 		.prefixed(transition-property, color);
@@ -19,7 +12,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			color: #0F9E5E;
 		}
 	}

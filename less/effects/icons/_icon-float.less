@@ -1,16 +1,9 @@
 /* Icon Float */
 .icon-float() {
 	.hacks();
-	position: relative;
-	padding-right: 2.2em;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f01b";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -21,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(transform, translateY(-4px));
 		}
 	}

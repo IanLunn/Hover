@@ -1,16 +1,9 @@
 /* Icon Float */
 @mixin icon-float {
 	@include hacks();
-	position: relative;
-	padding-right: 2.2em;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before {
-		content: "\f01b";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-property, transform);
@@ -21,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			@include prefixed(transform, translateY(-4px));
 		}
 	}

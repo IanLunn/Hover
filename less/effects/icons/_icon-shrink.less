@@ -1,16 +1,9 @@
 /* Icon Shrink */
 .icon-shrink() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f119";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -21,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(transform, scale(.8));
 		}
 	}

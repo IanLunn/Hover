@@ -3,16 +3,9 @@
 	@duration: @mediumDuration;
 
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @duration);
 
-	&:before {
-		content: "\f095";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @duration);
 		.prefixed(transition-property, transform);
@@ -23,7 +16,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(transform, scale(1.5) rotate(12deg));
 		}
 	}

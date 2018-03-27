@@ -27,16 +27,9 @@
 
 @mixin icon-wobble-horizontal {
 	@include hacks();
-	position: relative;
-	padding-right: 2.2em;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before {
-		content: "\f061";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -44,7 +37,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-wobble-horizontal);
 			@include prefixed(animation-duration, 1s);
 			@include prefixed(animation-timing-function, ease-in-out);

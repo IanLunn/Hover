@@ -13,20 +13,9 @@
 /* Icon Float Away */
 .icon-float-away() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before,
-	&:after {
-		content: "\f055";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
-	}
-
-	&:after {
-		opacity: 0;
+	.hvr-icon {
+		.prefixed(transform, translateZ(0));
 		.prefixed(animation-duration, @slowDuration);
 		.prefixed(animation-fill-mode, forwards);
 	}
@@ -35,7 +24,7 @@
 	&:focus,
 	&:active {
 
-		&:after {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-float-away");
 			.prefixed(animation-timing-function, ease-out);
 		}

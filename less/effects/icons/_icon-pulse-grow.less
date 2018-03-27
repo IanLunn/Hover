@@ -7,15 +7,8 @@
 
 .icon-pulse-grow() {
 	.hacks();
-	position: relative;
-	padding-right: @spaceBetweenTextAndArrows;
 
-	&:before {
-		content: "\f015";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-timing-function, ease-out);
 	}
@@ -24,7 +17,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pulse-grow");
 			.prefixed(animation-duration, @mediumDuration);
 			.prefixed(animation-timing-function, linear);

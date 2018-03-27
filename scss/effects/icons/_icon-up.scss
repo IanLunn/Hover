@@ -14,15 +14,8 @@
 /* Icon Up */
 @mixin icon-up {
 	@include hacks();
-	position: relative;
-	padding-right: 2.2em;
 
-	&:before {
-		content: "\f01b";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -30,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			@include prefixed(animation-name, #{$nameSpace}-icon-up);
 			@include prefixed(animation-duration, .75s);
 			@include prefixed(animation-timing-function, ease-out);

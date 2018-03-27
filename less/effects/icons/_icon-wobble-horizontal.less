@@ -27,16 +27,9 @@
 
 .icon-wobble-horizontal() {
 	.hacks();
-	position: relative;
-	padding-right: 2.2em;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f061";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -44,7 +37,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-wobble-horizontal");
 			.prefixed(animation-duration, 1s);
 			.prefixed(animation-timing-function, ease-in-out);

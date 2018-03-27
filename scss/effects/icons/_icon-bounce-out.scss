@@ -7,16 +7,9 @@
 
 @mixin icon-bounce-out {
 	@include hacks();
-	position: relative;
-	padding-right: #{$spaceBetweenTextAndArrows};
 	@include prefixed(transition-duration, $mediumDuration);
 
-	&:before {
-		content: "\f088";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-property, transform);
@@ -27,7 +20,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			@include prefixed(transform, scale(.9));
 			@include prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36));
 		}

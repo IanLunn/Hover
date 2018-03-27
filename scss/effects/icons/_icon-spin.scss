@@ -1,15 +1,8 @@
 /* Icon Spin */
 @mixin icon-spin {
 	@include hacks();
-	position: relative;
-	padding-right: 2.2em;
 
-	&:before {
-		content: "\f021";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		@include prefixed(transition-duration, 1s);
 		@include prefixed(transition-property, transform);
 		@include prefixed(transition-timing-function, ease-in-out);
@@ -19,7 +12,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			@include prefixed(transform, rotate(360deg));
 		}
 	}

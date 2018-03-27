@@ -1,16 +1,9 @@
 /* Icon Forward */
 .icon-forward() {
 	.hacks();
-	position: relative;
-	padding-right: 2.2em;
 	.prefixed(transition-duration, @fastDuration);
 
-	&:before {
-		content: "\f138";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @fastDuration);
 		.prefixed(transition-property, transform);
@@ -21,7 +14,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(transform, translateX(4px));
 		}
 	}

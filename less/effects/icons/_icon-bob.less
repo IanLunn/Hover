@@ -19,16 +19,9 @@
 
 .icon-bob() {
 	.hacks();
-	position: relative;
-	padding-right: 2.2em;
 	.prefixed(transition-duration, @mediumDuration);
 
-	&:before {
-		content: "\f077";
-		position: absolute;
-		right: 1em;
-		padding: 0 1px;
-		font-family: FontAwesome;
+	.hvr-icon {
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -36,7 +29,7 @@
 	&:focus,
 	&:active {
 
-		&:before {
+		.hvr-icon {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-bob-float, @{nameSpace}-icon-bob");
 			.prefixed(animation-duration, ~".3s, 1.5s");
 			.prefixed(animation-delay, ~"0s, .3s");
