@@ -763,6 +763,13 @@
 	}
 }
 
+@import "effects/icons/icon-heart";
+@if $includeClasses {
+	.#{$nameSpace}-icon-heart {
+		@include icon-heart();
+	}
+}
+
 /* CURLS */
 @import "effects/curls/curl-top-left";
 @if $includeClasses {

@@ -4021,6 +4021,50 @@
   animation-iteration-count: 1;
 }
 
+/* Icon Heart */
+@-webkit-keyframes hvr-icon-heart {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+@keyframes hvr-icon-heart {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+.hvr-icon-heart {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-icon-heart .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-heart:hover .hvr-icon, .hvr-icon-push:focus .hvr-icon, .hvr-icon-heart:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-heart;
+  animation-name: hvr-icon-heart;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: #f31313;
+}
+
 /* CURLS */
 /* Curl Top Left */
 .hvr-curl-top-left {

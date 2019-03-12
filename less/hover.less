@@ -764,6 +764,13 @@
 	}
 }
 
+@import "effects/icons/_icon-heart";
+& when(@includeClasses = true) {
+	.@{nameSpace}-icon-heart {
+		.icon-heart();
+	}
+}
+
 /* CURLS */
 @import "effects/curls/_curl-top-left";
 & when(@includeClasses = true) {
