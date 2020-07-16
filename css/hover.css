@@ -3141,6 +3141,59 @@
   animation-timing-function: ease-out;
 }
 
+/* Icon Float Away Upper Right*/
+
+@-webkit-keyframes hvr-icon-float-away-upperight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(1em);
+        transform: translateY(1em);
+    }
+}
+
+@keyframes hvr-icon-float-away-upperight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(1em, -1em);
+        transform: translate(1em, -1em);
+    }
+}
+
+/* Icon Float Away */
+
+.hvr-icon-float-away-upperight {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-icon-float-away-upperight .fa {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.hvr-icon-float-away-upperight:hover .fa,
+.hvr-icon-float-away-upperight:focus .fa,
+.hvr-icon-float-away-upperight:active .fa {
+    -webkit-animation-name: hvr-icon-float-away;
+    animation-name: hvr-icon-float-away;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+
 /* Icon Sink Away */
 @-webkit-keyframes hvr-icon-sink-away {
   0% {
