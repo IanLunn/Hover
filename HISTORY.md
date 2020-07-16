@@ -22,3 +22,4 @@
 - Changed all instances of 'colour' to 'color'
 - Added small amount of JS to demo page to prevent `<a href="#"></a>` elements from navigating (not required for hover.css to work)
 - Added "What's Included?" section to README.md
+//
