@@ -26,8 +26,8 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
     - [_options](#\_options)
 - [Contribute to Hover.css](#contribute-to-hovercss)
 - [Licenses](#licenses)
-    - [Commercial License](#commercial-license)
-    - [Open-Source License](#open-source-license)
+    - [Personal/Open-Source License](#personalopen-source)
+    - [Commercial License](#commercial)
 - [Hire Ian Lunn](#hire-ian-lunn)
 
 ## Download/Install
