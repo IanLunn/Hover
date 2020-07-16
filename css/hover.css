@@ -4144,9 +4144,114 @@
   -webkit-transition-property: width, height;
   transition-property: width, height;
 }
-.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before{
   width: 25px;
   height: 25px;
 }
+
+/* REFLECTS */
+/* Reflects Elements */
+.hvr-reflect-top, .hvr-reflect-bottom, .hvr-reflect-left, .hvr-reflect-right, .hvr-reflect-top-left, .hvr-reflect-top-right, .hvr-reflect-bottom-left, .hvr-reflect-bottom-right{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+/* Reflects Pseudo Elements */
+.hvr-reflect-top::before, .hvr-reflect-bottom::before, .hvr-reflect-left::before, .hvr-reflect-right::before, .hvr-reflect-top-left::before, .hvr-reflect-top-right::before, .hvr-reflect-bottom-left::before, .hvr-reflect-bottom-right::before{
+  content: '';
+  background: #fff;
+  height: 30%;
+  width: 150%;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,1);
+  box-shadow: 0px 0px 15px 5px rgba(255,255,255,1);
+}
+/* Reflect Top */
+.hvr-reflect-top::before{
+  top: calc(-150% + -15px);
+  transition: 0s;
+  transform: translate(-10%, 0%);
+}
+.hvr-reflect-top:hover::before{
+  top: calc(150% + 15px);
+  transition: .36s linear;
+}
+/* Reflect Bottom */
+.hvr-reflect-bottom::before{
+  top: calc(150% + 15px);
+  transition: 0s;
+  transform: translate(-10%, 0%);
+}
+.hvr-reflect-bottom:hover::before{
+  top: calc(-150% + -15px);
+  transition: .36s linear;
+}
+/* Reflect Left */
+.hvr-reflect-left::before{
+  left: calc(-150% + -15px);
+  transform: rotateZ(90deg);
+  transition: 0s;
+}
+.hvr-reflect-left:hover::before{
+  left: calc(150% + 15px);
+  transition: .36s linear;
+}
+/* Reflect Right */
+.hvr-reflect-right::before{
+  left: calc(150% + 15px);
+  transform: rotateZ(90deg);
+  transition: 0s;
+}
+.hvr-reflect-right:hover::before{
+  left: calc(-150% + -15px);
+  transition: .36s linear;
+}
+/* Reflect Top Left */
+.hvr-reflect-top-left::before{
+  left: calc(-150% + -15px);
+  transform: rotateZ(-45deg);
+  transition: 0s;
+}
+.hvr-reflect-top-left:hover::before{
+  left: calc(150% + 15px);
+  transition: .36s linear;
+}
+/* Reflect Top Right */
+.hvr-reflect-top-right::before{
+  left: calc(150% + 15px);
+  transform: rotateZ(45deg);
+  transition: 0s;
+}
+.hvr-reflect-top-right:hover::before{
+  left: calc(-150% + -15px);
+  transition: .36s linear;
+}
+/* Reflect Bottom Left */
+.hvr-reflect-bottom-left::before{
+  left: calc(-150% + -15px);
+  transform: rotateZ(45deg);
+  transition: 0s;
+}
+.hvr-reflect-bottom-left:hover::before{
+  left: calc(150% + 15px);
+  transition: .36s linear;
+}
+/* Reflect Bottom Right */
+.hvr-reflect-bottom-right::before{
+  left: calc(150% + 15px);
+  transform: rotateZ(-45deg);
+  transition: 0s;
+}
+.hvr-reflect-bottom-right:hover::before{
+  left: calc(-150% + -15px);
+  transition: .36s linear;
+}
+
+
 
 /*# sourceMappingURL=hover.css.map */
