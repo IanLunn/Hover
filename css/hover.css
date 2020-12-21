@@ -2488,7 +2488,30 @@
 .hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
-
+/*Box Shadow Outset 2.0*/
+.hvr-box-shadow-outset2 {
+	box-shadow: none;
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transform: scale(1.01);
+	transition: 0.5s;
+}
+.hvr-box-shadow-outset2:hover, .hvr-box-shadow-outset2:focus, .hvr-box-shadow-outset2:active{
+	box-shadow:
+		0 1px 0 #737373,
+		0 2px 0 #666666,
+		0 3px 0 #595959,
+		0 4px 0 #4d4d4d,
+		0 5px 0 #404040,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+	transition: 0.4s;
+}
 /* Box Shadow Inset */
 .hvr-box-shadow-inset {
   display: inline-block;
