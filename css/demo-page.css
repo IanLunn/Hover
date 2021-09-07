@@ -233,8 +233,8 @@ a {
   font-size: .8em;
 }
 
-.nav.hvr-icon-down,
-.nav.hvr-icon-forward {
+.nav.hvr-icon-down.active,
+.nav.hvr-icon-forward.active {
   padding-right: 1.2em;
 }
 
