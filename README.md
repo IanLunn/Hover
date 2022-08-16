@@ -2,7 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/ianlunn" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" width="217" height="51" ></a>
 
-A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.
+A collection of CSS3-powered hover effects to be applied to links, buttons, logos, SVG, featured images, and so on. Easily apply to your own elements, modify or just use them for inspiration. Available in CSS, Sass, and LESS.
 
 [Demo](http://ianlunn.github.io/Hover)  |
 [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
@@ -67,7 +67,7 @@ Assuming you want to use the Grow effect:
     }
     ```
 3. Copy this effect and then paste it into your own stylesheet.
-4. In the HTML file which you'd like the effect to appear, add the class of `.hvr-grow` to your chosen element.
+4. In the HTML file in which you'd like the effect to appear, add the class of `.hvr-grow` to your chosen element.
 
 Example element before applying Hover.css effect:
 
@@ -88,14 +88,14 @@ Example element after applying Hover.css effect:
 If you plan on using many Hover.css effects, you may like to reference the entire Hover.css stylesheet.
 
 1. Download `hover-min.css`
-2. Add `hover-min.css` to your websites files, in a directory named `css` for example
+2. Add `hover-min.css` to your website's files, in a directory named `css` for example
 3. Reference `hover-min.css` in `<head>` of the HTML page you'd like to add Hover.css effects to:
 ```html
 <head>
-	<link href="css/hover-min.css" rel="stylesheet">
+  <link href="css/hover-min.css" rel="stylesheet">
 </head>
 ```
-Alternatively you can add a reference into an existing stylesheet like so (this may be useful to WordPress users who are unable to edit HTML):
+Alternatively, you can add a reference into an existing stylesheet like so (this may be useful to WordPress users who are unable to edit HTML):
 ```css
 @import url("hover-min.css");
 ```
@@ -154,7 +154,7 @@ Note: As of Hover.css v2.3.0 you can use any method you like for adding icons (p
 
 Here, the image will act as the icon because it has the `hvr-icon` class applied to it, and when hovered over, the icon will spin as defined by the `hvr-icon-spin` class on the parent element.
 
-Position of the icon is entirely in your control. You could place it before the text, like so:
+The position of the icon is entirely in your control. You could place it before the text, like so:
 
 ```
 <a href="#" class="hvr-icon-spin">
@@ -195,7 +195,7 @@ Many Hover.css effects rely on CSS3 features such as transitions, animations, tr
 - [Transforms](http://caniuse.com/#search=transforms) - not supported below Internet Explorer 9
 - [Generated Content (pseudo-elements)](http://caniuse.com/#search=pseudo-elements) - not supported below Internet Explorer 8
 
-Aside from the above mentioned browsers, Hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your webpages accordingly. It is recommended to apply fallback effects for older browsers, using CSS supported by those browsers or a feature testing library such as [Modernizr](http://modernizr.com/).
+Aside from the above-mentioned browsers, Hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your web pages accordingly. It is recommended to apply fallback effects for older browsers, using CSS supported by those browsers or a feature testing library such as [Modernizr](http://modernizr.com/).
 
 ## Using Grunt for Development
 
@@ -205,7 +205,7 @@ Grunt is non-essential but can speed up development. With [Grunt installed](http
 
 ## Using Sass/LESS for Development
 
-Sass/LESS are non-essential but can speed up development. Preprocess Sass/LESS with your favourite software or the environment provided via [Grunt](#using-grunt-for-development).
+Sass/LESS are non-essential but can speed up development. Preprocess Sass/LESS with your favorite software or the environment provided via [Grunt](#using-grunt-for-development).
 
 Sass/LESS is used in the Hover.css project to separate various CSS into specific files. Each effect is within its own file in the `effects` directory. Hover.css also uses the following `.scss` and `.less` files:
 
@@ -253,7 +253,7 @@ The `keyframes` mixin is passed the keyframe name, followed by the content, both
 
 
 ### _options
-Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
+Contains default options, various effect options, and the browser prefixes you'd like to use with the `prefixed` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
 
 As of `2.0.0`, `_options` also includes a `$nameSpace` / `@nameSpace` option which allows you to change the name all classes are prefixed with. The default namespace is `hvr`.
 
@@ -265,7 +265,7 @@ If you'd like to contribute your own effects, please see the [Contributing Guide
 
 ## Licenses
 
-Hover.css is made available under a free personal/open source or paid commercial licenses depending on your requirements. To compare licenses please visit the [Ian Lunn Design Limited Store](https://ianlunn.co.uk/store/licenses/) and [purchase a commercial license here](https://ianlunn.co.uk/store/hover-css/).
+Hover.css is made available under a free personal/open source or paid commercial license depending on your requirements. To compare licenses please visit the [Ian Lunn Design Limited Store](https://ianlunn.co.uk/store/licenses/) and [purchase a commercial license here](https://ianlunn.co.uk/store/hover-css/).
 
 ### Personal/Open Source
 
