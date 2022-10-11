@@ -289,7 +289,7 @@ For commercial use, Hover.css is made available under Commercial, Extended Comme
 - Your code is kept proprietary, to yourself
 - Free updates to the major version
 
-[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/commercial/)
+[Purchase](https://ianlunn.gumroad.com/l/hover-css-extended-commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/commercial/)
 
 #### Extended Commercial License
 
@@ -300,7 +300,7 @@ For commercial use, Hover.css is made available under Commercial, Extended Comme
 
 *With the exception of applications that allow end users to produce separate applications. See the OEM Commercial License.
 
-[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=extended-commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/extended-commercial/)
+[Purchase](https://ianlunn.gumroad.com/l/hover-css-commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/extended-commercial/)
 
 #### OEM Commercial License
 
