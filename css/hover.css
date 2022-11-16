@@ -9,7 +9,7 @@
  */
 /* 2D TRANSITIONS */
 /* Grow */
-.hvr-grow {
+.hvr-grow{
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -20,7 +20,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active ,hvr-bob.active{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -371,7 +371,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active,hvr-bob.active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
   -webkit-animation-duration: .3s, 1.5s;
