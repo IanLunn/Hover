@@ -1184,7 +1184,32 @@
   -webkit-transform: translateX(-8px);
   transform: translateX(-8px);
 }
-
+/* clear */
+.clear{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.6s;
+  border-radius:5px;
+  filter: blur(2px);
+  -webkit-box-shadow: 0px 0px 10px 1px;
+}
+.clear:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px;
+  filter: blur(0px);
+  scale:1.05;
+}
+/* blurrty */
+.blurry{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.6s;
+  border-radius:5px;
+  filter: blur(0px);
+  -webkit-box-shadow: 0px 0px 5px 1px;
+}
+.blurry:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px;
+  filter: blur(2px);
+  scale:1.05;
+}
 /* BACKGROUND TRANSITIONS */
 /* Fade */
 .hvr-fade {
