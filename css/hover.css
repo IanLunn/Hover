@@ -2321,6 +2321,67 @@
 .hvr-overline-from-right:hover:before, .hvr-overline-from-right:focus:before, .hvr-overline-from-right:active:before {
   left: 0;
 }
+/* Leftline  Reveal */
+.hvr-Leftline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  padding-left: 4px; /* 添加左边距 */
+}
+.hvr-Leftline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; /* 修改为顶部对齐 */
+  bottom: 0;
+  left: 0; /* 修改边框宽度为零 */
+  width: 0; /* 修改为初始宽度为0 */
+  background: #2098D1;
+  -webkit-transition-property: width; /* 修改过渡属性 */
+  transition-property: width;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-Leftline-reveal:hover:before, .hvr-Leftline-reveal:focus:before, .hvr-Leftline-reveal:active:before {
+  width: 4px; /* 修改为边框宽度 */
+}
+
+/* Rightline  Reveal */
+.hvr-Rightline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  padding-right: 4px; /* 添加右边距 */
+}
+.hvr-Rightline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; /* 顶部对齐 */
+  bottom: 0;
+  right: 0; /* 右侧对齐 */
+  width: 0px; /* 右边框宽度 */
+  background: #2098D1;
+  -webkit-transition-property: width; /* 过渡属性 */
+  transition-property: width;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-Rightline-reveal:hover:before, .hvr-Rightline-reveal:focus:before, .hvr-Rightline-reveal:active:before {
+  width: 4px /* 宽度过渡到100% */
+}
 
 /* Reveal */
 .hvr-reveal {
