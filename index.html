@@ -376,18 +376,21 @@
 		<script>
 			/**
 			 * Used to demonstrate Hover.css only. Not required when adding
-			 * Hover.css to your own pages. Prevents a link from being
-			 * navigated and gaining focus.
+			 * Hover.css to your own pages. Prevents the example links
+			 * from jumping to the top of the page.
 			 */
-			var effects = document.querySelectorAll('.effects')[0];
+			var effects = document.querySelector('.effects');
 
 			effects.addEventListener('click', function(e) {
-
-				if (e.target.className.indexOf('hvr') > -1) {
-					e.preventDefault();
-					e.target.blur();
-
+				var example = e.target;
+				while (example !== effects &&
+					(example.tagName !== 'A' || example.getAttribute('href') !== '#')) {
+					example = example.parentNode;
 				}
+				if (example === effects) return;
+
+				e.preventDefault();
+				if (e.pointerType || (!window.PointerEvent && e.detail > 0)) example.blur();
 			});
 		</script>
 
