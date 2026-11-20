@@ -14,6 +14,7 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
     - [B. Reference Hover.css](#b-reference-hovercss)
     - [A Note on the display property](#a-note-on-the-display-property)
     - [Using Icon Effects](#using-icon-effects)
+    - [Customizing an Effect's Color](#customizing-an-effects-color)
 - [What's Included?](#whats-included)
     - [css](#css)
     - [scss/less](#scssless)
@@ -164,6 +165,22 @@ Position of the icon is entirely in your control. You could place it before the 
 ```
 
 Or use custom CSS to position the icon as you see fit.
+
+### Customizing an Effect's Color
+
+When using the compiled stylesheet, load your overrides after Hover.css. For example, this changes only Underline From Left elements that also use the `red-underline` class:
+
+```html
+<a href="/examples" class="hvr-underline-from-left red-underline">Examples</a>
+```
+
+```css
+.hvr-underline-from-left.red-underline::before {
+    background-color: #d22;
+}
+```
+
+To change the shared active color before compiling the Sass or LESS source, edit `$activeColor` in `scss/_options.scss` or `@activeColor` in `less/_options.less`. This also changes other effects that use the same option.
 
 ## What's Included?
 
