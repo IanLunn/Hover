@@ -81,7 +81,7 @@ Example element after applying Hover.css effect:
 <a href="#" class="hvr-grow">Add to Basket</a>
 ```
 
-**Note**: As of `2.0.0` all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using Sass/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
+**Note**: As of `2.0.0` Hover.css effect class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. In Sass or LESS, change the effect prefix using `$nameSpace` in `scss/_options.scss` or `@nameSpace` in `less/_options.less`. The icon child class is always `hvr-icon`.
 
 ### B. Reference Hover.css
 
@@ -255,7 +255,7 @@ The `keyframes` mixin is passed the keyframe name, followed by the content, both
 ### _options
 Contains default options, various effect options and the browser prefixes you'd like to use with the `prefixed` mixin. By default, only the `-webkit-` prefix is set to `true` (due to most browsers not requiring prefixes now).
 
-As of `2.0.0`, `_options` also includes a `$nameSpace` / `@nameSpace` option which allows you to change the name all classes are prefixed with. The default namespace is `hvr`.
+As of `2.0.0`, `_options` also includes a `$nameSpace` / `@nameSpace` option which sets the prefix for generated effect classes and keyframes. The default namespace is `hvr`. For example, use `custom-icon-forward` on the parent when the namespace is `custom` and keep `hvr-icon` on the icon itself.
 
 The `$includeClasses` / `@includeClasses` option by default is set to `true` and will generate all Hover.css effects under their own class names, `hvr-grow` for example. Should you wish to add the properties that make up Hover.css effects to your own class names, set this option to `false`.
 
